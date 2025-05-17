@@ -1,0 +1,608 @@
+Kaggle House Price Prediction
+Step 1: Load and Inspect Data
+Load and Inspect Data
+Why?
+Load the dataset from Kaggle.
+Understand the shape and structure of the data.
+Identify missing values, data types, and general properties.
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.preprocessing import LabelEncoder, StandardScaler, OneHotEncoder
+from sklearn.cluster import KMeans
+from scipy.stats import skew
+from sklearn.model_selection import train_test_split
+from sklearn.compose import ColumnTransformer
+from sklearn.linear_model import LinearRegression, Ridge
+from sklearn.ensemble import RandomForestRegressor, StackingRegressor
+from sklearn.model_selection import GridSearchCV, KFold, train_test_split
+from sklearn.metrics import mean_squared_error
+from xgboost import XGBRegressor
+from catboost import CatBoostRegressor
+import lightgbm as lgb
+# Set plot style
+sns.set_style("darkgrid")
+# Load the dataset
+train_df = pd.read_csv("data/train.csv")
+test_df = pd.read_csv("data/test.csv")
+# Display basic info
+print(f"Training Data Shape: {train_df.shape}")
+print(f"Test Data Shape: {test_df.shape}")
+Training Data Shape: (1460, 81)
+Test Data Shape: (1459, 80)
+# Display the first few rows
+train_df.head()
+Id	MSSubClass	MSZoning	LotFrontage	LotArea	Street	Alley	LotShape	LandContour	Utilities	...	PoolArea	PoolQC	Fence	MiscFeature	MiscVal	MoSold	YrSold	SaleType	SaleCondition	SalePrice
+0	1	60	RL	65.0	8450	Pave	NaN	Reg	Lvl	AllPub	...	0	NaN	NaN	NaN	0	2	2008	WD	Normal	208500
+1	2	20	RL	80.0	9600	Pave	NaN	Reg	Lvl	AllPub	...	0	NaN	NaN	NaN	0	5	2007	WD	Normal	181500
+2	3	60	RL	68.0	11250	Pave	NaN	IR1	Lvl	AllPub	...	0	NaN	NaN	NaN	0	9	2008	WD	Normal	223500
+3	4	70	RL	60.0	9550	Pave	NaN	IR1	Lvl	AllPub	...	0	NaN	NaN	NaN	0	2	2006	WD	Abnorml	140000
+4	5	60	RL	84.0	14260	Pave	NaN	IR1	Lvl	AllPub	...	0	NaN	NaN	NaN	0	12	2008	WD	Normal	250000
+5 rows × 81 columns
+
+Step 2: Exploratory Data Analysis (EDA)
+Exploratory Data Analysis (EDA)
+Why?
+Understand missing values.
+Analyze the distribution of key numerical and categorical features.
+Identify potential outliers.
+# Check missing values
+missing_values = train_df.isnull().sum()
+missing_values = missing_values[missing_values > 0]
+print("Missing values in dataset:")
+print(missing_values.sort_values(ascending=False))
+Missing values in dataset:
+PoolQC          1453
+MiscFeature     1406
+Alley           1369
+Fence           1179
+MasVnrType       872
+FireplaceQu      690
+LotFrontage      259
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+BsmtFinType2      38
+BsmtExposure      38
+BsmtFinType1      37
+BsmtCond          37
+BsmtQual          37
+MasVnrArea         8
+Electrical         1
+dtype: int64
+# Visualizing missing values
+plt.figure(figsize=(12, 6))
+sns.heatmap(train_df.isnull(), cmap='viridis', cbar=False, yticklabels=False)
+plt.title("Missing Values in Training Data")
+plt.show()
+
+We can see some of the features such as Alley, PoolQC,.. missing so many values, we will drop these columns on the missing handling part.
+
+Target Variable Analysis: SalePrice Distribution
+SalePrice is the variable we aim to predict.
+We need to check its distribution to see if it's skewed.
+# SalePrice distribution
+plt.figure(figsize=(10, 6))
+sns.histplot(train_df["SalePrice"], bins=50, kde=True, color='blue')
+plt.xlabel("Sale Price")
+plt.ylabel("Frequency")
+plt.title("Distribution of Sale Price")
+plt.show()
+
+Correlation Analysis: Feature Selection
+Checking how numerical features correlate with SalePrice.
+# Select only numerical columns
+numeric_df = train_df.select_dtypes(include=['int64', 'float64'])
+
+# Compute correlation matrix
+correlation_matrix = numeric_df.corr()
+
+# Plot heatmap of correlations
+plt.figure(figsize=(12, 8))
+sns.heatmap(correlation_matrix, cmap="coolwarm", annot=False)
+plt.title("Feature Correlation Heatmap")
+plt.show()
+
+# Display top correlated features with SalePrice
+top_correlations = correlation_matrix["SalePrice"].abs().sort_values(ascending=False)
+print(top_correlations.head(15))
+
+SalePrice       1.000000
+OverallQual     0.790982
+GrLivArea       0.708624
+GarageCars      0.640409
+GarageArea      0.623431
+TotalBsmtSF     0.613581
+1stFlrSF        0.605852
+FullBath        0.560664
+TotRmsAbvGrd    0.533723
+YearBuilt       0.522897
+YearRemodAdd    0.507101
+GarageYrBlt     0.486362
+MasVnrArea      0.477493
+Fireplaces      0.466929
+BsmtFinSF1      0.386420
+Name: SalePrice, dtype: float64
+Step 3: Handling Missing Values
+Handling Missing Values
+Why?
+Missing values can negatively impact model performance.
+Some missing values indicate absence of a feature, not missing data.
+We use domain knowledge to fill or drop columns appropriately.
+# Drop columns with excessive missing values (>80%)
+drop_columns = ["PoolQC", "MiscFeature", "Alley", "Fence"]
+train_df.drop(columns=drop_columns, inplace=True)
+test_df.drop(columns=drop_columns, inplace=True)
+print("Dropped columns:", drop_columns)
+Dropped columns: ['PoolQC', 'MiscFeature', 'Alley', 'Fence']
+# Fill categorical missing values with 'None'
+categorical_fill_none = ["GarageType", "GarageFinish", "GarageQual", "GarageCond", 
+                         "FireplaceQu", "BsmtFinType1", "BsmtFinType2", 
+                         "BsmtCond", "BsmtQual", "BsmtExposure", "MasVnrType"]
+for col in categorical_fill_none:
+    train_df.fillna({col: "None"}, inplace=True)
+    test_df.fillna({col: "None"}, inplace=True)
+
+# Print number of missing values after filling 'None'
+print(f"Missing values in train dataset in categorical features after fillna: {train_df[categorical_fill_none].isnull().sum().sum()}")
+print(f"Missing values in test dataset in categorical features after fillna: {test_df[categorical_fill_none].isnull().sum().sum()}")
+Missing values in train dataset in categorical features after fillna: 0
+Missing values in test dataset in categorical features after fillna: 0
+# Fill numerical missing values
+num_fill_zero = ["GarageYrBlt", "MasVnrArea"]
+for col in num_fill_zero:
+    train_df.fillna({col: 0}, inplace=True)
+    test_df.fillna({col: 0}, inplace=True)
+
+# Adhoc fill missing Electrical with mode and LotFrontage with median
+train_df["LotFrontage"] = train_df.groupby("Neighborhood")["LotFrontage"].transform(lambda x: x.fillna(x.median()))
+test_df["LotFrontage"] = test_df.groupby("Neighborhood")["LotFrontage"].transform(lambda x: x.fillna(x.median()))
+
+train_df.fillna({"Electrical": train_df["Electrical"].mode()[0]}, inplace=True)
+test_df.fillna({"Electrical": test_df["Electrical"].mode()[0]}, inplace=True)
+
+adhoc_fill = ["LotFrontage", "Electrical"]
+# Print number of missing values after filling 'None'
+print(f"Missing values in train dataset in numerical features after fill 0: {train_df[num_fill_zero].isnull().sum().sum()}")
+print(f"Missing values in test dataset in numerical features after fill 0: {test_df[num_fill_zero].isnull().sum().sum()}")
+print(f"Missing values in train dataset in LotFrontage and Electrical features after fill adhoc values: {train_df[adhoc_fill].isnull().sum().sum()}")
+print(f"Missing values in test dataset in LotFrontage and Electrical features after fill adhoc values: {test_df[adhoc_fill].isnull().sum().sum()}")
+
+print("Missing values handled.")
+Missing values in train dataset in numerical features after fill 0: 0
+Missing values in test dataset in numerical features after fill 0: 0
+Missing values in train dataset in LotFrontage and Electrical features after fill adhoc values: 0
+Missing values in test dataset in LotFrontage and Electrical features after fill adhoc values: 0
+Missing values handled.
+Step 4: Handling Outliers
+Why?
+Outliers can distort model training and predictions.
+We visualize and handle them properly to improve robustness.
+Approach
+Visualize Outliers with boxplots.
+Use the IQR method to detect outliers.
+Decide how to handle them:
+Remove extreme values for key features.
+Cap certain values at a threshold.
+Keep minor outliers that don't affect modeling.
+# Define key numerical features correlated with SalePrice based on Correlation Analysis
+key_features = [
+    "SalePrice", "OverallQual", "GrLivArea", "GarageCars", "GarageArea", 
+    "TotalBsmtSF", "1stFlrSF", "FullBath", "TotRmsAbvGrd", "YearBuilt", 
+    "YearRemodAdd", "MasVnrArea", "Fireplaces", "BsmtFinSF1", "LotFrontage"
+]
+
+# Visualize Outliers
+plt.figure(figsize=(16, 10))
+for i, col in enumerate(key_features):
+    plt.subplot(4, 4, i+1)
+    sns.boxplot(y=train_df[col])
+plt.title(col)
+
+plt.tight_layout()
+plt.show()
+
+# Function to detect outliers using IQR
+def detect_outliers(df, column):
+    Q1 = df[column].quantile(0.25)
+    Q3 = df[column].quantile(0.75)
+    IQR = Q3 - Q1
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    outliers = df[(df[column] < lower_bound) | (df[column] > upper_bound)]
+    print(f"{column}: {len(outliers)} outliers detected")
+    return outliers
+# Detect outliers for all key features
+outlier_dict = {}
+for col in key_features:
+    outlier_dict[col] = detect_outliers(train_df, col)
+SalePrice: 61 outliers detected
+OverallQual: 2 outliers detected
+GrLivArea: 31 outliers detected
+GarageCars: 5 outliers detected
+GarageArea: 21 outliers detected
+TotalBsmtSF: 61 outliers detected
+1stFlrSF: 20 outliers detected
+FullBath: 0 outliers detected
+TotRmsAbvGrd: 30 outliers detected
+YearBuilt: 7 outliers detected
+YearRemodAdd: 0 outliers detected
+MasVnrArea: 98 outliers detected
+Fireplaces: 5 outliers detected
+BsmtFinSF1: 7 outliers detected
+LotFrontage: 93 outliers detected
+# Outliers to Remove (Extreme Values)
+train_df = train_df[train_df["GrLivArea"] < 4000]
+train_df = train_df[train_df["TotalBsmtSF"] < 3000]
+train_df = train_df[train_df["MasVnrArea"] < 1500]
+train_df = train_df[train_df["LotFrontage"] < 200]
+train_df = train_df[train_df["GarageArea"] < 1200]
+
+# Function to cap outliers
+def cap_outliers(df, col, percentile=99):
+    upper_limit = df[col].quantile(percentile / 100)
+    df[col] = df[col].apply(lambda x: upper_limit if x > upper_limit else x)
+
+# Apply capping for certain features
+cap_outliers(train_df, "SalePrice", 99)
+cap_outliers(train_df, "BsmtFinSF1", 95)
+cap_outliers(train_df, "1stFlrSF", 95)
+
+print("Outlier Handling Complete!")
+Outlier Handling Complete!
+Step 5: Feature Engineering
+Feature Engineering
+Why?
+Create new meaningful features to improve model accuracy.
+Combine existing features for better representation.
+Transform skewed data to normalize distributions.
+# Creating new features
+train_df["HouseAge"] = train_df["YrSold"] - train_df["YearBuilt"]
+test_df["HouseAge"] = test_df["YrSold"] - test_df["YearBuilt"]
+
+train_df["TotalBathrooms"] = (train_df["FullBath"] + (0.5 * train_df["HalfBath"]) + 
+                                train_df["BsmtFullBath"] + (0.5 * train_df["BsmtHalfBath"]))
+test_df["TotalBathrooms"] = (test_df["FullBath"] + (0.5 * test_df["HalfBath"]) + 
+                               test_df["BsmtFullBath"] + (0.5 * test_df["BsmtHalfBath"]))
+
+train_df["TotalSF"] = train_df["TotalBsmtSF"] + train_df["1stFlrSF"] + train_df["2ndFlrSF"]
+test_df["TotalSF"] = test_df["TotalBsmtSF"] + test_df["1stFlrSF"] + test_df["2ndFlrSF"]
+
+# Display created features
+created_features = ["HouseAge", "TotalBathrooms", "TotalSF", "TotalSF"]
+print("Created features:")
+train_df[created_features].head()
+Created features:
+HouseAge	TotalBathrooms	TotalSF	TotalSF
+0	5	3.5	2566.0	2566.0
+1	31	2.5	2524.0	2524.0
+2	7	3.5	2706.0	2706.0
+3	91	2.0	2473.0	2473.0
+4	8	3.5	3343.0	3343.0
+# Encoding Neighborhood for clustering
+neighborhood_encoder = LabelEncoder()
+train_df["NeighborhoodEncoded"] = neighborhood_encoder.fit_transform(train_df["Neighborhood"])
+test_df["NeighborhoodEncoded"] = neighborhood_encoder.transform(test_df["Neighborhood"])
+
+# Display encoded neighborhood
+print("Encoded neighborhood:")
+print(train_df[['Neighborhood', 'NeighborhoodEncoded']].drop_duplicates().sort_values('NeighborhoodEncoded'))
+Encoded neighborhood:
+    Neighborhood  NeighborhoodEncoded
+219      Blmngtn                    0
+599      Blueste                    1
+225       BrDale                    2
+9        BrkSide                    3
+69       ClearCr                    4
+0        CollgCr                    5
+3        Crawfor                    6
+39       Edwards                    7
+50       Gilbert                    8
+21        IDOTRR                    9
+23       MeadowV                   10
+5        Mitchel                   11
+14         NAmes                   12
+126      NPkVill                   13
+7         NWAmes                   14
+4        NoRidge                   15
+11       NridgHt                   16
+8        OldTown                   17
+267        SWISU                   18
+10        Sawyer                   19
+18       SawyerW                   20
+6        Somerst                   21
+58       StoneBr                   22
+41        Timber                   23
+1        Veenker                   24
+# K-Means Clustering for Neighborhoods
+kmeans = KMeans(n_clusters=5, random_state=42)
+train_df["NeighborhoodCluster"] = kmeans.fit_predict(train_df[["NeighborhoodEncoded"]].values.reshape(-1, 1))
+test_df["NeighborhoodCluster"] = kmeans.predict(test_df[["NeighborhoodEncoded"]].values.reshape(-1, 1))
+
+# Display neighborhoods clustering
+print("Clustered neighborhood:")
+print(train_df[['Neighborhood', 'NeighborhoodEncoded', 'NeighborhoodCluster']].drop_duplicates().sort_values('NeighborhoodCluster'))
+
+print("Feature Engineering Complete!")
+Clustered neighborhood:
+    Neighborhood  NeighborhoodEncoded  NeighborhoodCluster
+126      NPkVill                   13                    0
+5        Mitchel                   11                    0
+7         NWAmes                   14                    0
+23       MeadowV                   10                    0
+14         NAmes                   12                    0
+0        CollgCr                    5                    1
+225       BrDale                    2                    1
+219      Blmngtn                    0                    1
+69       ClearCr                    4                    1
+599      Blueste                    1                    1
+9        BrkSide                    3                    1
+41        Timber                   23                    2
+58       StoneBr                   22                    2
+6        Somerst                   21                    2
+1        Veenker                   24                    2
+10        Sawyer                   19                    2
+18       SawyerW                   20                    2
+21        IDOTRR                    9                    3
+39       Edwards                    7                    3
+50       Gilbert                    8                    3
+3        Crawfor                    6                    3
+11       NridgHt                   16                    4
+267        SWISU                   18                    4
+8        OldTown                   17                    4
+4        NoRidge                   15                    4
+Feature Engineering Complete!
+/opt/anaconda3/lib/python3.12/site-packages/sklearn/cluster/_kmeans.py:1416: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+Step 6: Encoding Categorical Features
+Encoding Categorical Features
+Why?
+Machine learning models require numerical input.
+We use different encoding strategies based on feature types:
+Label Encoding for Ordinal Features (where order matters)
+One-Hot Encoding for Nominal Features (where order does not matter)
+# Identify categorical features
+categorical_features = train_df.select_dtypes(include=['object']).columns.tolist()
+
+print(f"Categorial features: {categorical_features}")
+Categorial features: ['MSZoning', 'Street', 'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope', 'Neighborhood', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'ExterQual', 'ExterCond', 'Foundation', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'Heating', 'HeatingQC', 'CentralAir', 'Electrical', 'KitchenQual', 'Functional', 'FireplaceQu', 'GarageType', 'GarageFinish', 'GarageQual', 'GarageCond', 'PavedDrive', 'SaleType', 'SaleCondition']
+# Define ordinal features with meaningful order
+ordinal_features = ["ExterQual", "ExterCond", "BsmtQual", "BsmtCond", "HeatingQC", 
+                    "KitchenQual", "FireplaceQu", "GarageQual", "GarageCond"]
+# Ensure missing values are filled before encoding
+for col in ordinal_features:
+    train_df[col] = train_df[col].fillna("None")
+    test_df[col] = test_df[col].fillna("None")
+
+print(f"Missing values in train dataset in ordinal features after fill none: {train_df[ordinal_features].isnull().sum().sum()}")
+print(f"Missing values in test dataset in ordinal features after fill none: {test_df[ordinal_features].isnull().sum().sum()}")
+Missing values in train dataset in ordinal features after fill none: 0
+Missing values in test dataset in ordinal features after fill none: 0
+# Apply Label Encoding to ordinal features
+label_encoders = {}
+for col in ordinal_features:
+    label_enc = LabelEncoder()
+    combined_data = list(train_df[col]) + list(test_df[col])  # Combine train & test categories
+    label_enc.fit(combined_data)
+    train_df[col] = label_enc.transform(train_df[col])
+    test_df[col] = label_enc.transform(test_df[col])
+    label_encoders[col] = label_enc  # Store encoders for reference
+
+# Display the label encoding on ordinal features
+print("Label encoded features:")
+print(train_df[ordinal_features])
+Label encoded features:
+      ExterQual  ExterCond  BsmtQual  BsmtCond  HeatingQC  KitchenQual  \
+0             2          4         2         4          0            2   
+1             3          4         2         4          0            4   
+2             2          4         2         4          0            2   
+3             3          4         4         1          2            2   
+4             2          4         2         4          0            2   
+...         ...        ...       ...       ...        ...          ...   
+1455          3          4         2         4          0            4   
+1456          3          4         2         4          4            4   
+1457          0          2         4         1          0            2   
+1458          3          4         4         4          2            2   
+1459          2          4         4         4          2            4   
+
+      FireplaceQu  GarageQual  GarageCond  
+0               3           5           5  
+1               5           5           5  
+2               5           5           5  
+3               2           5           5  
+4               5           5           5  
+...           ...         ...         ...  
+1455            5           5           5  
+1456            5           5           5  
+1457            2           5           5  
+1458            3           5           5  
+1459            3           5           5  
+
+[1447 rows x 9 columns]
+# Identify remaining nominal categorical features (excluding ordinal ones)
+nominal_features = [col for col in categorical_features if col not in ordinal_features]
+
+print(f"Nominal features: {nominal_features}")
+Nominal features: ['MSZoning', 'Street', 'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope', 'Neighborhood', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'Foundation', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'Heating', 'CentralAir', 'Electrical', 'Functional', 'GarageType', 'GarageFinish', 'PavedDrive', 'SaleType', 'SaleCondition']
+# Store target variable separately and drop it from train dataset
+y_train = train_df["SalePrice"].values  # Keep target variable
+train_df.drop(columns=["SalePrice"], inplace=True)  # Drop SalePrice before encoding
+
+# Apply One-Hot Encoding using ColumnTransformer
+column_transformer = ColumnTransformer(transformers=[
+    ('onehot', OneHotEncoder(handle_unknown='ignore', drop='first'), nominal_features)
+], remainder='passthrough')
+
+# Transform train and test datasets
+train_encoded = column_transformer.fit_transform(train_df)
+test_encoded = column_transformer.transform(test_df)
+
+# Convert to DataFrame
+train_df = pd.DataFrame(train_encoded, columns=column_transformer.get_feature_names_out())
+test_df = pd.DataFrame(test_encoded, columns=column_transformer.get_feature_names_out())
+
+# Reattach the target variable
+train_df["SalePrice"] = y_train  # Add SalePrice back
+
+# Display onehot encoded feature of train dataset
+print("Onehot encoding features in train dataset:")
+print(train_df[[col for col in train_df.columns if col.startswith("onehot__")]].head())
+
+print("Categorical Encoding Complete!")
+Onehot encoding features in train dataset:
+   onehot__MSZoning_FV  onehot__MSZoning_RH  onehot__MSZoning_RL  \
+0                  0.0                  0.0                  1.0   
+1                  0.0                  0.0                  1.0   
+2                  0.0                  0.0                  1.0   
+3                  0.0                  0.0                  1.0   
+4                  0.0                  0.0                  1.0   
+
+   onehot__MSZoning_RM  onehot__Street_Pave  onehot__LotShape_IR2  \
+0                  0.0                  1.0                   0.0   
+1                  0.0                  1.0                   0.0   
+2                  0.0                  1.0                   0.0   
+3                  0.0                  1.0                   0.0   
+4                  0.0                  1.0                   0.0   
+
+   onehot__LotShape_IR3  onehot__LotShape_Reg  onehot__LandContour_HLS  \
+0                   0.0                   1.0                      0.0   
+1                   0.0                   1.0                      0.0   
+2                   0.0                   0.0                      0.0   
+3                   0.0                   0.0                      0.0   
+4                   0.0                   0.0                      0.0   
+
+   onehot__LandContour_Low  ...  onehot__SaleType_ConLI  \
+0                      0.0  ...                     0.0   
+1                      0.0  ...                     0.0   
+2                      0.0  ...                     0.0   
+3                      0.0  ...                     0.0   
+4                      0.0  ...                     0.0   
+
+   onehot__SaleType_ConLw  onehot__SaleType_New  onehot__SaleType_Oth  \
+0                     0.0                   0.0                   0.0   
+1                     0.0                   0.0                   0.0   
+2                     0.0                   0.0                   0.0   
+3                     0.0                   0.0                   0.0   
+4                     0.0                   0.0                   0.0   
+
+   onehot__SaleType_WD  onehot__SaleCondition_AdjLand  \
+0                  1.0                            0.0   
+1                  1.0                            0.0   
+2                  1.0                            0.0   
+3                  1.0                            0.0   
+4                  1.0                            0.0   
+
+   onehot__SaleCondition_Alloca  onehot__SaleCondition_Family  \
+0                           0.0                           0.0   
+1                           0.0                           0.0   
+2                           0.0                           0.0   
+3                           0.0                           0.0   
+4                           0.0                           0.0   
+
+   onehot__SaleCondition_Normal  onehot__SaleCondition_Partial  
+0                           1.0                            0.0  
+1                           1.0                            0.0  
+2                           1.0                            0.0  
+3                           0.0                            0.0  
+4                           1.0                            0.0  
+
+[5 rows x 171 columns]
+Categorical Encoding Complete!
+/opt/anaconda3/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py:228: UserWarning: Found unknown categories in columns [0, 4, 9, 14, 15, 24, 28] during transform. These unknown categories will be encoded as all zeros
+  warnings.warn(
+Step 7: Feature Scaling
+Feature Scaling (Standardization)
+Why?
+Ensures numerical features are on the same scale.
+Improves model convergence and performance.
+Standardization (Z-score scaling) is applied: [ X_{scaled} = \frac{X - \mu}{\sigma} ]
+# Identify numerical columns
+numerical_features = train_df.select_dtypes(include=['number']).columns.tolist()
+numerical_features.remove("SalePrice")  # Exclude target variable
+numerical_features.remove("remainder__Id")
+
+# Initialize Standard Scaler
+scaler = StandardScaler()
+
+# Apply scaling
+train_df[numerical_features] = scaler.fit_transform(train_df[numerical_features])
+test_df[numerical_features] = scaler.transform(test_df[numerical_features])
+
+# Apply log scaling on SalePrice
+train_df['SalePrice'] = np.log(train_df['SalePrice'])
+
+# Display scaled features
+normalized_feature = numerical_features
+normalized_feature.append("SalePrice")
+print(f"Normalized features in train dataset: {train_df[normalized_feature].head()}")
+
+
+print("Feature Scaling (Standardization) Complete!")
+Normalized features in train dataset:    onehot__MSZoning_FV  onehot__MSZoning_RH  onehot__MSZoning_RL  \
+0            -0.215119             -0.10574              0.51894   
+1            -0.215119             -0.10574              0.51894   
+2            -0.215119             -0.10574              0.51894   
+3            -0.215119             -0.10574              0.51894   
+4            -0.215119             -0.10574              0.51894   
+
+   onehot__MSZoning_RM  onehot__Street_Pave  onehot__LotShape_IR2  \
+0            -0.421165             0.058885              -0.16861   
+1            -0.421165             0.058885              -0.16861   
+2            -0.421165             0.058885              -0.16861   
+3            -0.421165             0.058885              -0.16861   
+4            -0.421165             0.058885              -0.16861   
+
+   onehot__LotShape_IR3  onehot__LotShape_Reg  onehot__LandContour_HLS  \
+0             -0.079112              0.756853                -0.187217   
+1             -0.079112              0.756853                -0.187217   
+2             -0.079112             -1.321261                -0.187217   
+3             -0.079112             -1.321261                -0.187217   
+4             -0.079112             -1.321261                -0.187217   
+
+   onehot__LandContour_Low  ...  remainder__PoolArea  remainder__MiscVal  \
+0                 -0.15512  ...            -0.058296           -0.087339   
+1                 -0.15512  ...            -0.058296           -0.087339   
+2                 -0.15512  ...            -0.058296           -0.087339   
+3                 -0.15512  ...            -0.058296           -0.087339   
+4                 -0.15512  ...            -0.058296           -0.087339   
+
+   remainder__MoSold  remainder__YrSold  remainder__HouseAge  \
+0          -1.602333           0.138069            -1.048768   
+1          -0.490484          -0.613004            -0.189144   
+2           0.991981           0.138069            -0.982643   
+3          -1.602333          -1.364077             1.794605   
+4           2.103830           0.138069            -0.949581   
+
+   remainder__TotalBathrooms  remainder__TotalSF  \
+0                   1.670809            0.047601   
+1                   0.383792           -0.010640   
+2                   1.670809            0.241739   
+3                  -0.259716           -0.081362   
+4                   1.670809            1.125066   
+
+   remainder__NeighborhoodEncoded  remainder__NeighborhoodCluster  SalePrice  
+0                       -1.201459                       -0.576782  12.247694  
+1                        1.951625                        0.121047  12.109011  
+2                       -1.201459                       -0.576782  12.317167  
+3                       -1.035507                        0.818876  11.849398  
+4                        0.458059                        1.516706  12.429216  
+
+[5 rows x 222 columns]
+Feature Scaling (Standardization) Complete!
+Step 8: Finalizing and Exporting cleaned data
+Correct Id and Export cleaned data
+
+Why?
+Data must be finalized before feat into model for training.
+# Correct data: Convert back Id column to int32
+train_df.rename(columns={'remainder__Id': 'Id'}, inplace=True)
+test_df.rename(columns={'remainder__Id': 'Id'}, inplace=True)
+train_df['Id'] = train_df['Id'].astype('int32')
+test_df['Id'] = test_df['Id'].astype('int32')
+
+# Exporting cleaned data
+train_df.to_csv('data/cleaned_train_data.csv', index=False)
+test_df.to_csv('data/cleaned_test_data.csv', index=False)
