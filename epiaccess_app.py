@@ -134,6 +134,41 @@ def load_css():
         margin: 0 auto !important;
     }
     
+    /* Light Mode Warning Banner */
+    .warning-banner {
+        background: linear-gradient(45deg, #fbbf24, #f59e0b);
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        margin: 2rem auto;
+        max-width: 800px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        border-left: 6px solid #d97706;
+    }
+    
+    .warning-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .warning-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        opacity: 0.95;
+    }
+    
+    .warning-steps {
+        margin-top: 0.5rem;
+        font-weight: 500;
+        font-style: italic;
+    }
+    
     /* Value Proposition Cards */
     .value-card {
         background: white;
@@ -410,6 +445,22 @@ def load_css():
     </style>
     """, unsafe_allow_html=True)
 
+# Light Mode Warning Banner
+def light_mode_warning():
+    st.markdown("""
+    <div class="warning-banner">
+        <div class="warning-title">
+            ⚠️ Light Mode Required
+        </div>
+        <div class="warning-text">
+            This application is optimized for light mode. For the best experience, please switch to light mode.
+        </div>
+        <div class="warning-steps">
+            Instructions: Click the three dots (⋮) at the top right → Settings → Change "App theme" to "Light"
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
 # Hero Section
 def hero_section():
     st.markdown("""
@@ -576,6 +627,7 @@ def main():
     load_css()
     
     # Landing Page Sections
+    light_mode_warning()
     hero_section()
     
     # Add spacing
