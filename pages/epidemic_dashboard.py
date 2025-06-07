@@ -235,7 +235,14 @@ def create_forecast_chart(data, metric, countries, disease, show_forecast=True, 
         title = f'{disease} - {metric.replace("_", " ").title()} {"with 6-Month Forecast" if show_forecast else "Over Time"}'
     
     fig.update_layout(
-        title=dict(text=title, font_size=20, x=0.5),
+        title=dict(
+            text=title, 
+            font_size=20, 
+            x=0.50,  # Move slightly more to the left from 0.5 for better centering
+            y=0.99,  # Move upward from default position
+            xanchor='center',  # Ensure center anchoring
+            yanchor='top'  # Anchor from top
+        ),
         xaxis_title="Date",
         yaxis_title=metric.replace("_", " ").title(),
         hovermode='x unified',
@@ -274,12 +281,19 @@ def create_comparison_chart(data, metric, countries, disease):
         latest_data,
         x='country',
         y=metric,
-        title=f'{disease} - Peak {metric.replace("_", " ").title()} by Country',
         color=metric,
         color_continuous_scale='Viridis'
     )
     
     fig.update_layout(
+        title=dict(
+            text=f'{disease} - Peak {metric.replace("_", " ").title()} by Country',
+            font_size=18,
+            x=0.47,  # Match the main chart's centering
+            y=0.92,  # Move upward for consistency
+            xanchor='center',
+            yanchor='top'
+        ),
         xaxis_title="Country",
         yaxis_title=metric.replace("_", " ").title(),
         height=400,
