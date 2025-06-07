@@ -123,6 +123,17 @@ def load_css():
         box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6) !important;
     }
     
+    /* Center buttons in their columns */
+    .stButton {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    
+    .stButton > button {
+        width: auto !important;
+        margin: 0 auto !important;
+    }
+    
     /* Value Proposition Cards */
     .value-card {
         background: white;
