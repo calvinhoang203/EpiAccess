@@ -1,4 +1,7 @@
-# Health Access Clustering Page
+# Healthcare Access Clustering Analysis
+# This page analyzes countries based on their healthcare spending patterns
+# and economic capacity to identify different healthcare access groups
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -10,7 +13,7 @@ import warnings
 import os
 warnings.filterwarnings('ignore')
 
-# Set page config
+# Page setup
 st.set_page_config(
     page_title="Access Clustering - EpiAccess",
     page_icon="🔬",
@@ -19,33 +22,38 @@ st.set_page_config(
 
 @st.cache_data
 def load_health_expenditure_data():
-    """Load and process health expenditure data for clustering analysis"""
+    """
+    Load World Bank health expenditure data and prepare it for clustering.
+    We use 2020-2022 averages to smooth out pandemic-related volatility.
+    """
     try:
-        # Load the cleaned health expenditure data
+        # Read the Excel file with health spending data
         df = pd.read_excel("data/cleaned_health_expenditure.xlsx")
         
-        # Calculate recent averages (2020-2022) for more stable clustering
+        # Define column names for recent years (more stable than single year)
         recent_cols_pct = ['2020 H.E.(% of GDP)', '2021 H.E.(% of GDP)', '2022 H.E.(% of GDP)']
         recent_cols_per_capita = ['2020 H.E. per capita (USD)', '2021 H.E. per capita (USD)', '2022 H.E. per capita (USD)']
         recent_cols_gdp = ['2020 GDP(USD) by mil', '2021 GDP(USD) by mil', '2022 GDP(USD) by mil']
         
-        # Create clustering features using recent averages
+        # Start with basic country info
         clustering_data = df[['Country Name', 'Country Code']].copy()
         
-        # Average health expenditure as % of GDP (2020-2022) - Convert decimal to percentage
-        clustering_data['avg_he_pct_gdp'] = df[recent_cols_pct].mean(axis=1) * 100  # Convert to percentage
+        # Calculate 3-year averages for more stable clustering
+        # Fix: Convert decimal percentages to actual percentages (0.07 becomes 7%)
+        clustering_data['avg_he_pct_gdp'] = df[recent_cols_pct].mean(axis=1) * 100
         
-        # Average health expenditure per capita (2020-2022)
+        # Average spending per person in USD
         clustering_data['avg_he_per_capita'] = df[recent_cols_per_capita].mean(axis=1)
         
-        # Average GDP (2020-2022) in billions for better scaling
+        # Convert GDP from millions to billions (easier to work with)
         clustering_data['avg_gdp_billions'] = df[recent_cols_gdp].mean(axis=1) / 1000
         
-        # Remove rows with missing values but be more lenient
+        # Clean up the data - keep countries with health spending info
         initial_count = len(clustering_data)
         clustering_data = clustering_data.dropna(subset=['avg_he_pct_gdp', 'avg_he_per_capita'])
         final_count = len(clustering_data)
         
+        # Debug info for troubleshooting
         print(f"Data loaded: {initial_count} countries initially, {final_count} countries after cleaning")
         print(f"Sample data ranges:")
         print(f"Health Exp % GDP: {clustering_data['avg_he_pct_gdp'].min():.1f}% to {clustering_data['avg_he_pct_gdp'].max():.1f}%")
@@ -58,27 +66,30 @@ def load_health_expenditure_data():
         return None, None
 
 def perform_health_access_clustering(data, n_clusters=4):
-    """Perform K-means clustering on health access indicators"""
-    # Select features for clustering
+    """
+    Group countries into 4 healthcare access clusters using K-means.
+    Each cluster represents a different healthcare access pattern.
+    """
+    # The three key metrics for healthcare access
     features = ['avg_he_pct_gdp', 'avg_he_per_capita', 'avg_gdp_billions']
     clustering_features = data[features].copy()
     
-    # Fill any remaining NaN values with median
+    # Handle any missing values (use median as sensible default)
     for col in features:
         clustering_features[col] = clustering_features[col].fillna(clustering_features[col].median())
     
-    # Standardize features
+    # Standardize all features so they're on the same scale
     scaler = StandardScaler()
     scaled_features = scaler.fit_transform(clustering_features)
     
-    # Perform K-means clustering
+    # Run K-means clustering to find 4 groups
     kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
     data['cluster'] = kmeans.fit_predict(scaled_features)
     
-    # Create cluster labels based on characteristics
+    # Calculate average characteristics of each cluster
     cluster_stats = data.groupby('cluster')[features].mean()
     
-    # Define cluster labels based on realistic patterns
+    # Give each cluster a meaningful name based on its spending patterns
     cluster_labels = {}
     for cluster_id in range(n_clusters):
         stats = cluster_stats.loc[cluster_id]
@@ -86,20 +97,20 @@ def perform_health_access_clustering(data, n_clusters=4):
         he_pct_gdp = stats['avg_he_pct_gdp']
         gdp = stats['avg_gdp_billions']
         
-        # More balanced thresholds based on global averages
-        if he_per_capita > 1500 and gdp > 100:  # High spending + large economy
+        # Label clusters based on spending patterns (thresholds from global data analysis)
+        if he_per_capita > 1500 and gdp > 100:  # Rich countries with high absolute spending
             cluster_labels[cluster_id] = "High Access - Advanced Economy"
-        elif he_per_capita > 300 and he_pct_gdp > 6.0:  # Good spending + good priority
+        elif he_per_capita > 300 and he_pct_gdp > 6.0:  # Good spending with health priority
             cluster_labels[cluster_id] = "Medium-High Access - Developing"
-        elif he_pct_gdp > 6.5 and he_per_capita < 400:  # High priority despite limits
+        elif he_pct_gdp > 6.5 and he_per_capita < 400:  # High priority but limited resources
             cluster_labels[cluster_id] = "High Priority - Limited Resources"
-        else:  # Lower across metrics
+        else:  # Lower spending across the board
             cluster_labels[cluster_id] = "Low Access - Resource Constrained"
     
-    # Add cluster labels to data
+    # Add the cluster names to our data
     data['cluster_label'] = data['cluster'].map(cluster_labels)
     
-    # Print cluster distribution for debugging
+    # Show what we found (useful for debugging)
     print(f"Cluster distribution:")
     for cluster_id in range(n_clusters):
         cluster_data = data[data['cluster'] == cluster_id]
@@ -111,11 +122,12 @@ def perform_health_access_clustering(data, n_clusters=4):
     return data, cluster_stats, scaler, kmeans
 
 def create_cluster_bar_chart(data, metric, title):
-    """Create bar chart showing metric by cluster"""
+    """Make a bar chart comparing clusters on a specific metric"""
+    # Calculate averages and counts for each cluster
     cluster_summary = data.groupby('cluster_label')[metric].agg(['mean', 'count']).reset_index()
     cluster_summary.columns = ['Cluster', 'Average', 'Countries']
     
-    # Define consistent colors for clusters
+    # Use consistent colors across all visualizations
     color_map = {
         'High Access - Advanced Economy': '#2ecc71',
         'Medium-High Access - Developing': '#f39c12', 
@@ -123,9 +135,7 @@ def create_cluster_bar_chart(data, metric, title):
         'Low Access - Resource Constrained': '#e74c3c'
     }
     
-    # Map colors to clusters
-    cluster_summary['Color'] = cluster_summary['Cluster'].map(color_map)
-    
+    # Create the bar chart
     fig = px.bar(
         cluster_summary,
         x='Cluster',
@@ -136,7 +146,7 @@ def create_cluster_bar_chart(data, metric, title):
         text='Countries'
     )
     
-    # Update layout with better formatting
+    # Make it look nice
     fig.update_layout(
         title=dict(
             text=title,
@@ -149,16 +159,16 @@ def create_cluster_bar_chart(data, metric, title):
         xaxis_title="Healthcare Access Cluster",
         yaxis_title=metric.replace('_', ' ').title(),
         height=450,
-        showlegend=False,  # Remove legend since x-axis shows cluster names
+        showlegend=False,  # Don't need legend since x-axis shows cluster names
         plot_bgcolor='rgba(248,248,248,0.8)',
         paper_bgcolor='white',
         xaxis=dict(
-            tickangle=-45,  # Angle text for better readability
+            tickangle=-45,  # Tilt cluster names so they fit
             tickfont=dict(size=11)
         )
     )
     
-    # Add better text formatting and hover
+    # Add country counts on top of bars and nice hover info
     fig.update_traces(
         texttemplate='%{text} countries',
         textposition='outside',
@@ -169,7 +179,7 @@ def create_cluster_bar_chart(data, metric, title):
                      '<extra></extra>'
     )
     
-    # Format y-axis based on metric type
+    # Format y-axis appropriately for different metrics
     if 'per_capita' in metric:
         fig.update_yaxes(tickformat='$,.0f')
     elif 'pct_gdp' in metric:
