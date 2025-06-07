@@ -664,9 +664,34 @@ def hero_section():
     col1, col2, col3, col4, col5, col6, col7 = st.columns([1, 1.2, 0.3, 1.2, 0.3, 1.2, 1])
     
     with col2:
-        if st.button("📈 Explore Disease Trends", key="trends_btn", type="primary"):
+        # Custom HTML button for Disease Trends with inline styling
+        st.markdown("""
+        <div style="display: flex; justify-content: center;">
+            <button onclick="window.location.href='?page=epidemic_dashboard'" style="
+                background: linear-gradient(45deg, #2563eb, #3b82f6);
+                color: white;
+                border: none;
+                padding: 0.75rem 2rem;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 1rem;
+                box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+                transition: all 0.3s ease;
+                font-family: 'Inter', sans-serif;
+                height: 3rem;
+                cursor: pointer;
+                white-space: nowrap;
+            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(37, 99, 235, 0.6)';" 
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(37, 99, 235, 0.4)';">
+                📈 Explore Disease Trends
+            </button>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        # Check if this button was clicked using query params
+        if st.query_params.get("page") == "epidemic_dashboard":
             st.switch_page("pages/epidemic_dashboard.py")
-    
+
     with col4:
         # Custom HTML button for Disease Map with inline styling
         st.markdown("""
@@ -697,7 +722,32 @@ def hero_section():
             st.switch_page("pages/disease_map.py")
     
     with col6:
-        if st.button("🏥 Compare Healthcare Access", key="access_btn", type="secondary"):
+        # Custom HTML button for Healthcare Access with inline styling
+        st.markdown("""
+        <div style="display: flex; justify-content: center;">
+            <button onclick="window.location.href='?page=access_clustering'" style="
+                background: linear-gradient(45deg, #10b981, #059669);
+                color: white;
+                border: none;
+                padding: 0.75rem 2rem;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 1rem;
+                box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+                transition: all 0.3s ease;
+                font-family: 'Inter', sans-serif;
+                height: 3rem;
+                cursor: pointer;
+                white-space: nowrap;
+            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(16, 185, 129, 0.6)';" 
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(16, 185, 129, 0.4)';">
+                🏥 Compare Healthcare Access
+            </button>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        # Check if this button was clicked using query params
+        if st.query_params.get("page") == "access_clustering":
             st.switch_page("pages/access_clustering.py")
 
 # Value Proposition Section
