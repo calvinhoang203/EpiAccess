@@ -125,14 +125,14 @@ def load_css():
     
     /* Default button styling for Disease Map */
     button:not([kind]) {
-        background: linear-gradient(45deg, #8b5cf6, #7c3aed) !important;
+        background: linear-gradient(45deg, #f59e0b, #d97706) !important;
         color: white !important;
         border: none !important;
         padding: 0.75rem 2rem !important;
         border-radius: 50px !important;
         font-weight: 600 !important;
         font-size: 1rem !important;
-        box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4) !important;
+        box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4) !important;
         transition: all 0.3s ease !important;
         font-family: 'Inter', sans-serif !important;
         height: 3rem !important;
@@ -140,7 +140,7 @@ def load_css():
     
     button:not([kind]):hover {
         transform: translateY(-2px) !important;
-        box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6) !important;
+        box-shadow: 0 8px 25px rgba(245, 158, 11, 0.6) !important;
     }
     
     /* Center buttons in their columns */

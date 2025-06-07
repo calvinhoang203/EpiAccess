@@ -85,19 +85,29 @@ def load_about_css():
     }
     
     .user-list {
-        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
         padding: 0;
         margin: 0;
     }
     
     .user-item {
         background: white;
-        padding: 0.8rem 1.2rem;
-        margin: 0.5rem 0;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
         color: #374151;
         font-weight: 500;
+        font-size: 1rem;
+        border-left: 4px solid #3b82f6;
+        transition: all 0.3s ease;
+    }
+    
+    .user-item:hover {
+        transform: translateX(5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        border-left-color: #2563eb;
     }
     
     .dataset-card {
@@ -108,6 +118,10 @@ def load_about_css():
         margin-bottom: 1.5rem;
         transition: all 0.3s ease;
         border: 2px solid transparent;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     
     .dataset-card:hover {
@@ -120,13 +134,16 @@ def load_about_css():
         font-size: 1.4rem;
         font-weight: 600;
         color: #1f2937;
-        margin-bottom: 0.8rem;
+        margin-bottom: 1rem;
+        min-height: 1.8rem;
     }
     
     .dataset-description {
         color: #6b7280;
         line-height: 1.6;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        flex-grow: 1;
+        font-size: 0.95rem;
     }
     
     .dataset-meta {
@@ -134,6 +151,16 @@ def load_about_css():
         gap: 1rem;
         font-size: 0.9rem;
         color: #9ca3af;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .dataset-source {
+        font-size: 0.9rem;
+        color: #6b7280;
+        margin-top: auto;
+        padding-top: 0.5rem;
+        border-top: 1px solid #e5e7eb;
     }
     
     .dataset-link {
@@ -351,13 +378,13 @@ def mission_section():
         
         <div class="target-users">
             <h3 class="target-title">Designed For</h3>
-            <ul class="user-list">
-                <li class="user-item">🏥 Non-Governmental Organizations (NGOs)</li>
-                <li class="user-item">🌍 International Health Organizations</li>
-                <li class="user-item">👥 Community Health Leaders</li>
-                <li class="user-item">📊 Public Health Researchers</li>
-                <li class="user-item">🏛️ Government Health Agencies</li>
-            </ul>
+            <div class="user-list">
+                <div class="user-item">🏥 Non-Governmental Organizations (NGOs)</div>
+                <div class="user-item">🌍 International Health Organizations</div>
+                <div class="user-item">👥 Community Health Leaders</div>
+                <div class="user-item">📊 Public Health Researchers</div>
+                <div class="user-item">🏛️ Government Health Agencies</div>
+            </div>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -401,15 +428,19 @@ def datasets_section():
         with cols[i % 2]:
             st.markdown(f"""
             <div class="dataset-card">
-                <h3 class="dataset-title">{dataset['title']}</h3>
-                <p class="dataset-description">{dataset['description']}</p>
-                <div class="dataset-meta">
-                    <span>📅 {dataset['timespan']}</span>
-                    <span>📊 {dataset['records']}</span>
+                <div>
+                    <h3 class="dataset-title">{dataset['title']}</h3>
+                    <p class="dataset-description">{dataset['description']}</p>
                 </div>
-                <p style="margin-top: 1rem; font-size: 0.9rem; color: #6b7280;">
-                    <strong>Source:</strong> {dataset['source']}
-                </p>
+                <div>
+                    <div class="dataset-meta">
+                        <span>📅 {dataset['timespan']}</span>
+                        <span>📊 {dataset['records']}</span>
+                    </div>
+                    <div class="dataset-source">
+                        <strong>Source:</strong> {dataset['source']}
+                    </div>
+                </div>
             </div>
             """, unsafe_allow_html=True)
 
