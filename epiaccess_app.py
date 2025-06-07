@@ -84,6 +84,45 @@ def load_css():
         box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6);
     }
     
+    /* Hero Button Styling - Production Safe */
+    button[kind="primary"] {
+        background: linear-gradient(45deg, #2563eb, #3b82f6) !important;
+        color: white !important;
+        border: none !important;
+        padding: 0.75rem 2rem !important;
+        border-radius: 50px !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4) !important;
+        transition: all 0.3s ease !important;
+        font-family: 'Inter', sans-serif !important;
+        height: 3rem !important;
+    }
+    
+    button[kind="secondary"] {
+        background: linear-gradient(45deg, #10b981, #059669) !important;
+        color: white !important;
+        border: none !important;
+        padding: 0.75rem 2rem !important;
+        border-radius: 50px !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
+        transition: all 0.3s ease !important;
+        font-family: 'Inter', sans-serif !important;
+        height: 3rem !important;
+    }
+    
+    button[kind="primary"]:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6) !important;
+    }
+    
+    button[kind="secondary"]:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6) !important;
+    }
+    
     /* Value Proposition Cards */
     .value-card {
         background: white;
@@ -370,68 +409,16 @@ def hero_section():
     </div>
     """, unsafe_allow_html=True)
     
-    # Custom CSS for hero buttons
-    st.markdown("""
-    <style>
-    .hero-button-container {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        margin-top: -2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .stButton > button {
-        background: linear-gradient(45deg, #2563eb, #3b82f6) !important;
-        color: white !important;
-        border: none !important;
-        padding: 1rem 2rem !important;
-        border-radius: 50px !important;
-        font-weight: 600 !important;
-        font-size: 1rem !important;
-        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4) !important;
-        transition: all 0.3s ease !important;
-        font-family: 'Inter', sans-serif !important;
-        height: auto !important;
-        min-height: 3rem !important;
-        width: 100% !important;
-    }
-    
-    .stButton > button:hover {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6) !important;
-    }
-    
-    .hero-button-secondary > button {
-        background: linear-gradient(45deg, #10b981, #059669) !important;
-        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
-    }
-    
-    .hero-button-secondary > button:hover {
-        box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6) !important;
-    }
-    
-    /* Center the button columns */
-    div[data-testid="column"]:nth-child(2),
-    div[data-testid="column"]:nth-child(4) {
-        display: flex !important;
-        justify-content: center !important;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-    
-    # Create centered button layout
+    # Simple centered button layout using columns
     col1, col2, col3, col4, col5 = st.columns([2, 1.5, 1, 1.5, 2])
     
     with col2:
-        if st.button("📈 Explore Disease Trends", key="hero_trends", help="View epidemic trends and forecasting"):
+        if st.button("📈 Explore Disease Trends", key="trends_btn", type="primary"):
             st.switch_page("pages/epidemic_dashboard.py")
     
     with col4:
-        st.markdown('<div class="hero-button-secondary">', unsafe_allow_html=True)
-        if st.button("🏥 Compare Healthcare Access", key="hero_access", help="View healthcare access clustering"):
+        if st.button("🏥 Compare Healthcare Access", key="access_btn", type="secondary"):
             st.switch_page("pages/access_clustering.py")
-        st.markdown('</div>', unsafe_allow_html=True)
 
 # Value Proposition Section
 def value_proposition():

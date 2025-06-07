@@ -34,14 +34,14 @@ def load_about_css():
     .about-title {
         font-size: 3rem;
         font-weight: 700;
-        color: white !important;
+        color: white;
         margin-bottom: 1rem;
         text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
     
     .about-subtitle {
         font-size: 1.3rem;
-        color: rgba(255,255,255,0.9) !important;
+        color: rgba(255,255,255,0.9);
         font-weight: 400;
     }
     
@@ -327,8 +327,8 @@ def load_about_css():
 def about_header():
     st.markdown("""
     <div class="about-header">
-        <div class="about-title">About EpiAccess</div>
-        <div class="about-subtitle">Empowering Public Health Through Data-Driven Insights</div>
+        <h1 class="about-title">About EpiAccess</h1>
+        <p class="about-subtitle">Empowering Public Health Through Data-Driven Insights</p>
     </div>
     """, unsafe_allow_html=True)
 
