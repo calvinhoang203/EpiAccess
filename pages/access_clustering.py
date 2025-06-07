@@ -135,7 +135,7 @@ def create_cluster_bar_chart(data, metric, title):
         'Low Access - Resource Constrained': '#e74c3c'
     }
     
-    # Create the bar chart
+    # Create the bar chart with improved scaling
     fig = px.bar(
         cluster_summary,
         x='Cluster',
@@ -146,33 +146,50 @@ def create_cluster_bar_chart(data, metric, title):
         text='Countries'
     )
     
-    # Make it look nice
+    # Calculate better y-axis range for optimal scaling
+    max_val = cluster_summary['Average'].max()
+    min_val = cluster_summary['Average'].min()
+    
+    # Add 20% padding to top for better text visibility
+    y_range_top = max_val * 1.25
+    
+    # Make it look nice with improved scaling
     fig.update_layout(
         title=dict(
             text=title,
             font_size=18,
             x=0.47,
-            y=0.92,
+            y=0.95,
             xanchor='center',
             yanchor='top'
         ),
         xaxis_title="Healthcare Access Cluster",
         yaxis_title=metric.replace('_', ' ').title(),
-        height=450,
+        height=500,  # Increased height for better visibility
         showlegend=False,  # Don't need legend since x-axis shows cluster names
         plot_bgcolor='rgba(248,248,248,0.8)',
         paper_bgcolor='white',
+        margin=dict(l=60, r=60, t=100, b=120),  # Better margins for labels
+        yaxis=dict(
+            range=[0, y_range_top],  # Set optimal range
+            gridcolor='lightgray',
+            gridwidth=1
+        ),
         xaxis=dict(
-            tickangle=-45,  # Tilt cluster names so they fit
-            tickfont=dict(size=11)
+            tickangle=-35,  # Better angle for readability
+            tickfont=dict(size=12),
+            automargin=True
         )
     )
     
-    # Add country counts on top of bars and nice hover info
+    # Add country counts on top of bars with better positioning
     fig.update_traces(
         texttemplate='%{text} countries',
         textposition='outside',
-        textfont=dict(size=12, color='black'),
+        textfont=dict(size=13, color='black', family='Arial'),
+        marker=dict(
+            line=dict(color='white', width=2)  # Add border for better definition
+        ),
         hovertemplate='<b>%{x}</b><br>' +
                      f'{metric.replace("_", " ").title()}: %{{y:,.0f}}<br>' +
                      'Countries: %{text}<br>' +

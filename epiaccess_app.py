@@ -172,6 +172,14 @@ def load_css():
         0% {
             opacity: 0;
             transform: translateY(-10px);
+            height: 0;
+            margin: 0;
+            padding: 0;
+        }
+        5% {
+            height: auto;
+            margin: 1rem auto;
+            padding: 0.75rem 1.5rem;
         }
         10% {
             opacity: 1;
@@ -181,10 +189,20 @@ def load_css():
             opacity: 1;
             transform: translateY(0);
         }
+        95% {
+            opacity: 0;
+            transform: translateY(-10px);
+            height: auto;
+            margin: 1rem auto;
+            padding: 0.75rem 1.5rem;
+        }
         100% {
             opacity: 0;
             transform: translateY(-10px);
             visibility: hidden;
+            height: 0;
+            margin: 0;
+            padding: 0;
         }
     }
     
@@ -231,6 +249,14 @@ def load_css():
         0% {
             opacity: 0;
             transform: translateY(-10px);
+            height: 0;
+            margin: 0;
+            padding: 0;
+        }
+        5% {
+            height: auto;
+            margin: 0.5rem auto;
+            padding: 0.75rem 1.5rem;
         }
         10% {
             opacity: 1;
@@ -240,10 +266,20 @@ def load_css():
             opacity: 1;
             transform: translateY(0);
         }
+        95% {
+            opacity: 0;
+            transform: translateY(-10px);
+            height: auto;
+            margin: 0.5rem auto;
+            padding: 0.75rem 1.5rem;
+        }
         100% {
             opacity: 0;
             transform: translateY(-10px);
             visibility: hidden;
+            height: 0;
+            margin: 0;
+            padding: 0;
         }
     }
     
