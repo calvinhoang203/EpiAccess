@@ -668,10 +668,33 @@ def hero_section():
             st.switch_page("pages/epidemic_dashboard.py")
     
     with col4:
-        st.markdown('<div class="map-button-container">', unsafe_allow_html=True)
-        if st.button("🌍 View Disease Map", key="map_btn"):
+        # Custom HTML button for Disease Map with inline styling
+        st.markdown("""
+        <div style="display: flex; justify-content: center;">
+            <button onclick="window.location.href='?page=disease_map'" style="
+                background: linear-gradient(45deg, #8b5cf6, #7c3aed);
+                color: white;
+                border: none;
+                padding: 0.75rem 2rem;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 1rem;
+                box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+                transition: all 0.3s ease;
+                font-family: 'Inter', sans-serif;
+                height: 3rem;
+                cursor: pointer;
+                white-space: nowrap;
+            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(139, 92, 246, 0.6)';" 
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(139, 92, 246, 0.4)';">
+                🌍 View Disease Map
+            </button>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        # Check if this button was clicked using query params
+        if st.query_params.get("page") == "disease_map":
             st.switch_page("pages/disease_map.py")
-        st.markdown('</div>', unsafe_allow_html=True)
     
     with col6:
         if st.button("🏥 Compare Healthcare Access", key="access_btn", type="secondary"):
