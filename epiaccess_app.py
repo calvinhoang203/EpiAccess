@@ -136,37 +136,41 @@ def load_css():
     
     /* Light Mode Warning Banner */
     .warning-banner {
-        background: linear-gradient(45deg, #fbbf24, #f59e0b);
-        color: white;
-        padding: 1rem 2rem;
-        border-radius: 12px;
-        margin: 2rem auto;
-        max-width: 800px;
+        background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+        color: #4b5563;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        margin: 1rem auto;
+        max-width: 600px;
         text-align: center;
-        box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
-        border-left: 6px solid #d97706;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        border: 1px solid #d1d5db;
+        opacity: 0.9;
     }
     
     .warning-title {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0.25rem;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
+        color: #6b7280;
     }
     
     .warning-text {
-        font-size: 1rem;
-        line-height: 1.5;
-        opacity: 0.95;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        color: #6b7280;
     }
     
     .warning-steps {
-        margin-top: 0.5rem;
-        font-weight: 500;
+        margin-top: 0.25rem;
+        font-weight: 400;
         font-style: italic;
+        font-size: 0.85rem;
+        color: #9ca3af;
     }
     
     /* Value Proposition Cards */
@@ -626,8 +630,10 @@ def main():
     # Load custom CSS
     load_css()
     
-    # Landing Page Sections
+    # Light mode compatibility warning
     light_mode_warning()
+    
+    # Landing Page Sections
     hero_section()
     
     # Add spacing
