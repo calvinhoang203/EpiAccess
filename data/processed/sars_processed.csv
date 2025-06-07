@@ -1,0 +1,2539 @@
+country,date,total_cases,new_cases,total_deaths,new_deaths,region,disease
+Australia,2003-04-01,1.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-04-02,1.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-04-03,1.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-04-04,1.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-04-05,1.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-04-07,1.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-04-08,1.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-04-17,3.0,2.0,0.0,0.0,Oceania,SARS
+Australia,2003-04-18,3.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-04-19,3.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-04-21,3.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-04-22,3.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-04-23,4.0,1.0,0.0,0.0,Oceania,SARS
+Australia,2003-05-22,6.0,2.0,0.0,0.0,Oceania,SARS
+Australia,2003-05-28,6.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-05-29,6.0,0.0,0.0,0.0,Oceania,SARS
+Australia,2003-06-30,5.0,0.0,0.0,0.0,Oceania,SARS
+Belgium,2003-04-01,1.0,0.0,0.0,0.0,Europe,SARS
+Belgium,2003-04-02,1.0,0.0,0.0,0.0,Europe,SARS
+Belgium,2003-04-03,1.0,0.0,0.0,0.0,Europe,SARS
+Belgium,2003-04-04,1.0,0.0,0.0,0.0,Europe,SARS
+Belgium,2003-04-05,1.0,0.0,0.0,0.0,Europe,SARS
+Brazil,2003-04-03,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-04,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-05,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-07,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-08,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-09,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-10,2.0,1.0,0.0,0.0,,SARS
+Brazil,2003-04-11,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-12,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-14,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-15,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-16,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-17,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-18,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-19,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-21,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-22,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-23,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-24,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-25,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-26,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-28,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-29,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-04-30,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-01,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-02,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-03,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-05,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-06,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-07,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-08,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-09,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-10,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-12,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-13,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-14,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-15,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-16,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-17,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-19,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-20,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-21,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-22,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-23,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-24,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-26,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-27,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-28,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-29,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-30,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-05-31,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-02,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-03,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-04,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-05,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-06,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-09,2.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-10,3.0,1.0,0.0,0.0,,SARS
+Brazil,2003-06-11,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-12,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-13,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-16,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-17,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-18,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-19,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-20,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-23,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-24,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-25,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-26,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-27,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-06-30,3.0,0.0,0.0,0.0,,SARS
+Brazil,2003-07-01,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-07-02,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-07-03,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-07-04,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-07-07,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-07-08,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-07-09,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-07-10,1.0,0.0,0.0,0.0,,SARS
+Brazil,2003-07-11,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-04-24,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-04-25,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-04-26,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-04-28,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-04-29,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-04-30,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-01,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-02,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-03,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-05,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-06,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-07,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-08,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-09,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-10,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-12,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-13,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-14,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-15,1.0,0.0,0.0,0.0,,SARS
+Bulgaria,2003-05-16,1.0,0.0,0.0,0.0,,SARS
+Canada,2003-03-17,8.0,0.0,2.0,0.0,North America,SARS
+Canada,2003-03-18,8.0,0.0,2.0,0.0,North America,SARS
+Canada,2003-03-19,8.0,0.0,2.0,0.0,North America,SARS
+Canada,2003-03-20,9.0,1.0,2.0,0.0,North America,SARS
+Canada,2003-03-21,9.0,0.0,2.0,0.0,North America,SARS
+Canada,2003-03-22,9.0,0.0,2.0,0.0,North America,SARS
+Canada,2003-03-24,11.0,2.0,3.0,1.0,North America,SARS
+Canada,2003-03-25,11.0,0.0,3.0,0.0,North America,SARS
+Canada,2003-03-26,19.0,8.0,3.0,0.0,North America,SARS
+Canada,2003-03-27,28.0,9.0,3.0,0.0,North America,SARS
+Canada,2003-03-28,29.0,1.0,3.0,0.0,North America,SARS
+Canada,2003-03-29,37.0,8.0,3.0,0.0,North America,SARS
+Canada,2003-03-31,44.0,7.0,4.0,1.0,North America,SARS
+Canada,2003-04-01,53.0,9.0,4.0,0.0,North America,SARS
+Canada,2003-04-02,58.0,5.0,6.0,2.0,North America,SARS
+Canada,2003-04-03,62.0,4.0,6.0,0.0,North America,SARS
+Canada,2003-04-04,69.0,7.0,7.0,1.0,North America,SARS
+Canada,2003-04-05,74.0,5.0,7.0,0.0,North America,SARS
+Canada,2003-04-07,90.0,16.0,9.0,2.0,North America,SARS
+Canada,2003-04-08,91.0,1.0,10.0,1.0,North America,SARS
+Canada,2003-04-09,94.0,3.0,10.0,0.0,North America,SARS
+Canada,2003-04-10,97.0,3.0,10.0,0.0,North America,SARS
+Canada,2003-04-11,98.0,1.0,10.0,0.0,North America,SARS
+Canada,2003-04-12,101.0,3.0,10.0,0.0,North America,SARS
+Canada,2003-04-14,100.0,0.0,13.0,3.0,North America,SARS
+Canada,2003-04-15,100.0,0.0,13.0,0.0,North America,SARS
+Canada,2003-04-16,103.0,3.0,13.0,0.0,North America,SARS
+Canada,2003-04-17,126.0,23.0,12.0,0.0,North America,SARS
+Canada,2003-04-18,132.0,6.0,12.0,0.0,North America,SARS
+Canada,2003-04-19,132.0,0.0,12.0,0.0,North America,SARS
+Canada,2003-04-21,132.0,0.0,12.0,0.0,North America,SARS
+Canada,2003-04-22,139.0,7.0,13.0,1.0,North America,SARS
+Canada,2003-04-23,140.0,1.0,13.0,0.0,North America,SARS
+Canada,2003-04-24,140.0,0.0,15.0,2.0,North America,SARS
+Canada,2003-04-25,140.0,0.0,15.0,0.0,North America,SARS
+Canada,2003-04-26,142.0,2.0,18.0,3.0,North America,SARS
+Canada,2003-04-28,142.0,0.0,18.0,0.0,North America,SARS
+Canada,2003-04-29,146.0,4.0,20.0,2.0,North America,SARS
+Canada,2003-04-30,148.0,2.0,20.0,0.0,North America,SARS
+Canada,2003-05-01,147.0,0.0,20.0,0.0,North America,SARS
+Canada,2003-05-02,149.0,2.0,22.0,2.0,North America,SARS
+Canada,2003-05-03,149.0,0.0,22.0,0.0,North America,SARS
+Canada,2003-05-05,148.0,0.0,22.0,0.0,North America,SARS
+Canada,2003-05-06,148.0,0.0,22.0,0.0,North America,SARS
+Canada,2003-05-07,146.0,0.0,22.0,0.0,North America,SARS
+Canada,2003-05-08,146.0,0.0,22.0,0.0,North America,SARS
+Canada,2003-05-09,145.0,0.0,22.0,0.0,North America,SARS
+Canada,2003-05-10,145.0,0.0,22.0,0.0,North America,SARS
+Canada,2003-05-12,143.0,0.0,22.0,0.0,North America,SARS
+Canada,2003-05-13,143.0,0.0,22.0,0.0,North America,SARS
+Canada,2003-05-14,143.0,0.0,23.0,1.0,North America,SARS
+Canada,2003-05-15,142.0,0.0,23.0,0.0,North America,SARS
+Canada,2003-05-16,140.0,0.0,23.0,0.0,North America,SARS
+Canada,2003-05-17,140.0,0.0,23.0,0.0,North America,SARS
+Canada,2003-05-19,140.0,0.0,23.0,0.0,North America,SARS
+Canada,2003-05-20,140.0,0.0,23.0,0.0,North America,SARS
+Canada,2003-05-21,140.0,0.0,23.0,0.0,North America,SARS
+Canada,2003-05-22,140.0,0.0,23.0,0.0,North America,SARS
+Canada,2003-05-23,140.0,0.0,23.0,0.0,North America,SARS
+Canada,2003-05-24,140.0,0.0,23.0,0.0,North America,SARS
+Canada,2003-05-26,148.0,8.0,26.0,3.0,North America,SARS
+Canada,2003-05-27,148.0,0.0,26.0,0.0,North America,SARS
+Canada,2003-05-28,149.0,1.0,26.0,0.0,North America,SARS
+Canada,2003-05-29,151.0,2.0,26.0,0.0,North America,SARS
+Canada,2003-05-30,159.0,8.0,28.0,2.0,North America,SARS
+Canada,2003-05-31,188.0,29.0,30.0,2.0,North America,SARS
+Canada,2003-06-02,198.0,10.0,30.0,0.0,North America,SARS
+Canada,2003-06-03,213.0,15.0,31.0,1.0,North America,SARS
+Canada,2003-06-04,216.0,3.0,31.0,0.0,North America,SARS
+Canada,2003-06-05,218.0,2.0,31.0,0.0,North America,SARS
+Canada,2003-06-06,219.0,1.0,31.0,0.0,North America,SARS
+Canada,2003-06-09,229.0,10.0,32.0,1.0,North America,SARS
+Canada,2003-06-10,229.0,0.0,32.0,0.0,North America,SARS
+Canada,2003-06-11,230.0,1.0,32.0,0.0,North America,SARS
+Canada,2003-06-12,238.0,8.0,32.0,0.0,North America,SARS
+Canada,2003-06-13,242.0,4.0,32.0,0.0,North America,SARS
+Canada,2003-06-16,243.0,1.0,32.0,0.0,North America,SARS
+Canada,2003-06-17,247.0,4.0,32.0,0.0,North America,SARS
+Canada,2003-06-18,246.0,0.0,33.0,1.0,North America,SARS
+Canada,2003-06-19,245.0,0.0,34.0,1.0,North America,SARS
+Canada,2003-06-20,245.0,0.0,34.0,0.0,North America,SARS
+Canada,2003-06-23,246.0,1.0,35.0,1.0,North America,SARS
+Canada,2003-06-24,249.0,3.0,37.0,2.0,North America,SARS
+Canada,2003-06-25,250.0,1.0,37.0,0.0,North America,SARS
+Canada,2003-06-26,251.0,1.0,37.0,0.0,North America,SARS
+Canada,2003-06-27,251.0,0.0,37.0,0.0,North America,SARS
+Canada,2003-06-30,252.0,1.0,37.0,0.0,North America,SARS
+Canada,2003-07-01,252.0,0.0,38.0,1.0,North America,SARS
+Canada,2003-07-02,252.0,0.0,38.0,0.0,North America,SARS
+Canada,2003-07-03,251.0,0.0,38.0,0.0,North America,SARS
+Canada,2003-07-04,251.0,0.0,38.0,0.0,North America,SARS
+Canada,2003-07-07,251.0,0.0,38.0,0.0,North America,SARS
+Canada,2003-07-08,250.0,0.0,38.0,0.0,North America,SARS
+Canada,2003-07-09,249.0,0.0,38.0,0.0,North America,SARS
+Canada,2003-07-10,250.0,1.0,38.0,0.0,North America,SARS
+Canada,2003-07-11,250.0,0.0,38.0,0.0,North America,SARS
+China,2003-03-18,0.0,0.0,0.0,0.0,Asia,SARS
+China,2003-03-19,0.0,0.0,0.0,0.0,Asia,SARS
+China,2003-03-20,0.0,0.0,0.0,0.0,Asia,SARS
+China,2003-03-21,0.0,0.0,0.0,0.0,Asia,SARS
+China,2003-03-22,0.0,0.0,0.0,0.0,Asia,SARS
+China,2003-03-24,0.0,0.0,0.0,0.0,Asia,SARS
+China,2003-03-25,0.0,0.0,0.0,0.0,Asia,SARS
+China,2003-03-26,792.0,792.0,31.0,31.0,Asia,SARS
+China,2003-03-27,806.0,14.0,34.0,3.0,Asia,SARS
+China,2003-03-28,806.0,0.0,34.0,0.0,Asia,SARS
+China,2003-03-29,806.0,0.0,34.0,0.0,Asia,SARS
+China,2003-03-31,806.0,0.0,34.0,0.0,Asia,SARS
+China,2003-04-01,806.0,0.0,34.0,0.0,Asia,SARS
+China,2003-04-02,1190.0,384.0,46.0,12.0,Asia,SARS
+China,2003-04-03,1190.0,0.0,46.0,0.0,Asia,SARS
+China,2003-04-04,1220.0,30.0,49.0,3.0,Asia,SARS
+China,2003-04-05,1220.0,0.0,49.0,0.0,Asia,SARS
+China,2003-04-07,1268.0,48.0,53.0,4.0,Asia,SARS
+China,2003-04-08,1279.0,11.0,53.0,0.0,Asia,SARS
+China,2003-04-09,1280.0,1.0,53.0,0.0,Asia,SARS
+China,2003-04-10,1290.0,10.0,55.0,2.0,Asia,SARS
+China,2003-04-11,1309.0,19.0,58.0,3.0,Asia,SARS
+China,2003-04-12,1309.0,0.0,58.0,0.0,Asia,SARS
+China,2003-04-12,62.0,0.0,4.0,0.0,Asia,SARS
+China,2003-04-14,1418.0,1356.0,64.0,60.0,Asia,SARS
+China,2003-04-15,1418.0,0.0,64.0,0.0,Asia,SARS
+China,2003-04-16,1432.0,14.0,64.0,0.0,Asia,SARS
+China,2003-04-17,1457.0,25.0,65.0,1.0,Asia,SARS
+China,2003-04-18,1512.0,55.0,65.0,0.0,Asia,SARS
+China,2003-04-19,1512.0,0.0,65.0,0.0,Asia,SARS
+China,2003-04-21,1959.0,447.0,86.0,21.0,Asia,SARS
+China,2003-04-22,2001.0,42.0,92.0,6.0,Asia,SARS
+China,2003-04-23,2305.0,304.0,106.0,14.0,Asia,SARS
+China,2003-04-24,2422.0,117.0,110.0,4.0,Asia,SARS
+China,2003-04-25,2601.0,179.0,115.0,5.0,Asia,SARS
+China,2003-04-26,2753.0,152.0,122.0,7.0,Asia,SARS
+China,2003-04-28,2914.0,161.0,131.0,9.0,Asia,SARS
+China,2003-04-29,3303.0,389.0,148.0,17.0,Asia,SARS
+China,2003-04-30,3460.0,157.0,159.0,11.0,Asia,SARS
+China,2003-05-01,3638.0,178.0,170.0,11.0,Asia,SARS
+China,2003-05-02,3799.0,161.0,181.0,11.0,Asia,SARS
+China,2003-05-03,3971.0,172.0,190.0,9.0,Asia,SARS
+China,2003-05-05,4280.0,309.0,206.0,16.0,Asia,SARS
+China,2003-05-06,4409.0,129.0,214.0,8.0,Asia,SARS
+China,2003-05-07,4560.0,151.0,219.0,5.0,Asia,SARS
+China,2003-05-08,4698.0,138.0,224.0,5.0,Asia,SARS
+China,2003-05-09,4805.0,107.0,230.0,6.0,Asia,SARS
+China,2003-05-10,4884.0,79.0,235.0,5.0,Asia,SARS
+China,2003-05-12,5013.0,129.0,252.0,17.0,Asia,SARS
+China,2003-05-13,5086.0,73.0,262.0,10.0,Asia,SARS
+China,2003-05-14,5124.0,38.0,267.0,5.0,Asia,SARS
+China,2003-05-15,5163.0,39.0,271.0,4.0,Asia,SARS
+China,2003-05-16,5191.0,28.0,275.0,4.0,Asia,SARS
+China,2003-05-17,5209.0,18.0,282.0,7.0,Asia,SARS
+China,2003-05-19,5236.0,27.0,289.0,7.0,Asia,SARS
+China,2003-05-20,5248.0,12.0,294.0,5.0,Asia,SARS
+China,2003-05-21,5249.0,1.0,296.0,2.0,Asia,SARS
+China,2003-05-22,5271.0,22.0,300.0,4.0,Asia,SARS
+China,2003-05-23,5285.0,14.0,303.0,3.0,Asia,SARS
+China,2003-05-24,5309.0,24.0,308.0,5.0,Asia,SARS
+China,2003-05-26,5316.0,7.0,317.0,9.0,Asia,SARS
+China,2003-05-27,5322.0,6.0,321.0,4.0,Asia,SARS
+China,2003-05-28,5323.0,1.0,325.0,4.0,Asia,SARS
+China,2003-05-29,5325.0,2.0,327.0,2.0,Asia,SARS
+China,2003-05-30,5328.0,3.0,328.0,1.0,Asia,SARS
+China,2003-05-31,5328.0,0.0,332.0,4.0,Asia,SARS
+China,2003-06-02,5328.0,0.0,334.0,2.0,Asia,SARS
+China,2003-06-03,5329.0,1.0,334.0,0.0,Asia,SARS
+China,2003-06-04,5329.0,0.0,334.0,0.0,Asia,SARS
+China,2003-06-05,5329.0,0.0,336.0,2.0,Asia,SARS
+China,2003-06-06,5329.0,0.0,338.0,2.0,Asia,SARS
+China,2003-06-09,5328.0,0.0,340.0,2.0,Asia,SARS
+China,2003-06-10,5328.0,0.0,343.0,3.0,Asia,SARS
+China,2003-06-11,5329.0,1.0,343.0,0.0,Asia,SARS
+China,2003-06-12,5328.0,0.0,343.0,0.0,Asia,SARS
+China,2003-06-13,5327.0,0.0,343.0,0.0,Asia,SARS
+China,2003-06-16,5326.0,0.0,346.0,3.0,Asia,SARS
+China,2003-06-17,5326.0,0.0,346.0,0.0,Asia,SARS
+China,2003-06-18,5326.0,0.0,347.0,1.0,Asia,SARS
+China,2003-06-19,5326.0,0.0,347.0,0.0,Asia,SARS
+China,2003-06-20,5326.0,0.0,347.0,0.0,Asia,SARS
+China,2003-06-23,5326.0,0.0,347.0,0.0,Asia,SARS
+China,2003-06-24,5326.0,0.0,347.0,0.0,Asia,SARS
+China,2003-06-25,5327.0,1.0,348.0,1.0,Asia,SARS
+China,2003-06-26,5327.0,0.0,348.0,0.0,Asia,SARS
+China,2003-06-27,5327.0,0.0,348.0,0.0,Asia,SARS
+China,2003-06-30,5327.0,0.0,348.0,0.0,Asia,SARS
+China,2003-07-01,5327.0,0.0,348.0,0.0,Asia,SARS
+China,2003-07-02,5327.0,0.0,348.0,0.0,Asia,SARS
+China,2003-07-03,5327.0,0.0,348.0,0.0,Asia,SARS
+China,2003-07-04,5327.0,0.0,348.0,0.0,Asia,SARS
+China,2003-07-07,5327.0,0.0,348.0,0.0,Asia,SARS
+China,2003-07-08,5327.0,0.0,348.0,0.0,Asia,SARS
+China,2003-07-09,5327.0,0.0,348.0,0.0,Asia,SARS
+China,2003-07-10,5327.0,0.0,348.0,0.0,Asia,SARS
+China,2003-07-11,5327.0,0.0,348.0,0.0,Asia,SARS
+Colombia,2003-05-06,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-07,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-08,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-09,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-10,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-12,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-13,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-14,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-15,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-16,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-17,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-19,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-20,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-21,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-22,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-23,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-24,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-26,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-27,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-28,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-29,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-30,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-05-31,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-02,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-03,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-04,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-05,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-06,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-09,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-10,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-11,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-12,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-13,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-16,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-17,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-18,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-19,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-20,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-23,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-24,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-25,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-26,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-27,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-06-30,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-07-01,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-07-02,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-07-03,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-07-04,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-07-07,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-07-08,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-07-09,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-07-10,1.0,0.0,0.0,0.0,,SARS
+Colombia,2003-07-11,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-08,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-09,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-10,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-12,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-13,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-14,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-15,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-16,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-17,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-19,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-20,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-21,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-22,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-23,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-24,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-26,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-27,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-28,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-29,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-30,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-05-31,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-02,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-03,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-04,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-05,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-06,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-09,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-10,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-11,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-12,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-13,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-16,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-17,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-18,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-19,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-20,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-23,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-24,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-25,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-26,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-27,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-06-30,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-07-01,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-07-02,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-07-03,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-07-04,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-07-07,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-07-08,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-07-09,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-07-10,1.0,0.0,0.0,0.0,,SARS
+Finland,2003-07-11,1.0,0.0,0.0,0.0,,SARS
+France,2003-03-24,1.0,0.0,0.0,0.0,Europe,SARS
+France,2003-03-25,1.0,0.0,0.0,0.0,Europe,SARS
+France,2003-03-26,1.0,0.0,0.0,0.0,Europe,SARS
+France,2003-03-27,1.0,0.0,0.0,0.0,Europe,SARS
+France,2003-03-28,1.0,0.0,0.0,0.0,Europe,SARS
+France,2003-03-29,1.0,0.0,0.0,0.0,Europe,SARS
+France,2003-03-31,1.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-01,1.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-02,1.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-03,3.0,2.0,0.0,0.0,Europe,SARS
+France,2003-04-04,3.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-05,3.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-07,3.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-08,4.0,1.0,0.0,0.0,Europe,SARS
+France,2003-04-09,4.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-10,4.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-11,5.0,1.0,0.0,0.0,Europe,SARS
+France,2003-04-12,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-14,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-15,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-16,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-17,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-18,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-19,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-21,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-22,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-23,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-24,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-25,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-26,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-28,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-29,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-04-30,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-01,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-02,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-03,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-05,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-06,5.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-07,6.0,1.0,0.0,0.0,Europe,SARS
+France,2003-05-08,6.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-09,6.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-10,7.0,1.0,0.0,0.0,Europe,SARS
+France,2003-05-12,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-13,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-14,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-15,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-16,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-17,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-19,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-20,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-21,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-22,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-23,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-24,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-26,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-27,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-28,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-29,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-30,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-05-31,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-02,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-03,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-04,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-05,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-06,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-09,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-10,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-11,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-12,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-13,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-16,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-17,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-18,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-19,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-20,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-23,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-24,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-25,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-26,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-27,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-06-30,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-07-01,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-07-02,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-07-03,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-07-04,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-07-07,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-07-08,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-07-09,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-07-10,7.0,0.0,0.0,0.0,Europe,SARS
+France,2003-07-11,7.0,0.0,1.0,1.0,Europe,SARS
+Germany,2003-03-17,1.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-03-18,2.0,1.0,0.0,0.0,Europe,SARS
+Germany,2003-03-19,1.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-03-20,1.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-03-21,1.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-03-22,2.0,1.0,0.0,0.0,Europe,SARS
+Germany,2003-03-24,4.0,2.0,0.0,0.0,Europe,SARS
+Germany,2003-03-25,4.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-03-26,4.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-03-27,4.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-03-28,4.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-03-29,4.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-03-31,5.0,1.0,0.0,0.0,Europe,SARS
+Germany,2003-04-01,5.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-02,5.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-03,5.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-04,5.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-05,5.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-07,5.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-08,5.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-09,5.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-10,6.0,1.0,0.0,0.0,Europe,SARS
+Germany,2003-04-11,6.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-12,6.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-14,6.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-15,6.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-16,6.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-17,6.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-18,6.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-19,6.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-21,6.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-22,7.0,1.0,0.0,0.0,Europe,SARS
+Germany,2003-04-23,7.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-24,7.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-25,7.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-26,7.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-28,7.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-29,7.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-04-30,7.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-01,7.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-02,7.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-03,7.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-05,7.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-06,7.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-07,8.0,1.0,0.0,0.0,Europe,SARS
+Germany,2003-05-08,8.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-09,9.0,1.0,0.0,0.0,Europe,SARS
+Germany,2003-05-10,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-12,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-13,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-14,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-15,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-16,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-17,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-19,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-20,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-21,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-22,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-23,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-24,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-26,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-27,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-28,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-29,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-30,9.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-05-31,10.0,1.0,0.0,0.0,Europe,SARS
+Germany,2003-06-02,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-03,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-04,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-05,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-06,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-09,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-10,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-11,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-12,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-13,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-16,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-17,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-18,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-19,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-20,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-23,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-24,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-25,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-26,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-27,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-06-30,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-07-01,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-07-02,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-07-03,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-07-04,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-07-07,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-07-08,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-07-09,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-07-10,10.0,0.0,0.0,0.0,Europe,SARS
+Germany,2003-07-11,10.0,0.0,0.0,0.0,Europe,SARS
+Hong Kong,2003-03-17,95.0,0.0,1.0,0.0,Asia,SARS
+Hong Kong,2003-03-18,123.0,28.0,1.0,0.0,Asia,SARS
+Hong Kong,2003-03-19,150.0,27.0,5.0,4.0,Asia,SARS
+Hong Kong,2003-03-20,173.0,23.0,6.0,1.0,Asia,SARS
+Hong Kong,2003-03-21,203.0,30.0,6.0,0.0,Asia,SARS
+Hong Kong,2003-03-22,222.0,19.0,7.0,1.0,Asia,SARS
+Hong Kong,2003-03-24,260.0,38.0,10.0,3.0,Asia,SARS
+Hong Kong,2003-03-25,286.0,26.0,10.0,0.0,Asia,SARS
+Hong Kong,2003-03-26,316.0,30.0,10.0,0.0,Asia,SARS
+Hong Kong,2003-03-27,367.0,51.0,10.0,0.0,Asia,SARS
+Hong Kong,2003-03-28,425.0,58.0,10.0,0.0,Asia,SARS
+Hong Kong,2003-03-29,470.0,45.0,10.0,0.0,Asia,SARS
+Hong Kong,2003-03-31,530.0,60.0,13.0,3.0,Asia,SARS
+Hong Kong,2003-04-01,685.0,155.0,16.0,3.0,Asia,SARS
+Hong Kong,2003-04-02,708.0,23.0,16.0,0.0,Asia,SARS
+Hong Kong,2003-04-03,734.0,26.0,17.0,1.0,Asia,SARS
+Hong Kong,2003-04-04,761.0,27.0,17.0,0.0,Asia,SARS
+Hong Kong,2003-04-05,800.0,39.0,20.0,3.0,Asia,SARS
+Hong Kong,2003-04-07,883.0,83.0,23.0,3.0,Asia,SARS
+Hong Kong,2003-04-08,928.0,45.0,25.0,2.0,Asia,SARS
+Hong Kong,2003-04-09,970.0,42.0,27.0,2.0,Asia,SARS
+Hong Kong,2003-04-10,998.0,28.0,30.0,3.0,Asia,SARS
+Hong Kong,2003-04-11,1059.0,61.0,32.0,2.0,Asia,SARS
+Hong Kong,2003-04-12,1108.0,49.0,35.0,3.0,Asia,SARS
+Hong Kong,2003-04-14,1190.0,82.0,47.0,12.0,Asia,SARS
+Hong Kong,2003-04-15,1232.0,42.0,56.0,9.0,Asia,SARS
+Hong Kong,2003-04-16,1268.0,36.0,61.0,5.0,Asia,SARS
+Hong Kong,2003-04-17,1297.0,29.0,65.0,4.0,Asia,SARS
+Hong Kong,2003-04-18,1358.0,61.0,81.0,16.0,Asia,SARS
+Hong Kong,2003-04-19,1358.0,0.0,81.0,0.0,Asia,SARS
+Hong Kong,2003-04-21,1402.0,44.0,94.0,13.0,Asia,SARS
+Hong Kong,2003-04-22,1434.0,32.0,99.0,5.0,Asia,SARS
+Hong Kong,2003-04-23,1458.0,24.0,105.0,6.0,Asia,SARS
+Hong Kong,2003-04-24,1488.0,30.0,109.0,4.0,Asia,SARS
+Hong Kong,2003-04-25,1510.0,22.0,115.0,6.0,Asia,SARS
+Hong Kong,2003-04-26,1527.0,17.0,121.0,6.0,Asia,SARS
+Hong Kong,2003-04-28,1557.0,30.0,138.0,17.0,Asia,SARS
+Hong Kong,2003-04-29,1572.0,15.0,150.0,12.0,Asia,SARS
+Hong Kong,2003-04-30,1589.0,17.0,157.0,7.0,Asia,SARS
+Hong Kong,2003-05-01,1600.0,11.0,162.0,5.0,Asia,SARS
+Hong Kong,2003-05-02,1611.0,11.0,170.0,8.0,Asia,SARS
+Hong Kong,2003-05-03,1621.0,10.0,179.0,9.0,Asia,SARS
+Hong Kong,2003-05-05,1637.0,16.0,187.0,8.0,Asia,SARS
+Hong Kong,2003-05-06,1646.0,9.0,193.0,6.0,Asia,SARS
+Hong Kong,2003-05-07,1654.0,8.0,204.0,11.0,Asia,SARS
+Hong Kong,2003-05-08,1661.0,7.0,208.0,4.0,Asia,SARS
+Hong Kong,2003-05-09,1667.0,6.0,210.0,2.0,Asia,SARS
+Hong Kong,2003-05-10,1674.0,7.0,212.0,2.0,Asia,SARS
+Hong Kong,2003-05-12,1683.0,9.0,218.0,6.0,Asia,SARS
+Hong Kong,2003-05-13,1689.0,6.0,225.0,7.0,Asia,SARS
+Hong Kong,2003-05-14,1698.0,9.0,227.0,2.0,Asia,SARS
+Hong Kong,2003-05-15,1703.0,5.0,234.0,7.0,Asia,SARS
+Hong Kong,2003-05-16,1706.0,3.0,238.0,4.0,Asia,SARS
+Hong Kong,2003-05-17,1710.0,4.0,243.0,5.0,Asia,SARS
+Hong Kong,2003-05-19,1714.0,4.0,251.0,8.0,Asia,SARS
+Hong Kong,2003-05-20,1718.0,4.0,253.0,2.0,Asia,SARS
+Hong Kong,2003-05-21,1719.0,1.0,255.0,2.0,Asia,SARS
+Hong Kong,2003-05-22,1722.0,3.0,258.0,3.0,Asia,SARS
+Hong Kong,2003-05-23,1724.0,2.0,260.0,2.0,Asia,SARS
+Hong Kong,2003-05-24,1724.0,0.0,262.0,2.0,Asia,SARS
+Hong Kong,2003-05-26,1726.0,2.0,267.0,5.0,Asia,SARS
+Hong Kong,2003-05-27,1728.0,2.0,269.0,2.0,Asia,SARS
+Hong Kong,2003-05-28,1730.0,2.0,270.0,1.0,Asia,SARS
+Hong Kong,2003-05-29,1732.0,2.0,273.0,3.0,Asia,SARS
+Hong Kong,2003-05-30,1736.0,4.0,274.0,1.0,Asia,SARS
+Hong Kong,2003-05-31,1739.0,3.0,278.0,4.0,Asia,SARS
+Hong Kong,2003-06-02,1746.0,7.0,282.0,4.0,Asia,SARS
+Hong Kong,2003-06-03,1747.0,1.0,283.0,1.0,Asia,SARS
+Hong Kong,2003-06-04,1748.0,1.0,283.0,0.0,Asia,SARS
+Hong Kong,2003-06-05,1748.0,0.0,284.0,1.0,Asia,SARS
+Hong Kong,2003-06-06,1750.0,2.0,286.0,2.0,Asia,SARS
+Hong Kong,2003-06-09,1753.0,3.0,288.0,2.0,Asia,SARS
+Hong Kong,2003-06-10,1754.0,1.0,290.0,2.0,Asia,SARS
+Hong Kong,2003-06-11,1754.0,0.0,290.0,0.0,Asia,SARS
+Hong Kong,2003-06-12,1755.0,1.0,291.0,1.0,Asia,SARS
+Hong Kong,2003-06-13,1755.0,0.0,293.0,2.0,Asia,SARS
+Hong Kong,2003-06-16,1755.0,0.0,295.0,2.0,Asia,SARS
+Hong Kong,2003-06-17,1755.0,0.0,295.0,0.0,Asia,SARS
+Hong Kong,2003-06-18,1755.0,0.0,295.0,0.0,Asia,SARS
+Hong Kong,2003-06-19,1755.0,0.0,296.0,1.0,Asia,SARS
+Hong Kong,2003-06-20,1755.0,0.0,296.0,0.0,Asia,SARS
+Hong Kong,2003-06-23,1755.0,0.0,296.0,0.0,Asia,SARS
+Hong Kong,2003-06-24,1755.0,0.0,296.0,0.0,Asia,SARS
+Hong Kong,2003-06-25,1755.0,0.0,296.0,0.0,Asia,SARS
+Hong Kong,2003-06-26,1755.0,0.0,296.0,0.0,Asia,SARS
+Hong Kong,2003-06-27,1755.0,0.0,297.0,1.0,Asia,SARS
+Hong Kong,2003-06-30,1755.0,0.0,298.0,1.0,Asia,SARS
+Hong Kong,2003-07-01,1755.0,0.0,298.0,0.0,Asia,SARS
+Hong Kong,2003-07-02,1755.0,0.0,298.0,0.0,Asia,SARS
+Hong Kong,2003-07-03,1755.0,0.0,298.0,0.0,Asia,SARS
+Hong Kong,2003-07-04,1755.0,0.0,298.0,0.0,Asia,SARS
+Hong Kong,2003-07-07,1755.0,0.0,298.0,0.0,Asia,SARS
+Hong Kong,2003-07-08,1755.0,0.0,298.0,0.0,Asia,SARS
+Hong Kong,2003-07-09,1755.0,0.0,298.0,0.0,Asia,SARS
+Hong Kong,2003-07-10,1755.0,0.0,298.0,0.0,Asia,SARS
+Hong Kong,2003-07-11,1755.0,0.0,298.0,0.0,Asia,SARS
+India,2003-04-17,1.0,0.0,0.0,0.0,,SARS
+India,2003-04-18,1.0,0.0,0.0,0.0,,SARS
+India,2003-04-19,1.0,0.0,0.0,0.0,,SARS
+India,2003-04-21,1.0,0.0,0.0,0.0,,SARS
+India,2003-04-22,1.0,0.0,0.0,0.0,,SARS
+India,2003-04-23,1.0,0.0,0.0,0.0,,SARS
+India,2003-04-24,1.0,0.0,0.0,0.0,,SARS
+India,2003-04-25,1.0,0.0,0.0,0.0,,SARS
+India,2003-04-26,1.0,0.0,0.0,0.0,,SARS
+India,2003-04-28,1.0,0.0,0.0,0.0,,SARS
+India,2003-04-29,1.0,0.0,0.0,0.0,,SARS
+India,2003-05-06,1.0,0.0,0.0,0.0,,SARS
+India,2003-05-07,1.0,0.0,0.0,0.0,,SARS
+India,2003-05-08,1.0,0.0,0.0,0.0,,SARS
+India,2003-05-09,1.0,0.0,0.0,0.0,,SARS
+India,2003-05-10,1.0,0.0,0.0,0.0,,SARS
+India,2003-05-12,1.0,0.0,0.0,0.0,,SARS
+India,2003-05-13,3.0,2.0,0.0,0.0,,SARS
+India,2003-05-14,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-15,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-16,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-17,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-19,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-20,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-21,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-22,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-23,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-24,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-26,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-27,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-28,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-29,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-30,3.0,0.0,0.0,0.0,,SARS
+India,2003-05-31,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-02,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-03,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-04,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-05,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-06,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-09,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-10,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-11,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-12,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-13,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-16,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-17,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-18,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-19,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-20,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-23,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-24,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-25,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-26,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-27,3.0,0.0,0.0,0.0,,SARS
+India,2003-06-30,3.0,0.0,0.0,0.0,,SARS
+India,2003-07-01,3.0,0.0,0.0,0.0,,SARS
+India,2003-07-02,3.0,0.0,0.0,0.0,,SARS
+India,2003-07-03,3.0,0.0,0.0,0.0,,SARS
+India,2003-07-04,3.0,0.0,0.0,0.0,,SARS
+India,2003-07-07,3.0,0.0,0.0,0.0,,SARS
+India,2003-07-08,3.0,0.0,0.0,0.0,,SARS
+India,2003-07-09,3.0,0.0,0.0,0.0,,SARS
+India,2003-07-10,3.0,0.0,0.0,0.0,,SARS
+India,2003-07-11,3.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-14,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-15,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-16,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-17,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-18,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-19,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-21,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-22,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-23,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-24,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-25,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-26,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-28,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-29,1.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-04-30,2.0,1.0,0.0,0.0,,SARS
+Indonesia,2003-05-01,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-02,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-03,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-05,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-06,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-07,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-08,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-09,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-10,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-12,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-13,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-14,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-15,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-16,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-17,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-19,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-20,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-21,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-22,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-23,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-24,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-26,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-27,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-28,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-29,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-30,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-05-31,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-02,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-03,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-04,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-05,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-06,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-09,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-10,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-11,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-12,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-13,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-16,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-17,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-18,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-19,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-20,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-23,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-24,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-25,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-26,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-27,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-06-30,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-07-01,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-07-02,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-07-03,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-07-04,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-07-07,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-07-08,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-07-09,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-07-10,2.0,0.0,0.0,0.0,,SARS
+Indonesia,2003-07-11,2.0,0.0,0.0,0.0,,SARS
+Ireland,2003-03-21,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-03-22,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-03-24,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-03-25,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-03-26,2.0,1.0,0.0,0.0,Europe,SARS
+Ireland,2003-03-27,2.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-03-28,2.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-03-29,2.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-03-31,2.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-01,2.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-02,2.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-03,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-04,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-05,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-07,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-08,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-09,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-10,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-11,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-12,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-14,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-15,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-16,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-17,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-18,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-19,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-21,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-22,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-23,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-24,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-25,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-26,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-28,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-29,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-04-30,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-01,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-02,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-03,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-05,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-06,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-07,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-08,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-09,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-10,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-12,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-13,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-14,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-15,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-16,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-17,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-19,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-20,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-21,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-22,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-23,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-24,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-26,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-27,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-28,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-29,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-30,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-05-31,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-02,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-03,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-04,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-05,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-06,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-09,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-10,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-11,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-12,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-13,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-16,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-17,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-18,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-19,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-20,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-23,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-24,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-25,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-26,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-27,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-06-30,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-07-01,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-07-02,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-07-03,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-07-04,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-07-07,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-07-08,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-07-09,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-07-10,1.0,0.0,0.0,0.0,Europe,SARS
+Ireland,2003-07-11,1.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-03-21,1.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-03-22,2.0,1.0,0.0,0.0,Europe,SARS
+Italy,2003-03-24,2.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-03-25,2.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-03-26,3.0,1.0,0.0,0.0,Europe,SARS
+Italy,2003-03-27,2.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-03-28,2.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-03-29,2.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-03-31,2.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-01,3.0,1.0,0.0,0.0,Europe,SARS
+Italy,2003-04-02,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-03,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-04,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-05,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-07,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-08,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-09,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-10,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-11,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-12,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-14,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-15,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-16,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-17,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-18,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-19,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-21,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-22,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-23,3.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-24,4.0,1.0,0.0,0.0,Europe,SARS
+Italy,2003-04-25,4.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-26,4.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-04-28,8.0,4.0,0.0,0.0,Europe,SARS
+Italy,2003-04-29,9.0,1.0,0.0,0.0,Europe,SARS
+Italy,2003-04-30,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-01,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-02,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-03,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-05,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-06,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-07,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-08,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-09,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-10,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-12,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-13,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-14,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-15,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-16,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-17,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-19,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-20,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-21,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-22,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-23,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-24,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-26,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-27,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-28,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-29,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-30,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-05-31,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-02,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-03,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-04,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-05,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-06,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-09,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-10,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-11,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-12,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-13,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-16,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-17,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-18,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-19,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-20,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-23,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-24,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-25,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-26,9.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-27,5.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-06-30,5.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-07-01,5.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-07-02,4.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-07-03,4.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-07-04,4.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-07-07,4.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-07-08,4.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-07-09,4.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-07-10,4.0,0.0,0.0,0.0,Europe,SARS
+Italy,2003-07-11,4.0,0.0,0.0,0.0,Europe,SARS
+Japan,2003-04-11,4.0,0.0,0.0,0.0,,SARS
+Japan,2003-04-12,4.0,0.0,0.0,0.0,,SARS
+Japan,2003-04-15,1.0,0.0,0.0,0.0,,SARS
+Japan,2003-04-16,1.0,0.0,0.0,0.0,,SARS
+Japan,2003-04-17,2.0,1.0,0.0,0.0,,SARS
+Japan,2003-04-18,4.0,2.0,0.0,0.0,,SARS
+Japan,2003-04-19,4.0,0.0,0.0,0.0,,SARS
+Japan,2003-04-21,5.0,1.0,0.0,0.0,,SARS
+Japan,2003-04-22,2.0,0.0,0.0,0.0,,SARS
+Japan,2003-04-23,2.0,0.0,0.0,0.0,,SARS
+Japan,2003-04-24,2.0,0.0,0.0,0.0,,SARS
+Japan,2003-04-25,2.0,0.0,0.0,0.0,,SARS
+Japan,2003-04-26,2.0,0.0,0.0,0.0,,SARS
+Japan,2003-04-28,2.0,0.0,0.0,0.0,,SARS
+Japan,2003-04-29,2.0,0.0,0.0,0.0,,SARS
+Japan,2003-04-30,2.0,0.0,0.0,0.0,,SARS
+Japan,2003-05-01,2.0,0.0,0.0,0.0,,SARS
+Japan,2003-06-25,1.0,0.0,0.0,0.0,,SARS
+Japan,2003-06-26,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-10,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-11,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-12,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-14,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-15,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-16,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-17,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-18,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-19,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-21,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-22,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-23,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-24,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-25,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-26,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-28,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-29,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-04-30,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-01,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-02,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-03,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-05,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-06,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-07,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-08,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-09,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-10,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-12,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-13,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-14,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-15,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-16,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-17,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-19,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-20,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-21,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-22,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-23,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-24,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-26,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-27,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-28,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-29,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-30,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-05-31,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-02,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-03,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-04,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-05,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-06,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-09,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-10,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-11,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-12,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-13,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-16,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-17,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-18,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-19,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-20,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-23,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-24,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-25,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-26,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-27,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-06-30,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-07-01,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-07-02,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-07-03,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-07-04,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-07-07,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-07-08,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-07-09,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-07-10,1.0,0.0,0.0,0.0,,SARS
+Kuwait,2003-07-11,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-04-30,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-01,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-02,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-03,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-05,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-06,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-07,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-08,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-09,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-10,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-12,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-13,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-14,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-15,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-16,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-17,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-19,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-20,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-21,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-22,2.0,1.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-23,2.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-24,2.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-26,2.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-27,2.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-28,2.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-29,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-30,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-05-31,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-02,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-03,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-04,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-05,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-06,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-09,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-10,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-11,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-12,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-13,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-16,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-17,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-18,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-19,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-20,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-23,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-24,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-25,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-26,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-27,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-06-30,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-07-01,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-07-02,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-07-03,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-07-04,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-07-07,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-07-08,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-07-09,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-07-10,1.0,0.0,0.0,0.0,,SARS
+"Macao SAR, China",2003-07-11,1.0,0.0,0.0,0.0,,SARS
+Malaysia,2003-04-05,1.0,0.0,1.0,0.0,,SARS
+Malaysia,2003-04-07,1.0,0.0,1.0,0.0,,SARS
+Malaysia,2003-04-08,1.0,0.0,1.0,0.0,,SARS
+Malaysia,2003-04-09,1.0,0.0,1.0,0.0,,SARS
+Malaysia,2003-04-10,3.0,2.0,1.0,0.0,,SARS
+Malaysia,2003-04-11,4.0,1.0,1.0,0.0,,SARS
+Malaysia,2003-04-12,4.0,0.0,1.0,0.0,,SARS
+Malaysia,2003-04-14,4.0,0.0,1.0,0.0,,SARS
+Malaysia,2003-04-15,4.0,0.0,1.0,0.0,,SARS
+Malaysia,2003-04-16,5.0,1.0,1.0,0.0,,SARS
+Malaysia,2003-04-17,5.0,0.0,1.0,0.0,,SARS
+Malaysia,2003-04-18,5.0,0.0,1.0,0.0,,SARS
+Malaysia,2003-04-19,5.0,0.0,1.0,0.0,,SARS
+Malaysia,2003-04-21,6.0,1.0,1.0,0.0,,SARS
+Malaysia,2003-04-22,6.0,0.0,1.0,0.0,,SARS
+Malaysia,2003-04-23,5.0,0.0,2.0,1.0,,SARS
+Malaysia,2003-04-24,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-04-25,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-04-26,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-04-28,6.0,1.0,2.0,0.0,,SARS
+Malaysia,2003-04-29,6.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-04-30,6.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-01,6.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-02,6.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-03,6.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-05,7.0,1.0,2.0,0.0,,SARS
+Malaysia,2003-05-06,7.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-07,7.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-08,7.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-09,6.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-10,7.0,1.0,2.0,0.0,,SARS
+Malaysia,2003-05-12,7.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-13,7.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-14,7.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-15,7.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-16,7.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-17,7.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-19,7.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-20,7.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-21,8.0,1.0,2.0,0.0,,SARS
+Malaysia,2003-05-22,8.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-23,8.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-24,8.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-26,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-27,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-28,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-29,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-30,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-05-31,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-02,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-03,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-04,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-05,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-06,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-09,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-10,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-11,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-12,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-13,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-16,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-17,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-18,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-19,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-20,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-23,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-24,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-25,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-26,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-27,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-06-30,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-07-01,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-07-02,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-07-03,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-07-04,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-07-07,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-07-08,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-07-09,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-07-10,5.0,0.0,2.0,0.0,,SARS
+Malaysia,2003-07-11,5.0,0.0,2.0,0.0,,SARS
+Mongolia,2003-04-17,3.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-04-18,3.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-04-19,3.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-04-21,3.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-04-22,3.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-04-23,3.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-04-24,3.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-04-25,3.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-04-26,5.0,2.0,0.0,0.0,,SARS
+Mongolia,2003-04-28,5.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-04-29,5.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-04-30,6.0,1.0,0.0,0.0,,SARS
+Mongolia,2003-05-01,6.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-02,8.0,2.0,0.0,0.0,,SARS
+Mongolia,2003-05-03,8.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-05,8.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-06,8.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-07,9.0,1.0,0.0,0.0,,SARS
+Mongolia,2003-05-08,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-09,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-10,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-12,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-13,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-14,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-15,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-16,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-17,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-19,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-20,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-21,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-22,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-23,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-24,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-26,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-27,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-28,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-29,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-30,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-05-31,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-02,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-03,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-04,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-05,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-06,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-09,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-10,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-11,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-12,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-13,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-16,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-17,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-18,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-19,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-20,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-23,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-24,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-25,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-26,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-27,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-06-30,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-07-01,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-07-02,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-07-03,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-07-04,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-07-07,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-07-08,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-07-09,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-07-10,9.0,0.0,0.0,0.0,,SARS
+Mongolia,2003-07-11,9.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-02,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-03,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-05,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-06,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-07,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-08,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-09,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-10,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-12,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-13,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-14,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-15,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-16,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-17,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-19,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-20,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-21,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-22,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-23,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-24,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-26,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-27,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-28,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-29,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-30,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-05-31,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-02,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-03,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-04,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-05,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-06,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-09,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-10,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-11,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-12,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-13,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-16,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-17,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-18,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-19,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-20,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-23,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-24,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-25,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-26,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-27,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-06-30,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-07-01,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-07-02,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-07-03,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-07-04,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-07-07,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-07-08,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-07-09,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-07-10,1.0,0.0,0.0,0.0,,SARS
+New Zealand,2003-07-11,1.0,0.0,0.0,0.0,,SARS
+Philippines,2003-04-14,1.0,0.0,0.0,0.0,,SARS
+Philippines,2003-04-15,1.0,0.0,0.0,0.0,,SARS
+Philippines,2003-04-16,1.0,0.0,0.0,0.0,,SARS
+Philippines,2003-04-17,1.0,0.0,0.0,0.0,,SARS
+Philippines,2003-04-18,1.0,0.0,0.0,0.0,,SARS
+Philippines,2003-04-19,1.0,0.0,0.0,0.0,,SARS
+Philippines,2003-04-21,2.0,1.0,1.0,1.0,,SARS
+Philippines,2003-04-22,2.0,0.0,1.0,0.0,,SARS
+Philippines,2003-04-23,2.0,0.0,1.0,0.0,,SARS
+Philippines,2003-04-24,2.0,0.0,1.0,0.0,,SARS
+Philippines,2003-04-25,2.0,0.0,1.0,0.0,,SARS
+Philippines,2003-04-26,4.0,2.0,2.0,1.0,,SARS
+Philippines,2003-04-28,4.0,0.0,2.0,0.0,,SARS
+Philippines,2003-04-29,4.0,0.0,2.0,0.0,,SARS
+Philippines,2003-04-30,4.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-01,4.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-02,3.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-03,3.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-05,3.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-06,3.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-07,10.0,7.0,2.0,0.0,,SARS
+Philippines,2003-05-08,10.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-09,10.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-10,10.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-12,10.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-13,10.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-14,10.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-15,12.0,2.0,2.0,0.0,,SARS
+Philippines,2003-05-16,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-17,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-19,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-20,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-21,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-22,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-23,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-24,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-26,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-27,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-28,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-29,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-30,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-05-31,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-02,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-03,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-04,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-05,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-06,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-09,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-10,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-11,12.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-12,14.0,2.0,2.0,0.0,,SARS
+Philippines,2003-06-13,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-16,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-17,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-18,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-19,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-20,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-23,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-24,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-25,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-26,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-27,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-06-30,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-07-01,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-07-02,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-07-03,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-07-04,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-07-07,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-07-08,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-07-09,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-07-10,14.0,0.0,2.0,0.0,,SARS
+Philippines,2003-07-11,14.0,0.0,2.0,0.0,,SARS
+Poland,2003-05-01,1.0,0.0,0.0,0.0,,SARS
+Poland,2003-05-02,1.0,0.0,0.0,0.0,,SARS
+Poland,2003-05-03,1.0,0.0,0.0,0.0,,SARS
+Poland,2003-05-05,1.0,0.0,0.0,0.0,,SARS
+Poland,2003-05-06,1.0,0.0,0.0,0.0,,SARS
+Poland,2003-05-07,1.0,0.0,0.0,0.0,,SARS
+Poland,2003-05-08,1.0,0.0,0.0,0.0,,SARS
+Poland,2003-05-09,1.0,0.0,0.0,0.0,,SARS
+Poland,2003-05-10,1.0,0.0,0.0,0.0,,SARS
+Poland,2003-05-12,1.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-04-29,1.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-04-30,1.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-01,1.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-02,1.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-03,1.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-05,1.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-06,1.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-07,1.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-08,1.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-09,1.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-10,1.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-12,2.0,1.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-13,2.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-14,3.0,1.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-15,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-16,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-17,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-19,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-20,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-21,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-22,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-23,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-24,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-26,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-27,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-28,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-29,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-30,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-05-31,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-02,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-03,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-04,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-05,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-06,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-09,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-10,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-11,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-12,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-13,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-16,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-17,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-18,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-19,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-20,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-23,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-24,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-25,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-26,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-27,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-06-30,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-07-01,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-07-02,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-07-03,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-07-04,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-07-07,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-07-08,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-07-09,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-07-10,3.0,0.0,0.0,0.0,,SARS
+Republic of Korea,2003-07-11,3.0,0.0,0.0,0.0,,SARS
+Romania,2003-03-27,3.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-03-28,3.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-03-29,3.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-03-31,3.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-01,3.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-02,3.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-03,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-04,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-05,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-07,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-08,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-09,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-10,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-11,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-12,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-14,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-15,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-16,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-17,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-18,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-19,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-21,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-22,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-23,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-24,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-25,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-26,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-28,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-29,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-04-30,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-01,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-02,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-03,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-05,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-06,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-07,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-08,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-09,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-10,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-12,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-13,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-14,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-15,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-16,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-17,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-19,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-20,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-21,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-22,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-23,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-24,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-26,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-27,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-28,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-29,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-30,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-05-31,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-02,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-03,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-04,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-05,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-06,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-09,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-10,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-11,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-12,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-13,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-16,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-17,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-18,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-19,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-20,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-23,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-24,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-25,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-26,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-27,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-06-30,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-07-01,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-07-02,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-07-03,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-07-04,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-07-07,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-07-08,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-07-09,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-07-10,1.0,0.0,0.0,0.0,Europe,SARS
+Romania,2003-07-11,1.0,0.0,0.0,0.0,Europe,SARS
+Russian Federation,2003-05-31,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-02,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-03,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-04,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-05,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-06,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-09,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-10,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-11,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-12,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-13,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-16,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-17,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-18,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-19,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-20,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-23,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-24,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-25,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-26,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-27,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-06-30,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-07-01,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-07-02,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-07-03,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-07-04,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-07-07,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-07-08,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-07-09,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-07-10,1.0,0.0,0.0,0.0,,SARS
+Russian Federation,2003-07-11,1.0,0.0,0.0,0.0,,SARS
+Singapore,2003-03-17,20.0,0.0,0.0,0.0,Asia,SARS
+Singapore,2003-03-18,23.0,3.0,0.0,0.0,Asia,SARS
+Singapore,2003-03-19,31.0,8.0,0.0,0.0,Asia,SARS
+Singapore,2003-03-20,34.0,3.0,0.0,0.0,Asia,SARS
+Singapore,2003-03-21,39.0,5.0,0.0,0.0,Asia,SARS
+Singapore,2003-03-22,44.0,5.0,0.0,0.0,Asia,SARS
+Singapore,2003-03-24,65.0,21.0,0.0,0.0,Asia,SARS
+Singapore,2003-03-25,69.0,4.0,0.0,0.0,Asia,SARS
+Singapore,2003-03-26,74.0,5.0,1.0,1.0,Asia,SARS
+Singapore,2003-03-27,78.0,4.0,2.0,1.0,Asia,SARS
+Singapore,2003-03-28,86.0,8.0,2.0,0.0,Asia,SARS
+Singapore,2003-03-29,89.0,3.0,2.0,0.0,Asia,SARS
+Singapore,2003-03-31,91.0,2.0,2.0,0.0,Asia,SARS
+Singapore,2003-04-01,92.0,1.0,3.0,1.0,Asia,SARS
+Singapore,2003-04-02,95.0,3.0,4.0,1.0,Asia,SARS
+Singapore,2003-04-03,98.0,3.0,4.0,0.0,Asia,SARS
+Singapore,2003-04-04,100.0,2.0,5.0,1.0,Asia,SARS
+Singapore,2003-04-05,101.0,1.0,6.0,1.0,Asia,SARS
+Singapore,2003-04-07,106.0,5.0,6.0,0.0,Asia,SARS
+Singapore,2003-04-08,113.0,7.0,8.0,2.0,Asia,SARS
+Singapore,2003-04-09,118.0,5.0,9.0,1.0,Asia,SARS
+Singapore,2003-04-10,126.0,8.0,9.0,0.0,Asia,SARS
+Singapore,2003-04-11,133.0,7.0,9.0,0.0,Asia,SARS
+Singapore,2003-04-12,147.0,14.0,9.0,0.0,Asia,SARS
+Singapore,2003-04-14,158.0,11.0,12.0,3.0,Asia,SARS
+Singapore,2003-04-15,162.0,4.0,13.0,1.0,Asia,SARS
+Singapore,2003-04-16,162.0,0.0,13.0,0.0,Asia,SARS
+Singapore,2003-04-17,167.0,5.0,15.0,2.0,Asia,SARS
+Singapore,2003-04-18,177.0,10.0,16.0,1.0,Asia,SARS
+Singapore,2003-04-19,177.0,0.0,16.0,0.0,Asia,SARS
+Singapore,2003-04-21,178.0,1.0,16.0,0.0,Asia,SARS
+Singapore,2003-04-22,186.0,8.0,16.0,0.0,Asia,SARS
+Singapore,2003-04-23,189.0,3.0,17.0,1.0,Asia,SARS
+Singapore,2003-04-24,192.0,3.0,19.0,2.0,Asia,SARS
+Singapore,2003-04-25,195.0,3.0,19.0,0.0,Asia,SARS
+Singapore,2003-04-26,198.0,3.0,21.0,2.0,Asia,SARS
+Singapore,2003-04-28,199.0,1.0,23.0,2.0,Asia,SARS
+Singapore,2003-04-29,201.0,2.0,24.0,1.0,Asia,SARS
+Singapore,2003-04-30,201.0,0.0,24.0,0.0,Asia,SARS
+Singapore,2003-05-01,201.0,0.0,25.0,1.0,Asia,SARS
+Singapore,2003-05-02,203.0,2.0,25.0,0.0,Asia,SARS
+Singapore,2003-05-03,203.0,0.0,25.0,0.0,Asia,SARS
+Singapore,2003-05-05,204.0,1.0,26.0,1.0,Asia,SARS
+Singapore,2003-05-06,204.0,0.0,27.0,1.0,Asia,SARS
+Singapore,2003-05-07,204.0,0.0,27.0,0.0,Asia,SARS
+Singapore,2003-05-08,204.0,0.0,27.0,0.0,Asia,SARS
+Singapore,2003-05-09,204.0,0.0,27.0,0.0,Asia,SARS
+Singapore,2003-05-10,205.0,1.0,27.0,0.0,Asia,SARS
+Singapore,2003-05-12,205.0,0.0,28.0,1.0,Asia,SARS
+Singapore,2003-05-13,205.0,0.0,28.0,0.0,Asia,SARS
+Singapore,2003-05-14,205.0,0.0,28.0,0.0,Asia,SARS
+Singapore,2003-05-15,205.0,0.0,28.0,0.0,Asia,SARS
+Singapore,2003-05-16,205.0,0.0,28.0,0.0,Asia,SARS
+Singapore,2003-05-17,205.0,0.0,28.0,0.0,Asia,SARS
+Singapore,2003-05-19,206.0,1.0,28.0,0.0,Asia,SARS
+Singapore,2003-05-20,206.0,0.0,28.0,0.0,Asia,SARS
+Singapore,2003-05-21,206.0,0.0,28.0,0.0,Asia,SARS
+Singapore,2003-05-22,206.0,0.0,29.0,1.0,Asia,SARS
+Singapore,2003-05-23,206.0,0.0,31.0,2.0,Asia,SARS
+Singapore,2003-05-24,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-05-26,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-05-27,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-05-28,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-05-29,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-05-30,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-05-31,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-02,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-03,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-04,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-05,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-06,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-09,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-10,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-11,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-12,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-13,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-16,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-17,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-18,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-19,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-20,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-23,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-24,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-25,206.0,0.0,31.0,0.0,Asia,SARS
+Singapore,2003-06-26,206.0,0.0,32.0,1.0,Asia,SARS
+Singapore,2003-06-27,206.0,0.0,32.0,0.0,Asia,SARS
+Singapore,2003-06-30,206.0,0.0,32.0,0.0,Asia,SARS
+Singapore,2003-07-01,206.0,0.0,32.0,0.0,Asia,SARS
+Singapore,2003-07-02,206.0,0.0,32.0,0.0,Asia,SARS
+Singapore,2003-07-03,206.0,0.0,32.0,0.0,Asia,SARS
+Singapore,2003-07-04,206.0,0.0,32.0,0.0,Asia,SARS
+Singapore,2003-07-07,206.0,0.0,32.0,0.0,Asia,SARS
+Singapore,2003-07-08,206.0,0.0,32.0,0.0,Asia,SARS
+Singapore,2003-07-09,206.0,0.0,32.0,0.0,Asia,SARS
+Singapore,2003-07-10,206.0,0.0,32.0,0.0,Asia,SARS
+Singapore,2003-07-11,206.0,0.0,32.0,0.0,Asia,SARS
+Slovenia,2003-03-18,1.0,0.0,0.0,0.0,Europe,SARS
+Slovenia,2003-03-19,1.0,0.0,0.0,0.0,Europe,SARS
+Slovenia,2003-03-20,1.0,0.0,0.0,0.0,Europe,SARS
+Slovenia,2003-03-21,1.0,0.0,0.0,0.0,Europe,SARS
+Slovenia,2003-03-22,1.0,0.0,0.0,0.0,Europe,SARS
+South Africa,2003-04-11,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-12,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-14,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-15,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-16,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-17,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-18,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-19,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-21,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-22,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-23,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-24,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-25,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-26,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-28,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-29,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-04-30,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-05-01,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-05-02,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-05-03,1.0,0.0,0.0,0.0,,SARS
+South Africa,2003-05-05,1.0,0.0,1.0,1.0,,SARS
+South Africa,2003-05-06,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-07,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-08,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-09,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-10,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-12,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-13,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-14,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-15,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-16,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-17,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-19,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-20,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-21,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-22,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-23,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-24,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-26,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-27,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-28,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-29,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-30,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-05-31,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-02,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-03,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-04,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-05,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-06,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-09,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-10,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-11,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-12,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-13,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-16,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-17,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-18,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-19,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-20,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-23,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-24,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-25,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-26,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-27,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-06-30,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-07-01,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-07-02,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-07-03,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-07-04,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-07-07,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-07-08,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-07-09,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-07-10,1.0,0.0,1.0,0.0,,SARS
+South Africa,2003-07-11,1.0,0.0,1.0,0.0,,SARS
+Spain,2003-03-19,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-03-20,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-03-21,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-03-22,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-03-24,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-02,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-04,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-05,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-07,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-08,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-09,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-10,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-11,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-12,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-14,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-15,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-16,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-17,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-18,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-19,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-21,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-22,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-23,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-24,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-25,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-26,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-28,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-29,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-04-30,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-01,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-02,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-03,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-05,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-06,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-07,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-08,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-09,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-10,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-12,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-13,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-14,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-15,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-16,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-17,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-19,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-20,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-21,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-22,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-23,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-24,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-26,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-27,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-28,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-29,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-30,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-05-31,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-02,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-03,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-04,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-05,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-06,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-09,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-10,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-11,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-12,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-13,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-16,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-17,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-18,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-19,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-20,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-23,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-24,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-25,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-26,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-27,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-06-30,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-07-01,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-07-02,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-07-03,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-07-04,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-07-07,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-07-08,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-07-09,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-07-10,1.0,0.0,0.0,0.0,Europe,SARS
+Spain,2003-07-11,1.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-14,1.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-15,1.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-16,1.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-17,1.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-18,3.0,2.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-19,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-21,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-22,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-23,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-24,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-25,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-26,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-28,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-29,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-04-30,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-01,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-02,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-03,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-05,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-06,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-07,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-08,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-09,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-10,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-12,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-13,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-14,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-15,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-16,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-17,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-19,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-20,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-21,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-22,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-23,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-24,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-26,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-27,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-28,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-29,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-30,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-05-31,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-02,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-03,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-04,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-05,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-06,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-09,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-10,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-11,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-12,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-13,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-16,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-17,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-18,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-19,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-20,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-23,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-24,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-25,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-26,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-27,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-06-30,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-07-01,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-07-02,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-07-03,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-07-04,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-07-07,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-07-08,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-07-09,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-07-10,3.0,0.0,0.0,0.0,Europe,SARS
+Sweden,2003-07-11,3.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-03-17,2.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-03-20,7.0,5.0,0.0,0.0,Europe,SARS
+Switzerland,2003-03-21,7.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-03-22,7.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-03-24,2.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-03-25,2.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-03-26,2.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-03-27,2.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-03-28,2.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-03-29,3.0,1.0,0.0,0.0,Europe,SARS
+Switzerland,2003-03-31,3.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-01,3.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-02,2.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-03,2.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-04,2.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-05,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-07,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-08,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-09,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-10,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-11,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-12,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-14,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-15,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-16,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-17,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-18,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-19,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-21,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-22,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-23,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-24,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-25,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-26,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-28,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-29,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-04-30,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-01,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-02,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-03,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-05,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-06,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-07,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-08,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-09,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-10,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-12,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-13,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-14,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-15,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-16,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-17,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-19,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-20,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-21,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-22,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-23,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-24,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-26,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-27,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-28,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-29,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-30,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-05-31,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-02,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-03,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-04,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-05,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-06,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-09,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-10,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-11,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-12,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-13,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-16,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-17,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-18,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-19,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-20,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-23,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-24,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-25,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-26,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-27,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-06-30,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-07-01,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-07-02,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-07-03,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-07-04,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-07-07,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-07-08,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-07-09,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-07-10,1.0,0.0,0.0,0.0,Europe,SARS
+Switzerland,2003-07-11,1.0,0.0,0.0,0.0,Europe,SARS
+Taiwan,2003-03-18,3.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-03-19,3.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-03-20,4.0,1.0,0.0,0.0,Asia,SARS
+Taiwan,2003-03-21,6.0,2.0,0.0,0.0,Asia,SARS
+Taiwan,2003-03-22,6.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-03-24,6.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-03-25,6.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-03-26,6.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-03-27,6.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-03-28,10.0,4.0,0.0,0.0,Asia,SARS
+Taiwan,2003-03-29,10.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-03-31,10.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-01,13.0,3.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-02,13.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-03,14.0,1.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-04,15.0,1.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-05,17.0,2.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-07,21.0,4.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-08,19.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-09,19.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-10,19.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-11,21.0,2.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-12,23.0,2.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-14,23.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-15,23.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-16,27.0,4.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-17,27.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-18,29.0,2.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-19,29.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-21,29.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-22,29.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-23,37.0,8.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-24,37.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-25,41.0,4.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-26,49.0,8.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-28,66.0,17.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-29,66.0,0.0,0.0,0.0,Asia,SARS
+Taiwan,2003-04-30,78.0,12.0,1.0,1.0,Asia,SARS
+Taiwan,2003-05-01,89.0,11.0,3.0,2.0,Asia,SARS
+Taiwan,2003-05-02,100.0,11.0,8.0,5.0,Asia,SARS
+Taiwan,2003-05-03,100.0,0.0,8.0,0.0,Asia,SARS
+Taiwan,2003-05-05,116.0,16.0,8.0,0.0,Asia,SARS
+Taiwan,2003-05-06,116.0,0.0,10.0,2.0,Asia,SARS
+Taiwan,2003-05-07,125.0,9.0,11.0,1.0,Asia,SARS
+Taiwan,2003-05-08,131.0,6.0,13.0,2.0,Asia,SARS
+Taiwan,2003-05-09,149.0,18.0,13.0,0.0,Asia,SARS
+Taiwan,2003-05-10,172.0,23.0,18.0,5.0,Asia,SARS
+Taiwan,2003-05-12,184.0,12.0,20.0,2.0,Asia,SARS
+Taiwan,2003-05-13,207.0,23.0,24.0,4.0,Asia,SARS
+Taiwan,2003-05-14,238.0,31.0,30.0,6.0,Asia,SARS
+Taiwan,2003-05-15,264.0,26.0,30.0,0.0,Asia,SARS
+Taiwan,2003-05-16,274.0,10.0,35.0,5.0,Asia,SARS
+Taiwan,2003-05-17,274.0,0.0,35.0,0.0,Asia,SARS
+Taiwan,2003-05-19,344.0,70.0,40.0,5.0,Asia,SARS
+Taiwan,2003-05-20,383.0,39.0,52.0,12.0,Asia,SARS
+Taiwan,2003-05-21,418.0,35.0,52.0,0.0,Asia,SARS
+Taiwan,2003-05-22,483.0,65.0,60.0,8.0,Asia,SARS
+Taiwan,2003-05-23,538.0,55.0,60.0,0.0,Asia,SARS
+Taiwan,2003-05-24,538.0,0.0,60.0,0.0,Asia,SARS
+Taiwan,2003-05-26,585.0,47.0,72.0,12.0,Asia,SARS
+Taiwan,2003-05-27,596.0,11.0,76.0,4.0,Asia,SARS
+Taiwan,2003-05-28,610.0,14.0,81.0,5.0,Asia,SARS
+Taiwan,2003-05-29,660.0,50.0,81.0,0.0,Asia,SARS
+Taiwan,2003-05-30,667.0,7.0,81.0,0.0,Asia,SARS
+Taiwan,2003-05-31,676.0,9.0,81.0,0.0,Asia,SARS
+Taiwan,2003-06-02,684.0,8.0,81.0,0.0,Asia,SARS
+Taiwan,2003-06-03,679.0,0.0,81.0,0.0,Asia,SARS
+Taiwan,2003-06-04,678.0,0.0,81.0,0.0,Asia,SARS
+Taiwan,2003-06-05,677.0,0.0,81.0,0.0,Asia,SARS
+Taiwan,2003-06-06,676.0,0.0,81.0,0.0,Asia,SARS
+Taiwan,2003-06-09,680.0,4.0,81.0,0.0,Asia,SARS
+Taiwan,2003-06-10,686.0,6.0,81.0,0.0,Asia,SARS
+Taiwan,2003-06-11,687.0,1.0,81.0,0.0,Asia,SARS
+Taiwan,2003-06-12,688.0,1.0,81.0,0.0,Asia,SARS
+Taiwan,2003-06-13,693.0,5.0,81.0,0.0,Asia,SARS
+Taiwan,2003-06-16,698.0,5.0,83.0,2.0,Asia,SARS
+Taiwan,2003-06-17,697.0,0.0,83.0,0.0,Asia,SARS
+Taiwan,2003-06-18,697.0,0.0,83.0,0.0,Asia,SARS
+Taiwan,2003-06-19,695.0,0.0,84.0,1.0,Asia,SARS
+Taiwan,2003-06-20,695.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-06-23,692.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-06-24,687.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-06-25,686.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-06-26,682.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-06-27,681.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-06-30,678.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-07-01,678.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-07-02,676.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-07-03,674.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-07-04,674.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-07-07,674.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-07-08,671.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-07-09,671.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-07-10,671.0,0.0,84.0,0.0,Asia,SARS
+Taiwan,2003-07-11,671.0,0.0,84.0,0.0,Asia,SARS
+Thailand,2003-03-17,1.0,0.0,0.0,0.0,Asia,SARS
+Thailand,2003-03-18,1.0,0.0,0.0,0.0,Asia,SARS
+Thailand,2003-03-19,1.0,0.0,0.0,0.0,Asia,SARS
+Thailand,2003-03-20,1.0,0.0,0.0,0.0,Asia,SARS
+Thailand,2003-03-21,4.0,3.0,0.0,0.0,Asia,SARS
+Thailand,2003-03-22,4.0,0.0,0.0,0.0,Asia,SARS
+Thailand,2003-03-24,5.0,1.0,0.0,0.0,Asia,SARS
+Thailand,2003-03-25,5.0,0.0,0.0,0.0,Asia,SARS
+Thailand,2003-03-26,3.0,0.0,0.0,0.0,Asia,SARS
+Thailand,2003-03-27,3.0,0.0,0.0,0.0,Asia,SARS
+Thailand,2003-03-28,3.0,0.0,0.0,0.0,Asia,SARS
+Thailand,2003-03-29,3.0,0.0,1.0,1.0,Asia,SARS
+Thailand,2003-03-31,5.0,2.0,1.0,0.0,Asia,SARS
+Thailand,2003-04-01,6.0,1.0,1.0,0.0,Asia,SARS
+Thailand,2003-04-02,7.0,1.0,2.0,1.0,Asia,SARS
+Thailand,2003-04-03,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-04,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-05,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-07,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-08,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-09,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-10,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-11,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-12,8.0,1.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-14,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-15,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-16,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-17,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-18,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-19,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-21,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-22,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-23,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-24,8.0,1.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-25,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-26,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-28,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-29,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-04-30,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-01,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-02,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-03,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-05,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-06,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-07,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-08,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-09,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-10,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-12,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-13,7.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-14,8.0,1.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-15,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-16,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-17,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-19,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-20,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-21,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-22,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-23,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-24,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-26,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-27,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-28,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-29,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-30,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-05-31,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-02,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-03,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-04,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-05,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-06,8.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-09,9.0,1.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-10,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-11,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-12,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-13,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-16,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-17,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-18,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-19,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-20,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-23,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-24,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-25,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-26,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-27,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-06-30,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-07-01,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-07-02,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-07-03,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-07-04,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-07-07,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-07-08,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-07-09,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-07-10,9.0,0.0,2.0,0.0,Asia,SARS
+Thailand,2003-07-11,9.0,0.0,2.0,0.0,Asia,SARS
+United Kingdom,2003-03-18,1.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-03-19,1.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-03-20,2.0,1.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-03-21,2.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-03-22,2.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-03-24,3.0,1.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-03-25,3.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-03-26,3.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-03-27,3.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-03-28,3.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-03-29,3.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-03-31,3.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-01,3.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-02,3.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-03,3.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-04,3.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-05,4.0,1.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-07,5.0,1.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-08,5.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-09,5.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-10,5.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-11,5.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-12,6.0,1.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-14,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-15,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-16,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-17,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-18,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-19,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-21,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-22,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-23,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-24,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-25,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-26,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-28,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-29,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-04-30,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-01,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-02,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-03,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-05,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-06,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-07,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-08,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-09,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-10,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-12,6.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-13,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-14,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-15,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-16,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-17,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-19,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-20,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-21,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-22,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-23,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-24,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-26,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-27,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-28,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-29,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-30,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-05-31,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-02,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-03,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-04,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-05,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-06,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-09,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-10,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-11,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-12,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-13,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-16,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-17,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-18,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-19,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-20,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-23,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-24,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-25,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-26,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-27,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-06-30,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-07-01,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-07-02,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-07-03,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-07-04,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-07-07,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-07-08,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-07-09,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-07-10,4.0,0.0,0.0,0.0,Europe,SARS
+United Kingdom,2003-07-11,4.0,0.0,0.0,0.0,Europe,SARS
+United States,2003-03-19,11.0,0.0,0.0,0.0,North America,SARS
+United States,2003-03-20,11.0,0.0,0.0,0.0,North America,SARS
+United States,2003-03-21,13.0,2.0,0.0,0.0,North America,SARS
+United States,2003-03-22,22.0,9.0,0.0,0.0,North America,SARS
+United States,2003-03-24,37.0,15.0,0.0,0.0,North America,SARS
+United States,2003-03-25,39.0,2.0,0.0,0.0,North America,SARS
+United States,2003-03-26,40.0,1.0,0.0,0.0,North America,SARS
+United States,2003-03-27,45.0,5.0,0.0,0.0,North America,SARS
+United States,2003-03-28,51.0,6.0,0.0,0.0,North America,SARS
+United States,2003-03-29,59.0,8.0,0.0,0.0,North America,SARS
+United States,2003-03-31,59.0,0.0,0.0,0.0,North America,SARS
+United States,2003-04-01,69.0,10.0,0.0,0.0,North America,SARS
+United States,2003-04-02,72.0,3.0,0.0,0.0,North America,SARS
+United States,2003-04-03,85.0,13.0,0.0,0.0,North America,SARS
+United States,2003-04-04,100.0,15.0,0.0,0.0,North America,SARS
+United States,2003-04-05,115.0,15.0,0.0,0.0,North America,SARS
+United States,2003-04-07,141.0,26.0,0.0,0.0,North America,SARS
+United States,2003-04-08,148.0,7.0,0.0,0.0,North America,SARS
+United States,2003-04-09,149.0,1.0,0.0,0.0,North America,SARS
+United States,2003-04-10,154.0,5.0,0.0,0.0,North America,SARS
+United States,2003-04-11,166.0,12.0,0.0,0.0,North America,SARS
+United States,2003-04-12,166.0,0.0,0.0,0.0,North America,SARS
+United States,2003-04-14,174.0,8.0,0.0,0.0,North America,SARS
+United States,2003-04-15,193.0,19.0,0.0,0.0,North America,SARS
+United States,2003-04-16,193.0,0.0,0.0,0.0,North America,SARS
+United States,2003-04-17,199.0,6.0,0.0,0.0,North America,SARS
+United States,2003-04-18,220.0,21.0,0.0,0.0,North America,SARS
+United States,2003-04-19,220.0,0.0,0.0,0.0,North America,SARS
+United States,2003-04-21,39.0,0.0,0.0,0.0,North America,SARS
+United States,2003-04-22,38.0,0.0,0.0,0.0,North America,SARS
+United States,2003-04-23,39.0,1.0,0.0,0.0,North America,SARS
+United States,2003-04-24,37.0,0.0,0.0,0.0,North America,SARS
+United States,2003-04-25,39.0,2.0,0.0,0.0,North America,SARS
+United States,2003-04-26,41.0,2.0,0.0,0.0,North America,SARS
+United States,2003-04-28,41.0,0.0,0.0,0.0,North America,SARS
+United States,2003-04-29,41.0,0.0,0.0,0.0,North America,SARS
+United States,2003-04-30,52.0,11.0,0.0,0.0,North America,SARS
+United States,2003-05-01,54.0,2.0,0.0,0.0,North America,SARS
+United States,2003-05-02,56.0,2.0,0.0,0.0,North America,SARS
+United States,2003-05-03,54.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-05,61.0,7.0,0.0,0.0,North America,SARS
+United States,2003-05-06,65.0,4.0,0.0,0.0,North America,SARS
+United States,2003-05-07,65.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-08,63.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-09,63.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-10,64.0,1.0,0.0,0.0,North America,SARS
+United States,2003-05-12,64.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-13,64.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-14,64.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-15,64.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-16,65.0,1.0,0.0,0.0,North America,SARS
+United States,2003-05-17,66.0,1.0,0.0,0.0,North America,SARS
+United States,2003-05-19,67.0,1.0,0.0,0.0,North America,SARS
+United States,2003-05-20,67.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-21,66.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-22,65.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-23,65.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-24,65.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-26,65.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-27,65.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-28,66.0,1.0,0.0,0.0,North America,SARS
+United States,2003-05-29,66.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-30,66.0,0.0,0.0,0.0,North America,SARS
+United States,2003-05-31,66.0,0.0,0.0,0.0,North America,SARS
+United States,2003-06-02,66.0,0.0,0.0,0.0,North America,SARS
+United States,2003-06-03,68.0,2.0,0.0,0.0,North America,SARS
+United States,2003-06-04,69.0,1.0,0.0,0.0,North America,SARS
+United States,2003-06-05,69.0,0.0,0.0,0.0,North America,SARS
+United States,2003-06-06,68.0,0.0,0.0,0.0,North America,SARS
+United States,2003-06-09,68.0,0.0,0.0,0.0,North America,SARS
+United States,2003-06-10,69.0,1.0,0.0,0.0,North America,SARS
+United States,2003-06-11,71.0,2.0,0.0,0.0,North America,SARS
+United States,2003-06-12,70.0,0.0,0.0,0.0,North America,SARS
+United States,2003-06-13,71.0,1.0,0.0,0.0,North America,SARS
+United States,2003-06-16,72.0,1.0,0.0,0.0,North America,SARS
+United States,2003-06-17,73.0,1.0,0.0,0.0,North America,SARS
+United States,2003-06-18,75.0,2.0,0.0,0.0,North America,SARS
+United States,2003-06-19,75.0,0.0,0.0,0.0,North America,SARS
+United States,2003-06-20,74.0,0.0,0.0,0.0,North America,SARS
+United States,2003-06-23,74.0,0.0,0.0,0.0,North America,SARS
+United States,2003-06-24,75.0,1.0,0.0,0.0,North America,SARS
+United States,2003-06-25,75.0,0.0,0.0,0.0,North America,SARS
+United States,2003-06-26,74.0,0.0,0.0,0.0,North America,SARS
+United States,2003-06-27,74.0,0.0,0.0,0.0,North America,SARS
+United States,2003-06-30,73.0,0.0,0.0,0.0,North America,SARS
+United States,2003-07-01,73.0,0.0,0.0,0.0,North America,SARS
+United States,2003-07-02,73.0,0.0,0.0,0.0,North America,SARS
+United States,2003-07-03,73.0,0.0,0.0,0.0,North America,SARS
+United States,2003-07-04,73.0,0.0,0.0,0.0,North America,SARS
+United States,2003-07-07,73.0,0.0,0.0,0.0,North America,SARS
+United States,2003-07-08,74.0,1.0,0.0,0.0,North America,SARS
+United States,2003-07-09,75.0,1.0,0.0,0.0,North America,SARS
+United States,2003-07-10,75.0,0.0,0.0,0.0,North America,SARS
+United States,2003-07-11,75.0,0.0,0.0,0.0,North America,SARS
+Viet Nam,2003-03-17,40.0,0.0,1.0,0.0,Asia,SARS
+Viet Nam,2003-03-18,57.0,17.0,1.0,0.0,Asia,SARS
+Viet Nam,2003-03-19,56.0,0.0,2.0,1.0,Asia,SARS
+Viet Nam,2003-03-20,62.0,6.0,2.0,0.0,Asia,SARS
+Viet Nam,2003-03-21,62.0,0.0,2.0,0.0,Asia,SARS
+Viet Nam,2003-03-22,63.0,1.0,2.0,0.0,Asia,SARS
+Viet Nam,2003-03-24,58.0,0.0,4.0,2.0,Asia,SARS
+Viet Nam,2003-03-25,58.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-03-26,58.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-03-27,58.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-03-28,58.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-03-29,58.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-03-31,58.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-04-01,58.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-04-02,58.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-04-03,59.0,1.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-04-04,59.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-04-05,59.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-04-07,62.0,3.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-04-08,62.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-04-09,62.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-04-10,62.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-04-11,62.0,0.0,4.0,0.0,Asia,SARS
+Viet Nam,2003-04-14,63.0,1.0,5.0,1.0,Asia,SARS
+Viet Nam,2003-04-15,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-16,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-17,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-18,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-19,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-21,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-22,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-23,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-24,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-25,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-26,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-28,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-29,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-04-30,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-01,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-02,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-03,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-05,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-06,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-07,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-08,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-09,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-10,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-12,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-13,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-14,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-15,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-16,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-17,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-19,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-20,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-21,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-22,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-23,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-24,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-26,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-27,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-28,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-29,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-30,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-05-31,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-02,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-03,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-04,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-05,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-06,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-09,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-10,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-11,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-12,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-13,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-16,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-17,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-18,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-19,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-20,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-23,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-24,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-25,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-26,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-27,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-06-30,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-07-01,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-07-02,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-07-03,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-07-04,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-07-07,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-07-08,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-07-09,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-07-10,63.0,0.0,5.0,0.0,Asia,SARS
+Viet Nam,2003-07-11,63.0,0.0,5.0,0.0,Asia,SARS

@@ -1,0 +1,59 @@
+{
+  "COVID-19": {
+    "total_countries": 212,
+    "date_range": {
+      "start": "2019-12-31",
+      "end": "2020-09-19"
+    },
+    "peak_cases": {
+      "total_cases": 1208257,
+      "daily_cases": 27079
+    },
+    "total_deaths": 58580,
+    "top_affected_countries": {
+      "Brazil": 1208257.2399999106,
+      "India": 1208257.2399999106,
+      "United States": 1208257.2399999106,
+      "World": 1208257.2399999106,
+      "Russia": 1091186.0
+    }
+  },
+  "Monkeypox": {
+    "total_countries": 109,
+    "date_range": {
+      "start": "2022-01-31",
+      "end": "2022-09-22"
+    },
+    "peak_cases": {
+      "total_cases": 24403,
+      "daily_cases": 1411
+    },
+    "total_deaths": 0,
+    "top_affected_countries": {
+      "United States": 24403.0,
+      "Brazil": 7300.0,
+      "Spain": 7083.0,
+      "France": 3934.0,
+      "Germany": 3590.0
+    }
+  },
+  "SARS": {
+    "total_countries": 37,
+    "date_range": {
+      "start": "2003-03-17",
+      "end": "2003-07-11"
+    },
+    "peak_cases": {
+      "total_cases": 5329,
+      "daily_cases": 1356
+    },
+    "total_deaths": 348,
+    "top_affected_countries": {
+      "China": 5329.0,
+      "Hong Kong": 1755.0,
+      "Taiwan": 698.0,
+      "Canada": 252.0,
+      "United States": 220.0
+    }
+  }
+}
