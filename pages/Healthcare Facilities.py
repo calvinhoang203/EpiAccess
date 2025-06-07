@@ -95,13 +95,13 @@ This dashboard will feature:
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.button("🏠 Back to Home"):
-        st.switch_page("epiaccess_app.py")
+    if st.button("🏠 Home", key="home_nav"):
+        st.switch_page("Home.py")
 
 with col2:
-    if st.button("📊 Epidemic Dashboard"):
-        st.switch_page("pages/epidemic_dashboard.py")
+    if st.button("📈 Epidemic Dashboard", key="epidemic_nav"):
+        st.switch_page("pages/Disease Trends.py")
 
 with col3:
-    if st.button("🎯 Access Clustering"):
-        st.switch_page("pages/access_clustering.py") 
+    if st.button("🎯 Access Clustering", key="clustering_nav"):
+        st.switch_page("pages/Healthcare Access.py") 

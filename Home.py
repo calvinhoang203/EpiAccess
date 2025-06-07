@@ -123,7 +123,7 @@ def load_css():
         box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6) !important;
     }
     
-    /* Default button styling for Disease Map */
+    /* Default button styling for Disease Map - Orange */
     button:not([kind]) {
         background: linear-gradient(45deg, #f59e0b, #d97706) !important;
         color: white !important;
@@ -143,38 +143,34 @@ def load_css():
         box-shadow: 0 8px 25px rgba(245, 158, 11, 0.6) !important;
     }
     
-    /* More specific targeting for Disease Map button */
-    button[data-testid*="map_btn"],
-    div[data-testid*="map"] button,
-    .stButton button:nth-of-type(2) {
-        background: linear-gradient(45deg, #e97444, #dc2626) !important;
-        box-shadow: 0 4px 15px rgba(233, 116, 68, 0.4) !important;
-    }
-    
-    button[data-testid*="map_btn"]:hover,
-    div[data-testid*="map"] button:hover,
-    .stButton button:nth-of-type(2):hover {
-        box-shadow: 0 8px 25px rgba(233, 116, 68, 0.6) !important;
-    }
-    
-    /* Target Disease Map button through container */
-    .map-button-container button {
-        background: linear-gradient(45deg, #8b5cf6, #7c3aed) !important;
+    /* More specific targeting for Disease Map button by key */
+    button[data-testid="baseButton-secondary"]:not([kind="primary"]):not([kind="secondary"]) {
+        background: linear-gradient(45deg, #f59e0b, #d97706) !important;
         color: white !important;
         border: none !important;
         padding: 0.75rem 2rem !important;
         border-radius: 50px !important;
         font-weight: 600 !important;
         font-size: 1rem !important;
-        box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4) !important;
+        box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4) !important;
         transition: all 0.3s ease !important;
         font-family: 'Inter', sans-serif !important;
         height: 3rem !important;
     }
     
-    .map-button-container button:hover {
+    button[data-testid="baseButton-secondary"]:not([kind="primary"]):not([kind="secondary"]):hover {
         transform: translateY(-2px) !important;
-        box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6) !important;
+        box-shadow: 0 8px 25px rgba(245, 158, 11, 0.6) !important;
+    }
+    
+    /* Target by position - middle column button */
+    div:nth-child(4) button:not([kind]) {
+        background: linear-gradient(45deg, #f59e0b, #d97706) !important;
+        box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4) !important;
+    }
+    
+    div:nth-child(4) button:not([kind]):hover {
+        box-shadow: 0 8px 25px rgba(245, 158, 11, 0.6) !important;
     }
     
     /* Center buttons in their columns */
@@ -615,6 +611,42 @@ def load_css():
     [data-testid="stSidebar"] .css-1lcbmhc span {
         color: white !important;
     }
+    
+    /* Override middle primary button to be orange */
+    div:nth-child(4) button[kind="primary"] {
+        background: linear-gradient(45deg, #f59e0b, #d97706) !important;
+        box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4) !important;
+    }
+    
+    div:nth-child(4) button[kind="primary"]:hover {
+        box-shadow: 0 8px 25px rgba(245, 158, 11, 0.6) !important;
+    }
+    
+    /* FORCE Orange for Disease Map button - Override everything */
+    button[data-testid*="map"] {
+        background: linear-gradient(45deg, #f59e0b, #d97706) !important;
+        color: white !important;
+        border: none !important;
+        padding: 0.75rem 2rem !important;
+        border-radius: 50px !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4) !important;
+        transition: all 0.3s ease !important;
+        font-family: 'Inter', sans-serif !important;
+        height: 3rem !important;
+    }
+    
+    button[data-testid*="map"]:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 25px rgba(245, 158, 11, 0.6) !important;
+    }
+    
+    /* Force orange on button with map text content */
+    button:contains("Disease Map") {
+        background: linear-gradient(45deg, #f59e0b, #d97706) !important;
+        box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4) !important;
+    }
     </style>
     """, unsafe_allow_html=True)
 
@@ -664,91 +696,16 @@ def hero_section():
     col1, col2, col3, col4, col5, col6, col7 = st.columns([1, 1.2, 0.3, 1.2, 0.3, 1.2, 1])
     
     with col2:
-        # Custom HTML button for Disease Trends with inline styling
-        st.markdown("""
-        <div style="display: flex; justify-content: center;">
-            <button onclick="window.location.href='?page=epidemic_dashboard'" style="
-                background: linear-gradient(45deg, #2563eb, #3b82f6);
-                color: white;
-                border: none;
-                padding: 0.75rem 2rem;
-                border-radius: 50px;
-                font-weight: 600;
-                font-size: 1rem;
-                box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
-                transition: all 0.3s ease;
-                font-family: 'Inter', sans-serif;
-                height: 3rem;
-                cursor: pointer;
-                white-space: nowrap;
-            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(37, 99, 235, 0.6)';" 
-               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(37, 99, 235, 0.4)';">
-                📈 Explore Disease Trends
-            </button>
-        </div>
-        """, unsafe_allow_html=True)
-        
-        # Check if this button was clicked using query params
-        if st.query_params.get("page") == "epidemic_dashboard":
-            st.switch_page("pages/epidemic_dashboard.py")
+        if st.button("📈 Explore Disease Trends", key="trends_btn", type="primary"):
+            st.switch_page("pages/Disease Trends.py")
 
     with col4:
-        # Custom HTML button for Disease Map with inline styling
-        st.markdown("""
-        <div style="display: flex; justify-content: center;">
-            <button onclick="window.location.href='?page=disease_map'" style="
-                background: linear-gradient(45deg, #8b5cf6, #7c3aed);
-                color: white;
-                border: none;
-                padding: 0.75rem 2rem;
-                border-radius: 50px;
-                font-weight: 600;
-                font-size: 1rem;
-                box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
-                transition: all 0.3s ease;
-                font-family: 'Inter', sans-serif;
-                height: 3rem;
-                cursor: pointer;
-                white-space: nowrap;
-            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(139, 92, 246, 0.6)';" 
-               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(139, 92, 246, 0.4)';">
-                🌍 View Disease Map
-            </button>
-        </div>
-        """, unsafe_allow_html=True)
-        
-        # Check if this button was clicked using query params
-        if st.query_params.get("page") == "disease_map":
-            st.switch_page("pages/disease_map.py")
+        if st.button("🌍 View Disease Map", key="map_btn", type="primary"):
+            st.switch_page("pages/Disease Map.py")
     
     with col6:
-        # Custom HTML button for Healthcare Access with inline styling
-        st.markdown("""
-        <div style="display: flex; justify-content: center;">
-            <button onclick="window.location.href='?page=access_clustering'" style="
-                background: linear-gradient(45deg, #10b981, #059669);
-                color: white;
-                border: none;
-                padding: 0.75rem 2rem;
-                border-radius: 50px;
-                font-weight: 600;
-                font-size: 1rem;
-                box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
-                transition: all 0.3s ease;
-                font-family: 'Inter', sans-serif;
-                height: 3rem;
-                cursor: pointer;
-                white-space: nowrap;
-            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(16, 185, 129, 0.6)';" 
-               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(16, 185, 129, 0.4)';">
-                🏥 Compare Healthcare Access
-            </button>
-        </div>
-        """, unsafe_allow_html=True)
-        
-        # Check if this button was clicked using query params
-        if st.query_params.get("page") == "access_clustering":
-            st.switch_page("pages/access_clustering.py")
+        if st.button("🏥 Compare Healthcare Access", key="access_btn", type="secondary"):
+            st.switch_page("pages/Healthcare Access.py")
 
 # Value Proposition Section
 def value_proposition():

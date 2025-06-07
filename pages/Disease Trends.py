@@ -489,7 +489,7 @@ def main():
     
     with col2:
         if st.button("🗺️ View on Map", use_container_width=True):
-            st.switch_page("pages/disease_map.py")
+            st.switch_page("pages/Disease Map.py")
     
     # Load data
     data, metadata, summary = load_epidemic_data()
@@ -712,20 +712,20 @@ def main():
     col1, col2, col3, col4 = st.columns(4)
     
     with col1:
-        if st.button("🏥 Healthcare Facilities", use_container_width=True):
-            st.switch_page("pages/healthcare_facilities.py")
+        if st.button("🏥 Healthcare Facilities", key="facilities_nav"):
+            st.switch_page("pages/Healthcare Facilities.py")
     
     with col2:
-        if st.button("🔬 Access Clustering", use_container_width=True):
-            st.switch_page("pages/access_clustering.py")
+        if st.button("🎯 Access Clustering", key="clustering_nav"):
+            st.switch_page("pages/Healthcare Access.py")
     
     with col3:
-        if st.button("🗺️ Disease Map", use_container_width=True):
-            st.switch_page("pages/disease_map.py")
+        if st.button("🗺️ Disease Map", key="disease_map_nav"):
+            st.switch_page("pages/Disease Map.py")
     
     with col4:
-        if st.button("🏠 Home", use_container_width=True):
-            st.switch_page("epiaccess_app.py")
+        if st.button("🏠 Home", key="home_nav"):
+            st.switch_page("Home.py")
 
 if __name__ == "__main__":
     main() 
