@@ -523,7 +523,7 @@ def featured_dashboards():
     with col1:
         st.markdown("""
         <div class="dashboard-card">
-            <div class="dashboard-icon">��️</div>
+            <div class="dashboard-icon">🌍</div>
             <div class="dashboard-title">Disease Map</div>
             <div class="dashboard-description">
                 Geographic visualization of disease incidence and risk levels

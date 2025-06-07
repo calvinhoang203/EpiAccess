@@ -34,14 +34,14 @@ def load_resources_css():
     .resources-title {
         font-size: 3rem;
         font-weight: 700;
-        color: white;
+        color: white !important;
         margin-bottom: 1rem;
         text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
     
     .resources-subtitle {
         font-size: 1.3rem;
-        color: rgba(255,255,255,0.9);
+        color: rgba(255,255,255,0.9) !important;
         font-weight: 400;
     }
     
@@ -265,8 +265,8 @@ def load_resources_css():
 def resources_header():
     st.markdown("""
     <div class="resources-header">
-        <h1 class="resources-title">📚 Resources & Methodology</h1>
-        <p class="resources-subtitle">Technical documentation, research methods, and downloadable guides</p>
+        <div class="resources-title">📄 Resources & Methodology</div>
+        <div class="resources-subtitle">Technical documentation, research methods, and downloadable guides</div>
     </div>
     """, unsafe_allow_html=True)
 
