@@ -123,6 +123,26 @@ def load_css():
         box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6) !important;
     }
     
+    /* Default button styling for Disease Map */
+    button:not([kind]) {
+        background: linear-gradient(45deg, #8b5cf6, #7c3aed) !important;
+        color: white !important;
+        border: none !important;
+        padding: 0.75rem 2rem !important;
+        border-radius: 50px !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4) !important;
+        transition: all 0.3s ease !important;
+        font-family: 'Inter', sans-serif !important;
+        height: 3rem !important;
+    }
+    
+    button:not([kind]):hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6) !important;
+    }
+    
     /* Center buttons in their columns */
     .stButton {
         display: flex !important;
@@ -145,7 +165,27 @@ def load_css():
         text-align: center;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         border: 1px solid #d1d5db;
-        opacity: 0.9;
+        animation: fadeInOut 6s ease-in-out forwards;
+    }
+    
+    @keyframes fadeInOut {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        10% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        80% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-10px);
+            visibility: hidden;
+        }
     }
     
     .warning-title {
@@ -166,6 +206,65 @@ def load_css():
     }
     
     .warning-steps {
+        margin-top: 0.25rem;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 0.85rem;
+        color: #9ca3af;
+    }
+    
+    /* Zoom Level Warning Banner */
+    .zoom-warning-banner {
+        background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+        color: #4b5563;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        margin: 0.5rem auto;
+        max-width: 600px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        border: 1px solid #d1d5db;
+        animation: fadeInOutDelayed 6s ease-in-out forwards;
+    }
+    
+    @keyframes fadeInOutDelayed {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        10% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        80% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-10px);
+            visibility: hidden;
+        }
+    }
+    
+    .zoom-warning-title {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        color: #6b7280;
+    }
+    
+    .zoom-warning-text {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        color: #6b7280;
+    }
+    
+    .zoom-warning-steps {
         margin-top: 0.25rem;
         font-weight: 400;
         font-style: italic;
@@ -465,6 +564,22 @@ def light_mode_warning():
     </div>
     """, unsafe_allow_html=True)
 
+# Zoom Level Warning Banner
+def zoom_warning():
+    st.markdown("""
+    <div class="zoom-warning-banner">
+        <div class="zoom-warning-title">
+            🔍 100% Zoom Required
+        </div>
+        <div class="zoom-warning-text">
+            This application is designed for 100% browser zoom. Layout may break at other zoom levels.
+        </div>
+        <div class="zoom-warning-steps">
+            Press Ctrl+0 (Cmd+0 on Mac) to reset zoom to 100%, or use browser zoom controls
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
 # Hero Section
 def hero_section():
     st.markdown("""
@@ -475,14 +590,18 @@ def hero_section():
     </div>
     """, unsafe_allow_html=True)
     
-    # Simple centered button layout using columns
-    col1, col2, col3, col4, col5 = st.columns([2, 1.5, 1, 1.5, 2])
+    # Three-button centered layout
+    col1, col2, col3, col4, col5, col6, col7 = st.columns([1, 1.2, 0.3, 1.2, 0.3, 1.2, 1])
     
     with col2:
         if st.button("📈 Explore Disease Trends", key="trends_btn", type="primary"):
             st.switch_page("pages/epidemic_dashboard.py")
     
     with col4:
+        if st.button("🌍 View Disease Map", key="map_btn"):
+            st.switch_page("pages/disease_map.py")
+    
+    with col6:
         if st.button("🏥 Compare Healthcare Access", key="access_btn", type="secondary"):
             st.switch_page("pages/access_clustering.py")
 
@@ -632,6 +751,9 @@ def main():
     
     # Light mode compatibility warning
     light_mode_warning()
+    
+    # Zoom level warning
+    zoom_warning()
     
     # Landing Page Sections
     hero_section()
