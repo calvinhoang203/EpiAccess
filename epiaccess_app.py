@@ -3,7 +3,7 @@ import streamlit as st
 
 # Set page configuration
 st.set_page_config(
-    page_title="EpiAccess: Smarter Public Health Decisions",
+    page_title="🏥 EpiAccess",
     page_icon="🏥",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -82,6 +82,40 @@ def load_css():
     
     .cta-button.secondary:hover {
         box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6);
+    }
+    
+    /* Hero Button Styling */
+    div[data-testid="column"]:nth-child(2) button[key="hero_trends"],
+    div[data-testid="column"]:nth-child(4) button[key="hero_access"] {
+        background: linear-gradient(45deg, #2563eb, #3b82f6) !important;
+        color: white !important;
+        border: none !important;
+        padding: 1rem 2rem !important;
+        border-radius: 50px !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4) !important;
+        transition: all 0.3s ease !important;
+        width: 100% !important;
+        font-family: 'Inter', sans-serif !important;
+    }
+    
+    div[data-testid="column"]:nth-child(4) button[key="hero_access"] {
+        background: linear-gradient(45deg, #10b981, #059669) !important;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
+    }
+    
+    div[data-testid="column"]:nth-child(2) button[key="hero_trends"]:hover,
+    div[data-testid="column"]:nth-child(4) button[key="hero_access"]:hover {
+        transform: translateY(-2px) !important;
+    }
+    
+    div[data-testid="column"]:nth-child(2) button[key="hero_trends"]:hover {
+        box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6) !important;
+    }
+    
+    div[data-testid="column"]:nth-child(4) button[key="hero_access"]:hover {
+        box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6) !important;
     }
     
     /* Value Proposition Cards */
@@ -184,7 +218,6 @@ def load_css():
         text-align: center;
         box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         transition: all 0.3s ease;
-        cursor: pointer;
         border: 2px solid transparent;
         height: 250px;
         display: flex;
@@ -193,27 +226,26 @@ def load_css():
     }
     
     .dashboard-card:hover {
-        transform: translateY(-5px);
         border-color: #3b82f6;
-        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        transform: scale(1.02);
     }
     
     .dashboard-icon {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-bottom: 1rem;
     }
     
     .dashboard-title {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 600;
         color: #1f2937;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
     
     .dashboard-description {
         color: #6b7280;
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.5;
     }
     
     .preview-button {
@@ -263,6 +295,102 @@ def load_css():
         color: #9ca3af;
         font-size: 0.9rem;
     }
+    
+    /* Style About button to match footer links perfectly */
+    .footer .stButton > button {
+        background: transparent !important;
+        border: none !important;
+        color: #d1d5db !important;
+        text-decoration: none !important;
+        transition: color 0.3s ease !important;
+        font-size: 1rem !important;
+        padding: 0 !important;
+        height: auto !important;
+        font-family: 'Inter', sans-serif !important;
+        font-weight: 400 !important;
+        line-height: 1.5 !important;
+    }
+    
+    .footer .stButton > button:hover {
+        background: transparent !important;
+        color: white !important;
+        border: none !important;
+        text-decoration: none !important;
+        transform: none !important;
+    }
+    
+    .footer .stButton > button:focus {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+    
+    .footer .stButton > button:active {
+        background: transparent !important;
+        border: none !important;
+        color: white !important;
+        transform: none !important;
+    }
+    
+    .footer .stButton {
+        display: inline !important;
+    }
+    
+    /* Sidebar Navigation Styling */
+    .css-1d391kg {
+        background: linear-gradient(180deg, #667eea 0%, #764ba2 100%) !important;
+    }
+    
+    .css-1aumxhk {
+        background: linear-gradient(180deg, #667eea 0%, #764ba2 100%) !important;
+    }
+    
+    .sidebar .sidebar-content {
+        background: linear-gradient(180deg, #667eea 0%, #764ba2 100%) !important;
+    }
+    
+    /* Sidebar links styling */
+    [data-testid="stSidebar"] a {
+        color: white !important;
+        text-decoration: none !important;
+        padding: 0.75rem 1rem !important;
+        border-radius: 8px !important;
+        margin: 0.25rem 0 !important;
+        transition: all 0.3s ease !important;
+        font-weight: 500 !important;
+        text-transform: capitalize !important;
+    }
+    
+    [data-testid="stSidebar"] a:hover {
+        background: rgba(255, 255, 255, 0.2) !important;
+        transform: translateX(5px) !important;
+    }
+    
+    [data-testid="stSidebar"] .element-container {
+        margin: 0.25rem 0 !important;
+    }
+    
+    /* Current page indicator */
+    [data-testid="stSidebar"] a[aria-current="page"] {
+        background: rgba(255, 255, 255, 0.3) !important;
+        border-left: 4px solid white !important;
+        font-weight: 600 !important;
+    }
+    
+    /* Sidebar header */
+    [data-testid="stSidebar"] .css-1lcbmhc {
+        padding-top: 2rem !important;
+    }
+    
+    /* Make sidebar text white */
+    [data-testid="stSidebar"] .css-1lcbmhc h1, 
+    [data-testid="stSidebar"] .css-1lcbmhc h2,
+    [data-testid="stSidebar"] .css-1lcbmhc h3,
+    [data-testid="stSidebar"] .css-1lcbmhc p,
+    [data-testid="stSidebar"] .css-1lcbmhc span {
+        color: white !important;
+    }
     </style>
     """, unsafe_allow_html=True)
 
@@ -273,16 +401,63 @@ def hero_section():
         <div class="hero-title">🏥 EpiAccess</div>
         <div class="hero-title">Smarter Public Health Decisions</div>
         <div class="hero-tagline">Track disease trends. Understand access. Improve outcomes.</div>
-        <div>
-            <button class="cta-button">
-                📈 Explore Disease Trends
-            </button>
-            <button class="cta-button secondary">
-                🏥 Compare Healthcare Access
-            </button>
-        </div>
     </div>
     """, unsafe_allow_html=True)
+    
+    # Custom CSS for hero buttons
+    st.markdown("""
+    <style>
+    .hero-button-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .stButton > button {
+        background: linear-gradient(45deg, #2563eb, #3b82f6) !important;
+        color: white !important;
+        border: none !important;
+        padding: 1rem 2rem !important;
+        border-radius: 50px !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4) !important;
+        transition: all 0.3s ease !important;
+        font-family: 'Inter', sans-serif !important;
+        height: auto !important;
+        min-height: 3rem !important;
+    }
+    
+    .stButton > button:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6) !important;
+    }
+    
+    .hero-button-secondary > button {
+        background: linear-gradient(45deg, #10b981, #059669) !important;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
+    }
+    
+    .hero-button-secondary > button:hover {
+        box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6) !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
+    # Create centered button layout
+    col1, col2, col3, col4, col5 = st.columns([1.5, 1, 0.5, 1, 1.5])
+    
+    with col2:
+        if st.button("📈 Explore Disease Trends", key="hero_trends", help="View epidemic trends and forecasting"):
+            st.switch_page("pages/epidemic_dashboard.py")
+    
+    with col4:
+        st.markdown('<div class="hero-button-secondary">', unsafe_allow_html=True)
+        if st.button("🏥 Compare Healthcare Access", key="hero_access", help="View healthcare access clustering"):
+            st.switch_page("pages/access_clustering.py")
+        st.markdown('</div>', unsafe_allow_html=True)
 
 # Value Proposition Section
 def value_proposition():
@@ -381,8 +556,6 @@ def featured_dashboards():
             </div>
         </div>
         """, unsafe_allow_html=True)
-        if st.button("🗺️ View Disease Map", key="disease_map"):
-            st.switch_page("pages/disease_map.py")
     
     with col2:
         st.markdown("""
@@ -394,8 +567,6 @@ def featured_dashboards():
             </div>
         </div>
         """, unsafe_allow_html=True)
-        if st.button("📊 View Epidemic Dashboard", key="epidemic_trends"):
-            st.switch_page("pages/epidemic_dashboard.py")
     
     with col3:
         st.markdown("""
@@ -407,8 +578,6 @@ def featured_dashboards():
             </div>
         </div>
         """, unsafe_allow_html=True)
-        if st.button("🏥 View Healthcare Facilities", key="healthcare_facilities"):
-            st.switch_page("pages/healthcare_facilities.py")
     
     with col4:
         st.markdown("""
@@ -420,23 +589,12 @@ def featured_dashboards():
             </div>
         </div>
         """, unsafe_allow_html=True)
-        if st.button("🎯 View Access Clustering", key="access_clustering"):
-            st.switch_page("pages/access_clustering.py")
 
 # Footer Section
 def footer():
     st.markdown("""
-    <div class="footer">
-        <div class="footer-links">
-            <a href="#" class="footer-link">About</a>
-            <a href="#" class="footer-link">Resources</a>
-            <a href="#" class="footer-link">Contact</a>
-            <a href="#" class="footer-link">Language Selector</a>
-            <a href="#" class="footer-link">Accessibility Mode</a>
-        </div>
-        <div class="footer-text">
-            © 2025 EpiAccess. Empowering smarter public health decisions through data-driven insights.
-        </div>
+    <div style="text-align: center; margin-top: 4rem; padding: 2rem; color: #6b7280;">
+        © 2025 EpiAccess. Empowering smarter public health decisions through data-driven insights.
     </div>
     """, unsafe_allow_html=True)
 

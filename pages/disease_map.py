@@ -8,7 +8,7 @@ import numpy as np
 
 # Set page config
 st.set_page_config(
-    page_title="Disease Map - EpiAccess",
+    page_title="🗺️ Disease Map",
     page_icon="🗺️",
     layout="wide"
 )
@@ -369,6 +369,61 @@ def main():
         padding: 15px;
         margin: 20px 0;
         border-radius: 5px;
+    }
+    
+    /* Sidebar Navigation Styling */
+    .css-1d391kg {
+        background: linear-gradient(180deg, #667eea 0%, #764ba2 100%) !important;
+    }
+    
+    .css-1aumxhk {
+        background: linear-gradient(180deg, #667eea 0%, #764ba2 100%) !important;
+    }
+    
+    .sidebar .sidebar-content {
+        background: linear-gradient(180deg, #667eea 0%, #764ba2 100%) !important;
+    }
+    
+    /* Sidebar links styling */
+    [data-testid="stSidebar"] a {
+        color: white !important;
+        text-decoration: none !important;
+        padding: 0.75rem 1rem !important;
+        border-radius: 8px !important;
+        margin: 0.25rem 0 !important;
+        transition: all 0.3s ease !important;
+        font-weight: 500 !important;
+        text-transform: capitalize !important;
+    }
+    
+    [data-testid="stSidebar"] a:hover {
+        background: rgba(255, 255, 255, 0.2) !important;
+        transform: translateX(5px) !important;
+    }
+    
+    [data-testid="stSidebar"] .element-container {
+        margin: 0.25rem 0 !important;
+    }
+    
+    /* Current page indicator */
+    [data-testid="stSidebar"] a[aria-current="page"] {
+        background: rgba(255, 255, 255, 0.3) !important;
+        border-left: 4px solid white !important;
+        font-weight: 600 !important;
+    }
+    
+    /* Sidebar header */
+    [data-testid="stSidebar"] .css-1lcbmhc {
+        padding-top: 2rem !important;
+    }
+    
+    /* Make sidebar text white */
+    [data-testid="stSidebar"] .css-1lcbmhc h1, 
+    [data-testid="stSidebar"] .css-1lcbmhc h2,
+    [data-testid="stSidebar"] .css-1lcbmhc h3,
+    [data-testid="stSidebar"] .css-1lcbmhc p,
+    [data-testid="stSidebar"] .css-1lcbmhc span {
+        color: white !important;
     }
     </style>
     """, unsafe_allow_html=True)
