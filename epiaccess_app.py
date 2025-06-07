@@ -143,6 +143,40 @@ def load_css():
         box-shadow: 0 8px 25px rgba(245, 158, 11, 0.6) !important;
     }
     
+    /* More specific targeting for Disease Map button */
+    button[data-testid*="map_btn"],
+    div[data-testid*="map"] button,
+    .stButton button:nth-of-type(2) {
+        background: linear-gradient(45deg, #e97444, #dc2626) !important;
+        box-shadow: 0 4px 15px rgba(233, 116, 68, 0.4) !important;
+    }
+    
+    button[data-testid*="map_btn"]:hover,
+    div[data-testid*="map"] button:hover,
+    .stButton button:nth-of-type(2):hover {
+        box-shadow: 0 8px 25px rgba(233, 116, 68, 0.6) !important;
+    }
+    
+    /* Target Disease Map button through container */
+    .map-button-container button {
+        background: linear-gradient(45deg, #8b5cf6, #7c3aed) !important;
+        color: white !important;
+        border: none !important;
+        padding: 0.75rem 2rem !important;
+        border-radius: 50px !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4) !important;
+        transition: all 0.3s ease !important;
+        font-family: 'Inter', sans-serif !important;
+        height: 3rem !important;
+    }
+    
+    .map-button-container button:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6) !important;
+    }
+    
     /* Center buttons in their columns */
     .stButton {
         display: flex !important;
@@ -634,8 +668,10 @@ def hero_section():
             st.switch_page("pages/epidemic_dashboard.py")
     
     with col4:
+        st.markdown('<div class="map-button-container">', unsafe_allow_html=True)
         if st.button("🌍 View Disease Map", key="map_btn"):
             st.switch_page("pages/disease_map.py")
+        st.markdown('</div>', unsafe_allow_html=True)
     
     with col6:
         if st.button("🏥 Compare Healthcare Access", key="access_btn", type="secondary"):
