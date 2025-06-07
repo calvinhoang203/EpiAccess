@@ -34,9 +34,10 @@ def load_resources_css():
     .resources-title {
         font-size: 3rem;
         font-weight: 700;
-        color: white;
+        color: white !important;
         margin-bottom: 1rem;
         text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        text-align: center;
     }
     
     .resources-subtitle {
