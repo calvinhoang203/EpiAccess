@@ -394,6 +394,7 @@ def hero_section():
         font-family: 'Inter', sans-serif !important;
         height: auto !important;
         min-height: 3rem !important;
+        width: 100% !important;
     }
     
     .stButton > button:hover {
@@ -409,11 +410,18 @@ def hero_section():
     .hero-button-secondary > button:hover {
         box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6) !important;
     }
+    
+    /* Center the button columns */
+    div[data-testid="column"]:nth-child(2),
+    div[data-testid="column"]:nth-child(4) {
+        display: flex !important;
+        justify-content: center !important;
+    }
     </style>
     """, unsafe_allow_html=True)
     
     # Create centered button layout
-    col1, col2, col3, col4, col5 = st.columns([1.5, 1, 0.5, 1, 1.5])
+    col1, col2, col3, col4, col5 = st.columns([2, 1.5, 1, 1.5, 2])
     
     with col2:
         if st.button("📈 Explore Disease Trends", key="hero_trends", help="View epidemic trends and forecasting"):
@@ -515,7 +523,7 @@ def featured_dashboards():
     with col1:
         st.markdown("""
         <div class="dashboard-card">
-            <div class="dashboard-icon">🗺️</div>
+            <div class="dashboard-icon">��️</div>
             <div class="dashboard-title">Disease Map</div>
             <div class="dashboard-description">
                 Geographic visualization of disease incidence and risk levels
