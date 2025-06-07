@@ -677,7 +677,7 @@ def hero_section():
                 border: none;
                 padding: 0.75rem 2rem;
                 border-radius: 50px;
-                font-weight: 600;
+                font-weight: 400;
                 font-size: 1rem;
                 box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
                 transition: all 0.3s ease;
