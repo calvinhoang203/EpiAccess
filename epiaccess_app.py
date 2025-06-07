@@ -84,40 +84,6 @@ def load_css():
         box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6);
     }
     
-    /* Hero Button Styling */
-    div[data-testid="column"]:nth-child(2) button[key="hero_trends"],
-    div[data-testid="column"]:nth-child(4) button[key="hero_access"] {
-        background: linear-gradient(45deg, #2563eb, #3b82f6) !important;
-        color: white !important;
-        border: none !important;
-        padding: 1rem 2rem !important;
-        border-radius: 50px !important;
-        font-weight: 600 !important;
-        font-size: 1rem !important;
-        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4) !important;
-        transition: all 0.3s ease !important;
-        width: 100% !important;
-        font-family: 'Inter', sans-serif !important;
-    }
-    
-    div[data-testid="column"]:nth-child(4) button[key="hero_access"] {
-        background: linear-gradient(45deg, #10b981, #059669) !important;
-        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
-    }
-    
-    div[data-testid="column"]:nth-child(2) button[key="hero_trends"]:hover,
-    div[data-testid="column"]:nth-child(4) button[key="hero_access"]:hover {
-        transform: translateY(-2px) !important;
-    }
-    
-    div[data-testid="column"]:nth-child(2) button[key="hero_trends"]:hover {
-        box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6) !important;
-    }
-    
-    div[data-testid="column"]:nth-child(4) button[key="hero_access"]:hover {
-        box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6) !important;
-    }
-    
     /* Value Proposition Cards */
     .value-card {
         background: white;
