@@ -20,10 +20,13 @@ We use authentic epidemic and health expenditure datasets, not simulated data:
 ### Epidemic Data
 • **COVID-19 Data**: 44,785 records from 2020-2022 covering 212 countries
   - Source: [COVID-19 Dataset on Kaggle](https://www.kaggle.com/datasets/bolkonsky/covid19)
+
 • **SARS Data**: 2,538 records from March-July 2003 covering 37 countries
   - Source: [SARS Outbreak 2003 Complete Dataset](https://www.kaggle.com/datasets/imdevskp/sars-outbreak-2003-complete-dataset?select=sars_2003_complete_dataset_clean.csv)
+
 • **Monkeypox Data**: 15,792 records from 2022 covering 109 countries
   - Source: [Monkeypox Dataset Daily Updated](https://www.kaggle.com/datasets/deepcontractor/monkeypox-dataset-daily-updated?select=Daily_Country_Wise_Confirmed_Cases.csv)
+
 • **Total Epidemic Dataset**: 63,115 records across 222 unique countries
 
 ### Healthcare Access Data
