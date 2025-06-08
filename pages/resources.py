@@ -285,6 +285,33 @@ def forecast_methodology_tab():
     </div>
     """, unsafe_allow_html=True)
     
+    # Visual flowchart showing the prediction process
+    st.markdown("""
+    <div class="methodology-card">
+        <h3 class="method-title">How We Make Predictions</h3>
+        <div style="display: flex; justify-content: center; align-items: center; margin: 2rem 0; flex-wrap: wrap; gap: 1rem;">
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 20px; border-radius: 12px; text-align: center; min-width: 140px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <strong>📊 Look at<br/>Past Data</strong>
+            </div>
+            <div style="color: #667eea; font-size: 24px; font-weight: bold;">→</div>
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 20px; border-radius: 12px; text-align: center; min-width: 140px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <strong>🔍 Find<br/>Patterns</strong>
+            </div>
+            <div style="color: #667eea; font-size: 24px; font-weight: bold;">→</div>
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 20px; border-radius: 12px; text-align: center; min-width: 140px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <strong>📈 Project<br/>Forward</strong>
+            </div>
+            <div style="color: #667eea; font-size: 24px; font-weight: bold;">→</div>
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 20px; border-radius: 12px; text-align: center; min-width: 140px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <strong>📊 Show Confidence<br/>Level</strong>
+            </div>
+        </div>
+        <p class="method-description" style="text-align: center; margin-top: 1rem;">
+            Our transparent 4-step process makes forecasting easy to understand and perfect for learning epidemiological modeling.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+    
     col1, col2 = st.columns(2)
     
     with col1:
