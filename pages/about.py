@@ -466,9 +466,9 @@ def team_section():
         },
         {
             "name": "Theraune Casey",
-            "role": "UX/UI Designer",
+            "role": "Product Designer and Strategist",
             "image": "info/theraune_pic.png",
-            "description": "Design lead focused on making complex health data accessible and actionable for diverse user groups."
+            "description": "Specializing in creating data-driven, human-centered tools that promote equity in public health and community systems. With a background in data analysis, business strategy and UX design, Theraune designs intuitive digital experiences that bridge complex information with real-world needs."
         },
         {
             "name": "Soumana Dama",
