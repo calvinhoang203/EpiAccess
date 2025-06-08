@@ -540,20 +540,31 @@ def team_section():
     ]
     
     # Create a centered container for the team cards with better deployment compatibility
-    st.markdown('<div class="team-container">', unsafe_allow_html=True)
+    st.markdown('<div style="max-width: 1200px; margin: 0 auto; padding: 2rem 0; clear: both;">', unsafe_allow_html=True)
     
     cols = st.columns(2)
     for i, member in enumerate(team_members):
         with cols[i % 2]:
-            # Create a card container with the team member info
+            # Create a card container with inline styles to override any CSS conflicts
             st.markdown(f"""
-            <div class="team-card">
+            <div style="background: white; padding: 2rem; border-radius: 16px; text-align: center; 
+                        box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: all 0.3s ease; 
+                        height: 400px; display: flex; flex-direction: column; align-items: center; 
+                        justify-content: flex-start; margin-bottom: 2rem; border: 1px solid #f3f4f6; 
+                        position: relative; z-index: 1; overflow: hidden;">
                 <img src="data:image/jpeg;base64,{get_image_base64(member['image'])}" 
-                     class="team-avatar" 
+                     style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; 
+                            border: 4px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+                            margin-bottom: 1.5rem; transition: all 0.3s ease; flex-shrink: 0; display: block;" 
                      alt="{member['name']}">
-                <h3 class="team-name">{member['name']}</h3>
-                <p class="team-role">{member['role']}</p>
-                <p class="team-description">{member['description']}</p>
+                <h3 style="font-size: 1.4rem; font-weight: 700; color: #1f2937; margin-bottom: 0.5rem; 
+                           text-align: center; line-height: 1.3; flex-shrink: 0; width: 100%;">{member['name']}</h3>
+                <p style="color: #3b82f6; font-weight: 600; margin-bottom: 1.2rem; font-size: 1.1rem; 
+                          text-align: center; text-transform: uppercase; letter-spacing: 0.5px; 
+                          flex-shrink: 0; width: 100%;">{member['role']}</p>
+                <p style="color: #6b7280; font-size: 0.95rem; line-height: 1.6; text-align: center; 
+                          margin: 0; flex-grow: 1; display: block; width: 100%; padding: 0; 
+                          overflow-wrap: break-word; word-wrap: break-word;">{member['description']}</p>
             </div>
             """, unsafe_allow_html=True)
     
