@@ -183,47 +183,93 @@ def load_about_css():
         text-align: center;
         box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         transition: all 0.3s ease;
-        height: 300px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+        border: 1px solid #f3f4f6;
     }
     
     .team-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        border: 1px solid #3b82f6;
     }
     
     .team-avatar {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
-        background: linear-gradient(45deg, #3b82f6, #2563eb);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        color: white;
+        object-fit: cover;
+        border: 4px solid #e5e7eb;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         margin-bottom: 1.5rem;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
+    }
+    
+    .team-card:hover .team-avatar {
+        border-color: #3b82f6;
+        box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
     }
     
     .team-name {
-        font-size: 1.3rem;
-        font-weight: 600;
+        font-size: 1.4rem;
+        font-weight: 700;
         color: #1f2937;
         margin-bottom: 0.5rem;
+        text-align: center;
+        line-height: 1.3;
+        flex-shrink: 0;
     }
     
     .team-role {
         color: #3b82f6;
-        font-weight: 500;
-        margin-bottom: 1rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+        font-size: 1.1rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
     }
     
     .team-description {
         color: #6b7280;
         font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: center;
+        margin: 0;
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-start;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .team-section-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .team-section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1f2937;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .team-section-subtitle {
+        font-size: 1.2rem;
+        color: #6b7280;
+        max-width: 600px;
+        margin: 0 auto;
         line-height: 1.5;
     }
     
@@ -454,7 +500,7 @@ def team_section():
     team_members = [
         {
             "name": "Hieu (Calvin) Hoang",
-            "role": "Lead Data Scientist", 
+            "role": "Data Scientist", 
             "image": "info/hieu_pic.jpg",
             "description": "Data Scientist with experience in public health analytics, machine learning, and building community-driven tools for impact using Python, SQL, Streamlit, Firebase, and Scikit-learn. Obtained the Google Advanced Data Analytics Certificate."
         },
@@ -478,26 +524,25 @@ def team_section():
         }
     ]
     
+    # Create a centered container for the team cards
+    st.markdown('<div style="max-width: 1200px; margin: 0 auto;">', unsafe_allow_html=True)
+    
     cols = st.columns(2)
     for i, member in enumerate(team_members):
         with cols[i % 2]:
             # Create a card container with the team member info
             st.markdown(f"""
-            <div class="team-card" style="margin-bottom: 2rem;">
-                <div style="text-align: center; margin-bottom: 1.5rem;">
-                    <img src="data:image/jpeg;base64,{get_image_base64(member['image'])}" 
-                         style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; 
-                                border: 4px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
-                         alt="{member['name']}">
-                </div>
-                <h3 class="team-name" style="text-align: center; color: #1f2937; font-size: 1.3rem; 
-                                           font-weight: 600; margin-bottom: 0.5rem;">{member['name']}</h3>
-                <p class="team-role" style="text-align: center; color: #3b82f6; font-weight: 500; 
-                                          margin-bottom: 1rem; font-size: 1.1rem;">{member['role']}</p>
-                <p class="team-description" style="text-align: center; color: #6b7280; line-height: 1.5; 
-                                                  font-size: 0.95rem; margin: 0;">{member['description']}</p>
+            <div class="team-card">
+                <img src="data:image/jpeg;base64,{get_image_base64(member['image'])}" 
+                     class="team-avatar" 
+                     alt="{member['name']}">
+                <h3 class="team-name">{member['name']}</h3>
+                <p class="team-role">{member['role']}</p>
+                <p class="team-description">{member['description']}</p>
             </div>
             """, unsafe_allow_html=True)
+    
+    st.markdown('</div>', unsafe_allow_html=True)
 
 def get_image_base64(image_path):
     """Convert image to base64 string for embedding in HTML"""
