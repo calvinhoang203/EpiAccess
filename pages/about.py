@@ -456,7 +456,7 @@ def team_section():
             "name": "Hieu (Calvin) Hoang",
             "role": "Lead Data Scientist", 
             "image": "info/hieu_pic.jpg",
-            "description": "Data Scientist with experience in public health analytics, machine learning, and building community-driven tools for impact using Python, SQL, Streamlit, Firebase, and Scikit-learn."
+            "description": "Data Scientist with experience in public health analytics, machine learning, and building community-driven tools for impact using Python, SQL, Streamlit, Firebase, and Scikit-learn. Obtained the Google Advanced Data Analytics Certificate."
         },
         {
             "name": "Marcos Escamilla",
@@ -472,9 +472,9 @@ def team_section():
         },
         {
             "name": "Soumana Dama",
-            "role": "Public Health Advisor",
+            "role": "Full-Stack Engineer",
             "image": "info/soumana_pic.jpg", 
-            "description": "Former CDC epidemiologist with field experience in outbreak response across 20+ countries."
+            "description": "Web and mobile developer, specialized in full-stack technologies, with a keen interest in artificial intelligence and data analysis. Holder of the Google Professional Data Analytics Certificate, obtained as part of the GWG Data Analytics Spring Cohort 25 (EMEAI Data Analytics) program."
         }
     ]
     
