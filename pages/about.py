@@ -177,76 +177,91 @@ def load_about_css():
     }
     
     .team-card {
-        background: white;
-        padding: 2rem;
-        border-radius: 16px;
-        text-align: center;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        transition: all 0.3s ease;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        margin-bottom: 2rem;
-        border: 1px solid #f3f4f6;
+        background: white !important;
+        padding: 2rem !important;
+        border-radius: 16px !important;
+        text-align: center !important;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+        transition: all 0.3s ease !important;
+        height: 400px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        margin-bottom: 2rem !important;
+        border: 1px solid #f3f4f6 !important;
+        position: relative !important;
+        z-index: 1 !important;
+        overflow: hidden !important;
     }
     
     .team-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        border: 1px solid #3b82f6;
+        transform: translateY(-8px) !important;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+        border: 1px solid #3b82f6 !important;
+        z-index: 2 !important;
     }
     
     .team-avatar {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid #e5e7eb;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        margin-bottom: 1.5rem;
-        transition: all 0.3s ease;
-        flex-shrink: 0;
+        width: 120px !important;
+        height: 120px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        border: 4px solid #e5e7eb !important;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+        margin-bottom: 1.5rem !important;
+        transition: all 0.3s ease !important;
+        flex-shrink: 0 !important;
+        display: block !important;
     }
     
     .team-card:hover .team-avatar {
-        border-color: #3b82f6;
-        box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+        border-color: #3b82f6 !important;
+        box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3) !important;
     }
     
     .team-name {
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: #1f2937;
-        margin-bottom: 0.5rem;
-        text-align: center;
-        line-height: 1.3;
-        flex-shrink: 0;
+        font-size: 1.4rem !important;
+        font-weight: 700 !important;
+        color: #1f2937 !important;
+        margin-bottom: 0.5rem !important;
+        text-align: center !important;
+        line-height: 1.3 !important;
+        flex-shrink: 0 !important;
+        width: 100% !important;
     }
     
     .team-role {
-        color: #3b82f6;
-        font-weight: 600;
-        margin-bottom: 1.2rem;
-        font-size: 1.1rem;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        flex-shrink: 0;
+        color: #3b82f6 !important;
+        font-weight: 600 !important;
+        margin-bottom: 1.2rem !important;
+        font-size: 1.1rem !important;
+        text-align: center !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+        flex-shrink: 0 !important;
+        width: 100% !important;
     }
     
     .team-description {
-        color: #6b7280;
-        font-size: 0.95rem;
-        line-height: 1.6;
-        text-align: center;
-        margin: 0;
-        flex-grow: 1;
-        display: flex;
-        align-items: flex-start;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        color: #6b7280 !important;
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        text-align: center !important;
+        margin: 0 !important;
+        flex-grow: 1 !important;
+        display: block !important;
+        width: 100% !important;
+        padding: 0 !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+    }
+    
+    .team-container {
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+        padding: 2rem 0 !important;
+        clear: both !important;
     }
     
     .team-section-header {
@@ -500,7 +515,7 @@ def team_section():
     team_members = [
         {
             "name": "Hieu (Calvin) Hoang",
-            "role": "Data Scientist", 
+            "role": "Lead Data Scientist", 
             "image": "info/hieu_pic.jpg",
             "description": "Data Scientist with experience in public health analytics, machine learning, and building community-driven tools for impact using Python, SQL, Streamlit, Firebase, and Scikit-learn. Obtained the Google Advanced Data Analytics Certificate."
         },
@@ -524,8 +539,8 @@ def team_section():
         }
     ]
     
-    # Create a centered container for the team cards
-    st.markdown('<div style="max-width: 1200px; margin: 0 auto;">', unsafe_allow_html=True)
+    # Create a centered container for the team cards with better deployment compatibility
+    st.markdown('<div class="team-container">', unsafe_allow_html=True)
     
     cols = st.columns(2)
     for i, member in enumerate(team_members):
