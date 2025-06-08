@@ -21,6 +21,7 @@ def load_about_css():
     }
     
     footer {visibility: hidden;}
+
     .about-header {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         padding: 3rem 2rem;
