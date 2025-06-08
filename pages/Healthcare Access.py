@@ -964,17 +964,13 @@ def main():
     
     # Navigation
     st.markdown("---")
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
     
     with col1:
         if st.button("🗺️ Disease Map", key="disease_map_nav"):
             st.switch_page("pages/Disease Map.py")
     
     with col2:
-        if st.button("🏥 Healthcare Facilities", key="facilities_nav"):
-            st.switch_page("pages/Healthcare Facilities.py")
-    
-    with col3:
         if st.button("🏠 Home", key="home_nav"):
             st.switch_page("Home.py")
 

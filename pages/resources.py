@@ -272,14 +272,15 @@ def resources_header():
     """, unsafe_allow_html=True)
 
 def forecast_methodology_tab():
-    st.markdown("## 📊 How We Predict Epidemic Trends")
+    st.markdown("## 📈 How We Predict Disease Trends")
     
     st.markdown("""
     <div class="methodology-card">
-        <h3 class="method-title">Simple Time Series Forecasting</h3>
+        <h3 class="method-title">Exponential Smoothing for Epidemic Forecasting</h3>
         <p class="method-description">
-            We use proven statistical methods to predict where disease trends might go next. Think of it like 
-            looking at a graph of cases over time and drawing a line to show what might happen in the next few months.
+            We use a proven statistical method called exponential smoothing to analyze epidemic patterns 
+            and project trends. This method is perfect for educational purposes because it's transparent, 
+            understandable, and widely used in epidemiology.
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -288,43 +289,122 @@ def forecast_methodology_tab():
     
     with col1:
         st.markdown("""
-        **What We Look For:**
-        - **Patterns**: Does the disease spread faster in winter? 
-        - **Trends**: Are cases going up, down, or staying steady?
-        - **Cycles**: Do outbreaks repeat every few months?
+        **What Exponential Smoothing Does:**
+        - **Weighs recent data more heavily** - Last week's cases matter more than last month's
+        - **Smooths out random noise** - Ignores daily fluctuations to see real trends
+        - **Adapts to changes** - Quickly responds when outbreak patterns shift
+        - **Provides confidence intervals** - Shows uncertainty ranges around predictions
         
         **Real Example:**
-        If COVID-19 cases have been rising by 100 per week for the past month, 
-        our model might predict they'll keep rising at a similar rate.
+        If COVID-19 cases in Brazil were:
+        - Week 1: 1,000 cases
+        - Week 2: 1,200 cases  
+        - Week 3: 1,500 cases
+        
+        The model sees an upward trend (+25% per week) and might predict Week 4: ~1,800 cases
         """)
     
     with col2:
         st.markdown("""
-        **Why This Works:**
-        - Disease spread often follows predictable patterns
-        - People's behavior (like travel, gatherings) is somewhat consistent
-        - Seasonal factors (weather, holidays) repeat each year
+        **Why This Method for Epidemics:**
+        - **Epidemic-specific** - Designed for disease spread patterns
+        - **Educational value** - Easy to understand and explain step-by-step
+        - **Proven track record** - Used by epidemiologists for decades
+        - **Handles uncertainty** - Shows confidence ranges, not false precision
         
-        **When It Doesn't Work:**
-        - New virus variants appear
-        - Major policy changes happen
-        - Unexpected events occur
+        **What Makes It Different from ML:**
+        - Transparent calculations (you can see how it works)
+        - Works with smaller datasets (doesn't need millions of data points)
+        - Focuses on recent trends (more relevant for outbreaks)
+        - Educational focus (great for learning forecasting concepts)
         """)
     
     st.markdown("""
-    <div class="flowchart-box">
-        <h4>How We Make Predictions</h4>
-        <div>
-            <div class="process-step">Look at Past Data</div>
-            <span class="arrow">→</span>
-            <div class="process-step">Find Patterns</div>
-            <span class="arrow">→</span>
-            <div class="process-step">Project Forward</div>
-            <span class="arrow">→</span>
-            <div class="process-step">Show Confidence Level</div>
-        </div>
+    <div class="methodology-card">
+        <h3 class="method-title">Step-by-Step: How Our Forecasting Works</h3>
+        <p class="method-description">Here's exactly how we turn historical case data into educational forecasts:</p>
     </div>
     """, unsafe_allow_html=True)
+    
+    st.markdown("""
+    **Step 1: Data Preparation**
+    - Clean historical case numbers (remove obvious errors)
+    - Organize by date and country
+    - Identify the timeframe for analysis
+    
+    **Step 2: Trend Detection**
+    - Calculate recent growth/decline rates
+    - Measure how volatile the data is (lots of ups and downs?)
+    - Assess data quality (more data = higher confidence)
+    
+    **Step 3: Apply Exponential Smoothing**
+    - Give more weight to recent observations
+    - Calculate smoothed trend line
+    - Project trend forward for 6 months maximum
+    
+    **Step 4: Add Epidemic Context**
+    - Apply dampening to prevent unrealistic endless growth
+    - Account for typical epidemic curve patterns
+    - Generate uncertainty bands (confidence intervals)
+    """)
+    
+    st.markdown("""
+    **🎯 Specific Use Case Example:**
+    
+    **Learning Scenario**: Understanding SARS 2003 patterns
+    - **Input**: Daily SARS cases in Singapore (March-June 2003)
+    - **Model Output**: Shows the typical epidemic curve with peak in April
+    - **Educational Value**: Students learn how outbreaks rise, peak, and decline
+    - **Key Insight**: Even with limited data, you can see clear patterns
+    
+    **What Students Learn:**
+    - How to identify epidemic phases (growth, peak, decline)
+    - Why recent data matters more than old data
+    - How to interpret confidence intervals and uncertainty
+    - When forecasting works well vs. when it doesn't
+    """)
+    
+    st.markdown("""
+    <div class="methodology-card">
+        <h3 class="method-title">Why This Method is Perfect for Learning</h3>
+        <p class="method-description">
+            Unlike complex machine learning models, exponential smoothing is transparent and educational. 
+            You can see exactly how it works and understand its strengths and limitations.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("""
+        **Excellent for Teaching:**
+        - **Mathematical transparency** - Students can follow the calculations
+        - **Immediate feedback** - See how changing parameters affects results
+        - **Real-world relevance** - Actually used by health professionals
+        - **Appropriate complexity** - Not too simple, not overwhelming
+        
+        **Limitations to Discuss:**
+        - Cannot predict sudden policy changes
+        - Assumes patterns will continue (often unrealistic)
+        - Works best with consistent data quality
+        - 6-month limit for reasonable accuracy
+        """)
+    
+    with col2:
+        st.markdown("""
+        **Learning Outcomes:**
+        - **Statistical thinking** - Understanding trends vs. noise
+        - **Critical analysis** - When to trust vs. doubt predictions
+        - **Data literacy** - Reading charts and confidence intervals
+        - **Scientific reasoning** - How models work and their limits
+        
+        **Real Skills Developed:**
+        - Pattern recognition in time series data
+        - Understanding forecasting uncertainty
+        - Interpreting epidemic curves
+        - Evaluating model reliability
+        """)
 
 def clustering_methodology_tab():
     st.markdown("## 🎯 How We Group Countries by Healthcare Access")
@@ -376,38 +456,10 @@ def data_sources_tab():
     
     st.markdown("""
     <div class="methodology-card">
-        <h3 class="method-title">Trusted Health Organizations</h3>
+        <h3 class="method-title">Reliable Public Datasets for Education</h3>
         <p class="method-description">
-            We only use data from official sources that health experts trust worldwide. 
-            This ensures our information is accurate and reliable.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    # Simplified data sources - only the ones we actually use
-    st.markdown("""
-    **🏥 World Health Organization (WHO)**
-    - Global disease tracking and surveillance data
-    - Official outbreak reports and case counts
-    - Updated regularly by health professionals worldwide
-    
-    **🏦 World Bank**
-    - Healthcare spending data for most countries
-    - Economic indicators like GDP and population
-    - Helps us understand each country's healthcare capacity
-    
-    **🏛️ Government Health Ministries**
-    - Country-specific disease surveillance
-    - Local outbreak reports and case tracking
-    - Provides detailed regional information
-    """)
-    
-    st.markdown("""
-    <div class="methodology-card">
-        <h3 class="method-title">How We Clean and Check the Data</h3>
-        <p class="method-description">
-            Raw data often has mistakes or missing information. We carefully clean and verify everything 
-            before using it in our analysis.
+            We use well-documented, publicly available datasets that are perfect for learning 
+            data analysis and epidemiological concepts. All sources are properly attributed and verifiable.
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -416,94 +468,157 @@ def data_sources_tab():
     
     with col1:
         st.markdown("""
-        **Common Problems We Fix:**
-        - Missing dates or duplicate entries
-        - Different countries using different formats
-        - Obvious data entry errors (like negative cases)
-        - Inconsistent country names or spellings
+        **📊 Epidemic Disease Datasets**
+        - **COVID-19**: 44,785 records (2020-2022)
+          - Source: Kaggle dataset by Bolkonsky
+          - Coverage: 212 countries
+          - Best for: Pandemic pattern analysis
+        
+        - **SARS**: 2,538 records (March-July 2003)
+          - Source: Kaggle dataset by imdevskp
+          - Coverage: 37 affected countries
+          - Best for: Historical outbreak study
+        
+        - **Monkeypox**: 15,792 records (2022)
+          - Source: Kaggle dataset by deepcontractor
+          - Coverage: 109 countries
+          - Best for: Emerging disease patterns
         """)
     
     with col2:
         st.markdown("""
-        **How We Fix Them:**
-        - Fill small gaps using nearby data points
-        - Standardize all formats to be consistent
-        - Remove or correct obvious errors
-        - Cross-check with multiple sources when possible
+        **💰 Healthcare Access Data**
+        - **World Bank Health Expenditure**
+          - Source: World Bank Open Data Platform
+          - Coverage: 175+ countries (2015-2022)
+          - Metrics: Per capita spending, % of GDP
+        
+        - **Economic Indicators**
+          - GDP, population, development indices
+          - Multi-year averages for stability
+          - Used for clustering analysis
+        
+        **✅ Data Quality Features:**
+        - Officially published datasets
+        - Proper attribution to creators
+        - Consistent formatting and cleaning
+        - Documented limitations and gaps
         """)
-
-def why_this_matters_tab():
-    st.markdown("## 💡 Why These Methods Matter")
     
     st.markdown("""
     <div class="methodology-card">
-        <h3 class="method-title">Making Complex Data Simple</h3>
+        <h3 class="method-title">How We Process Raw Data for Education</h3>
         <p class="method-description">
-            Public health data can be overwhelming. Our goal is to turn thousands of data points 
-            into clear, actionable insights that help people make better health decisions.
+            Raw datasets often have inconsistencies. We clean and standardize everything 
+            while documenting our process for educational transparency.
         </p>
     </div>
     """, unsafe_allow_html=True)
     
-    # Real examples from the platform
-    examples = [
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("""
+        **Quality Improvements:**
+        - **Standardize country names** (USA vs United States vs US)
+        - **Fix date formats** (MM/DD/YYYY vs DD/MM/YYYY)
+        - **Remove obvious errors** (negative cases, impossible dates)
+        - **Fill small gaps** using interpolation methods
+        - **Document assumptions** made during cleaning
+        """)
+    
+    with col2:
+        st.markdown("""
+        **Educational Benefits:**
+        - **Real data experience** - Learn with authentic datasets
+        - **Data cleaning skills** - See how raw data gets processed
+        - **Quality awareness** - Understand data limitations
+        - **Reproducible methods** - All steps documented and explainable
+        - **Critical thinking** - Learn to question data quality
+        """)
+    
+    st.markdown("""
+    **⚠️ Important Educational Context**
+    
+    - **Historical focus**: All data is from past outbreaks for learning purposes
+    - **Not real-time**: These are educational datasets, not current surveillance
+    - **Properly attributed**: All original creators and sources are credited
+    - **Transparent processing**: Cleaning steps are documented for learning
+    - **Educational use only**: Not suitable for clinical or policy decisions
+    """)
+
+def why_this_matters_tab():
+    st.markdown("## 💡 Educational Value and Learning Goals")
+    
+    st.markdown("""
+    ### What You Can Learn
+    This platform is designed as an educational tool to help users understand:
+    """)
+    
+    # Focus on educational value
+    learning_goals = [
         {
-            "scenario": "NGO Planning Emergency Response",
-            "problem": "A health NGO needs to know where to send medical supplies during an outbreak",
-            "solution": "Use our clustering analysis to identify countries with similar healthcare limitations",
-            "outcome": "Supplies go to countries most likely to need them based on spending patterns"
+            "topic": "📈 Epidemic Patterns",
+            "description": "How diseases spread over time and what epidemic curves look like",
+            "skills": "Pattern recognition, trend analysis, data visualization"
         },
         {
-            "scenario": "Government Preparing for Seasonal Flu",
-            "problem": "Health officials want to know when flu cases might peak this winter",
-            "solution": "Look at our trend forecasts to see predicted case increases",
-            "outcome": "Hospitals can prepare beds and staff before the peak hits"
+            "topic": "🔮 Forecasting Concepts", 
+            "description": "How statistical models make predictions and their limitations",
+            "skills": "Understanding uncertainty, confidence intervals, model reliability"
         },
         {
-            "scenario": "Researcher Studying Global Health Equity",
-            "problem": "Academic needs to compare healthcare access across different regions",
-            "solution": "Use our country clustering to see which nations face similar challenges",
-            "outcome": "Research identifies patterns and potential solutions for health equity"
+            "topic": "🌍 Global Health Equity",
+            "description": "How healthcare access varies worldwide and why it matters",
+            "skills": "Data clustering, comparative analysis, health economics basics"
+        },
+        {
+            "topic": "📊 Data Analysis Skills",
+            "description": "How to interpret charts, understand data quality, and draw conclusions",
+            "skills": "Critical thinking, data literacy, scientific reasoning"
         }
     ]
     
-    for i, example in enumerate(examples, 1):
+    for goal in learning_goals:
         st.markdown(f"""
-        **Example {i}: {example['scenario']}**
-        - *Problem*: {example['problem']}
-        - *How EpiAccess Helps*: {example['solution']}
-        - *Result*: {example['outcome']}
+        **{goal['topic']}**
+        - *What you'll learn*: {goal['description']}
+        - *Skills developed*: {goal['skills']}
         """)
-        if i < len(examples):
-            st.markdown("---")
+        st.markdown("---")
     
     st.markdown("""
-    <div class="methodology-card">
-        <h3 class="method-title">Limitations and Important Notes</h3>
-        <p class="method-description">
-            No analysis is perfect. Here's what you should know about the limits of our methods.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
+    ### Educational Use Cases
     
-    col1, col2 = st.columns(2)
+    **👨‍🎓 For Students:**
+    - Learn data science and public health concepts
+    - Practice interpreting visualizations and statistics
+    - Understand how models work and their limitations
     
-    with col1:
-        st.markdown("""
-        **What Our Forecasts Can Do:**
-        - Show likely trends based on current patterns
-        - Help with general planning and preparation
-        - Compare different scenarios and outcomes
-        - Identify potential problems before they happen
-        """)
+    **👩‍🏫 For Educators:**
+    - Teaching tool for epidemiology and data analysis
+    - Real-world examples of statistical concepts
+    - Discussion starter about health equity and global health
     
-    with col2:
-        st.markdown("""
-        **What Our Forecasts Cannot Do:**
-        - Predict exact numbers with 100% accuracy
-        - Account for unexpected events or policy changes
-        - Replace expert medical judgment
-        - Guarantee specific outcomes will occur
+    **🔬 For Researchers:**
+    - Example of data cleaning and visualization techniques
+    - Understanding clustering and forecasting methods
+    - Learning about data limitations and uncertainty
+    """)
+    
+    st.markdown("""
+    ### Important Disclaimers
+    
+    **🚨 This is an Educational Tool**
+    - Not for medical, clinical, or policy decisions
+    - Historical data may not reflect current conditions
+    - Simplified analysis for learning purposes
+    - Always consult official health authorities for real health information
+    
+    **📚 Learning Focus**
+    - Designed to teach concepts, not provide authoritative analysis
+    - Emphasizes understanding methods and limitations
+    - Encourages critical thinking about data and models
         """)
 
 def main():

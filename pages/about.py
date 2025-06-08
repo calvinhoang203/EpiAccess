@@ -1,5 +1,7 @@
 # About EpiAccess - Smarter Public Health Decisions
 import streamlit as st
+import base64
+import os
 
 st.set_page_config(
     page_title="ℹ️ About",
@@ -361,33 +363,35 @@ def about_header():
     """, unsafe_allow_html=True)
 
 def mission_section():
+    st.markdown("## Our Mission")
+    
     st.markdown("""
-    <div class="mission-card">
-        <h2 style="color: #1f2937; font-size: 1.8rem; font-weight: 600; margin-bottom: 1.5rem;">Our Mission</h2>
-        <p class="mission-text">
-            EpiAccess democratizes access to critical public health data and insights. In a world where 
-            infectious diseases know no borders, we believe that every organization – from local NGOs to 
-            international health agencies – deserves access to the same powerful analytics that drive 
-            evidence-based decision making.
-        </p>
-        <p class="mission-text">
-            Our platform transforms complex epidemiological data into actionable insights, enabling 
-            faster response times, better resource allocation, and more effective public health interventions. 
-            We bridge the gap between raw data and real-world impact.
-        </p>
-        
-        <div class="target-users">
-            <h3 class="target-title">Designed For</h3>
-            <div class="user-list">
-                <div class="user-item">🏥 Non-Governmental Organizations (NGOs)</div>
-                <div class="user-item">🌍 International Health Organizations</div>
-                <div class="user-item">👥 Community Health Leaders</div>
-                <div class="user-item">📊 Public Health Researchers</div>
-                <div class="user-item">🏛️ Government Health Agencies</div>
-            </div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    EpiAccess democratizes access to critical public health data and insights. In a world where 
+    infectious diseases know no borders, we believe that every organization – from local NGOs to 
+    international health agencies – deserves access to the same powerful analytics that drive 
+    evidence-based decision making.
+    """)
+    
+    st.markdown("""
+    Our platform transforms complex epidemiological data into actionable insights, enabling 
+    faster response times, better resource allocation, and more effective public health interventions. 
+    We bridge the gap between raw data and real-world impact.
+    """)
+    
+    st.markdown("### Designed For")
+    
+    # Create columns for the target users
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("• 🏥 **Non-Governmental Organizations (NGOs)**")
+        st.markdown("• 🌍 **International Health Organizations**")
+        st.markdown("• 👥 **Community Health Leaders**")
+    
+    with col2:
+        st.markdown("• 📊 **Public Health Researchers**")
+        st.markdown("• 🏛️ **Government Health Agencies**")
+        st.markdown("• 🎓 **Students and Educators**")
 
 def datasets_section():
     st.markdown('<h2 class="section-title">Our Data Sources</h2>', unsafe_allow_html=True)
@@ -395,31 +399,31 @@ def datasets_section():
     datasets = [
         {
             "title": "COVID-19 Global Dataset",
-            "description": "Comprehensive daily tracking of COVID-19 cases, deaths, and recoveries across 190+ countries. Updated continuously with WHO and national health ministry data.",
-            "timespan": "2020 - Present",
-            "records": "2.1M+ records",
-            "source": "WHO, Johns Hopkins, National Health Ministries"
-        },
-        {
-            "title": "Monkeypox Surveillance Data",
-            "description": "Real-time monitoring of monkeypox cases with detailed geographic and demographic breakdowns. Essential for outbreak response planning.",
-            "timespan": "2022 - Present", 
-            "records": "50K+ records",
-            "source": "WHO Global Health Observatory"
+            "description": "Historical COVID-19 cases, deaths, and country-level tracking data from 2020-2022. Processed and cleaned for educational analysis of pandemic patterns.",
+            "timespan": "2020 - 2022",
+            "records": "44,785 records",
+            "source": "Kaggle Public Dataset (Bolkonsky/COVID-19)"
         },
         {
             "title": "SARS Historical Dataset",
-            "description": "Complete epidemiological record of the 2003 SARS outbreak. Critical for understanding coronavirus transmission patterns and response effectiveness.",
-            "timespan": "2003 - 2004",
-            "records": "8K+ records", 
-            "source": "WHO SARS Archives"
+            "description": "Complete epidemiological record of the 2003 SARS outbreak covering 37 countries. Essential for understanding coronavirus transmission patterns and historical outbreak analysis.",
+            "timespan": "March - July 2003",
+            "records": "2,538 records", 
+            "source": "Kaggle Public Dataset (imdevskp/SARS 2003)"
+        },
+        {
+            "title": "Monkeypox Surveillance Data",
+            "description": "Daily confirmed monkeypox cases by country during the 2022 outbreak. Provides insights into emerging disease patterns and transmission dynamics.",
+            "timespan": "2022", 
+            "records": "15,792 records",
+            "source": "Kaggle Public Dataset (deepcontractor/Monkeypox)"
         },
         {
             "title": "World Bank Health Expenditure",
-            "description": "Healthcare spending patterns and economic capacity indicators for 180+ countries. Essential for understanding healthcare access disparities.",
-            "timespan": "2000 - 2022",
-            "records": "15K+ records",
-            "source": "World Bank Open Data"
+            "description": "Healthcare spending indicators and economic capacity data for 175+ countries. Used for clustering analysis to understand global healthcare access patterns.",
+            "timespan": "2015 - 2022",
+            "records": "175 countries",
+            "source": "World Bank Open Data Platform"
         }
     ]
     
@@ -449,27 +453,27 @@ def team_section():
     
     team_members = [
         {
-            "name": "Dr. Sarah Chen",
+            "name": "Hieu (Calvin) Hoang",
             "role": "Lead Data Scientist", 
-            "avatar": "👩‍🔬",
-            "description": "Epidemiologist with 10+ years experience in infectious disease modeling and WHO outbreak response."
+            "image": "info/hieu_pic.jpg",
+            "description": "Data Scientist with experience in public health analytics, machine learning, and building community-driven tools for impact using Python, SQL, Streamlit, Firebase, and Scikit-learn."
         },
         {
-            "name": "Marcus Rodriguez",
-            "role": "Full-Stack Engineer",
-            "avatar": "👨‍💻", 
-            "description": "Software architect specializing in healthcare systems and real-time data processing pipelines."
+            "name": "Marcos Escamilla",
+            "role": "Data Analyst",
+            "image": "info/marcos_pic.jpg", 
+            "description": "Working for a non profit organization where I teach first year college students data analytic tools such as SQL, R and Excel"
         },
         {
-            "name": "Priya Patel",
+            "name": "Theraune Casey",
             "role": "UX/UI Designer",
-            "avatar": "🎨",
+            "image": "info/theraune_pic.png",
             "description": "Design lead focused on making complex health data accessible and actionable for diverse user groups."
         },
         {
-            "name": "Dr. James Wright",
+            "name": "Soumana Dama",
             "role": "Public Health Advisor",
-            "avatar": "🏥", 
+            "image": "info/soumana_pic.jpg", 
             "description": "Former CDC epidemiologist with field experience in outbreak response across 20+ countries."
         }
     ]
@@ -477,14 +481,32 @@ def team_section():
     cols = st.columns(2)
     for i, member in enumerate(team_members):
         with cols[i % 2]:
+            # Create a card container with the team member info
             st.markdown(f"""
-            <div class="team-card">
-                <div class="team-avatar">{member['avatar']}</div>
-                <h3 class="team-name">{member['name']}</h3>
-                <p class="team-role">{member['role']}</p>
-                <p class="team-description">{member['description']}</p>
+            <div class="team-card" style="margin-bottom: 2rem;">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <img src="data:image/jpeg;base64,{get_image_base64(member['image'])}" 
+                         style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; 
+                                border: 4px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" 
+                         alt="{member['name']}">
+                </div>
+                <h3 class="team-name" style="text-align: center; color: #1f2937; font-size: 1.3rem; 
+                                           font-weight: 600; margin-bottom: 0.5rem;">{member['name']}</h3>
+                <p class="team-role" style="text-align: center; color: #3b82f6; font-weight: 500; 
+                                          margin-bottom: 1rem; font-size: 1.1rem;">{member['role']}</p>
+                <p class="team-description" style="text-align: center; color: #6b7280; line-height: 1.5; 
+                                                  font-size: 0.95rem; margin: 0;">{member['description']}</p>
             </div>
             """, unsafe_allow_html=True)
+
+def get_image_base64(image_path):
+    """Convert image to base64 string for embedding in HTML"""
+    try:
+        with open(image_path, "rb") as img_file:
+            return base64.b64encode(img_file.read()).decode()
+    except:
+        # Return a default placeholder if image fails to load
+        return ""
 
 def main():
     load_about_css()

@@ -792,7 +792,7 @@ def how_it_works():
 def featured_dashboards():
     st.markdown('<div class="section-title">Featured Dashboards</div>', unsafe_allow_html=True)
     
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3 = st.columns(3)
     
     with col1:
         st.markdown("""
@@ -817,17 +817,6 @@ def featured_dashboards():
         """, unsafe_allow_html=True)
     
     with col3:
-        st.markdown("""
-        <div class="dashboard-card">
-            <div class="dashboard-icon">🏢</div>
-            <div class="dashboard-title">Healthcare Facilities</div>
-            <div class="dashboard-description">
-                Facility distribution, capacity, and resource planning
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
-    
-    with col4:
         st.markdown("""
         <div class="dashboard-card">
             <div class="dashboard-icon">🎯</div>

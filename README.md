@@ -1,6 +1,6 @@
 # EpiAccess: Epidemic Forecasting & Healthcare Analysis Dashboard
 
-A comprehensive web application for analyzing infectious disease trends, generating forecasts, and visualizing epidemic patterns across countries and regions. Now includes advanced healthcare access clustering to understand global health infrastructure patterns.
+A comprehensive web application for analyzing infectious disease trends, generating forecasts, and visualizing epidemic patterns across countries and regions. Features advanced healthcare access clustering to understand global health infrastructure patterns.
 
 ## 🎯 What This Project Does
 
@@ -18,7 +18,7 @@ This dashboard helps users understand and predict epidemic patterns by:
 We use authentic epidemic and health expenditure datasets, not simulated data:
 
 ### Epidemic Data
-• **COVID-19 Data**: 44,785 records from 2019-2020 covering 212 countries
+• **COVID-19 Data**: 44,785 records from 2020-2022 covering 212 countries
   - Source: [COVID-19 Dataset on Kaggle](https://www.kaggle.com/datasets/bolkonsky/covid19)
 • **SARS Data**: 2,538 records from March-July 2003 covering 37 countries
   - Source: [SARS Outbreak 2003 Complete Dataset](https://www.kaggle.com/datasets/imdevskp/sars-outbreak-2003-complete-dataset?select=sars_2003_complete_dataset_clean.csv)
@@ -59,8 +59,9 @@ We acknowledge the original data collectors and maintainers who made this analys
 • **Smart Dampening**: Prevents unrealistic exponential growth projections
 • **Multiple Countries**: Compare forecasts across different regions
 • **Performance Optimized**: Handles up to 5 countries simultaneously for responsive analysis
+• **Reliability**: Best for trend analysis and resource planning (not precise predictions)
 
-### 3. Healthcare Access Clustering Analysis 🆕
+### 3. Healthcare Access Clustering Analysis
 • **Machine Learning Clustering**: K-means algorithm identifies 4 distinct healthcare access patterns
 • **Multi-Dimensional Analysis**: Uses health spending per capita, GDP percentage, and economic capacity
 • **Real-World Categories**: 
@@ -72,7 +73,7 @@ We acknowledge the original data collectors and maintainers who made this analys
 • **Economic Pattern Analysis**: GDP vs health spending relationships with trend lines
 • **Statistical Insights**: Correlation analysis and efficiency metrics for each cluster
 
-### 4. Enhanced Access Clustering Visualizations 🆕
+### 4. Enhanced Access Clustering Visualizations
 • **Health Spending Tab**: Bar charts comparing per capita spending and GDP percentage by cluster
 • **Global Distribution Tab**: 
   - Interactive scatter plots with point sizes based on GDP
@@ -87,11 +88,12 @@ We acknowledge the original data collectors and maintainers who made this analys
 • **Smart Color Coding**: Consistent colors across all visualizations for easy pattern recognition
 
 ### 5. AI-Powered Insights
-• **Plain English Summaries**: "Brazil: 15% increase in COVID-19 cases forecast for next month (high confidence)"
+• **Plain English Summaries**: "Brazil: 15% increase trend observed over recent weeks (medium confidence)"
 • **Trend Analysis**: Identifies increasing, decreasing, or stable patterns
 • **Confidence Scoring**: High/Medium/Low reliability ratings based on data quality
 • **Visual Indicators**: Color-coded confidence levels with trend arrows (📈📉➡️)
 • **Healthcare Access Insights**: Automatic cluster characterization and country comparisons
+• **Educational Focus**: Designed for learning and analysis, not clinical decisions
 
 ### 6. "Project to 2025" Scenarios
 • **What-If Analysis**: Shows how historical outbreaks would unfold if they started in 2025
@@ -106,9 +108,9 @@ We acknowledge the original data collectors and maintainers who made this analys
 • **Top Affected Lists**: Sortable tables of most impacted countries
 
 ### 8. Navigation System
-• **Seamless Switching**: Move between dashboard, map, clustering analysis, and other pages
+• **Seamless Switching**: Move between epidemic trends, disease map, and healthcare access clustering
 • **Consistent Design**: Uniform interface across all components
-• **Easy Access**: One-click navigation to different analysis modes
+• **Easy Access**: One-click navigation between different analysis modes
 
 ## 🔧 Technical Implementation
 
@@ -194,40 +196,45 @@ Meaning: We're 95% sure actual cases will be between 800-1,200
    • Create upper/lower confidence bounds
 
 **Why 6 Months?**
-• **Short enough** - Patterns don't change dramatically
+• **Short enough** - Patterns don't change dramatically over this timeframe
 • **Long enough** - Useful for planning and resource allocation
-• **Evidence-based** - Research shows diminishing accuracy beyond 6 months
+• **Evidence-based** - Research shows forecasting accuracy diminishes significantly beyond 6 months
+• **Practical balance** - Provides actionable insights without overconfident long-term predictions
 
 #### **Model Reliability by Use Case**
 
-**High Reliability (8-9/10):**
-• **Trend Direction** - Is it going up, down, or staying stable?
-• **Pattern Shape** - How similar to historical outbreaks?
-• **Relative Comparison** - Which countries will be most affected?
+**Higher Reliability (7-8/10):**
+• **Trend Direction** - Is the epidemic growing, declining, or staying stable?
+• **Pattern Recognition** - How similar is this outbreak to historical ones?
+• **Relative Comparison** - Which countries/regions are most affected?
+• **Resource Planning** - Approximate healthcare capacity needs
 
-**Medium Reliability (6-7/10):**
-• **Approximate Numbers** - Rough estimates of case counts
-• **Timeline Estimates** - When peaks might occur
-• **Resource Planning** - Hospital capacity needs
+**Medium Reliability (5-6/10):**
+• **Approximate Numbers** - General magnitude of case counts (within broad ranges)
+• **Timeline Estimates** - Rough timing of peaks or declines
+• **2025 Projections** - "What-if" scenario planning only
 
-**Lower Reliability (4-5/10):**
+**Lower Reliability (3-4/10):**
 • **Exact Case Counts** - Precise daily numbers
-• **External Factors** - Policy changes, new variants, behavioral shifts
-• **Long-term Predictions** - Beyond 6 months
+• **External Factor Prediction** - Policy changes, new variants, behavioral shifts
+• **Long-term Predictions** - Anything beyond 6 months
+• **Individual Decision Making** - Personal health or medical decisions
 
 #### **Why Not Use More Complex Models?**
 
 **We Could Use Machine Learning, But:**
-• **Data Requirements** - Need massive datasets we don't have
+• **Data Requirements** - Need massive datasets with consistent quality
 • **Overfitting Risk** - Complex models can memorize noise instead of real patterns
-• **Interpretability** - Harder to explain why predictions were made
+• **Interpretability** - Harder to explain and understand how predictions are made
 • **Epidemic Context** - General AI models don't understand epidemic-specific patterns
+• **Educational Value** - Simpler models are better for learning and transparency
 
 **Exponential Smoothing Advantages:**
 • **Proven Track Record** - Used successfully in epidemiology for decades
 • **Transparent** - Easy to understand how predictions are made
-• **Robust** - Works well with limited data
+• **Robust** - Works well with limited or imperfect data
 • **Fast** - Generates predictions quickly for multiple countries
+• **Educational** - Great for understanding forecasting principles
 
 ### 🏥 Healthcare Access Clustering Methodology
 
@@ -342,7 +349,7 @@ Different clusters need different types of international health support:
 • **Batch Processing**: Handles multiple countries simultaneously
 • **Error Handling**: Graceful fallbacks for insufficient data
 
-### Healthcare Access Clustering (`pages/access_clustering.py`)
+### Healthcare Access Clustering (`pages/Healthcare Access.py`)
 • **K-means Implementation**: Scikit-learn clustering with 4 optimized clusters
 • **Data Preprocessing**: 3-year averaging (2020-2022) for pandemic stability
 • **Interactive Visualizations**: Enhanced scatter plots with GDP-based point sizing
@@ -364,7 +371,7 @@ Different clusters need different types of international health support:
 • **Insights Panel**: Real-time generated summaries and trend analysis
 • **Comparison Charts**: Bar charts for country-to-country analysis
 
-### Access Clustering Interface 🆕
+### Access Clustering Interface
 • **Three-Tab Design**: Health spending, global distribution, and economic patterns
 • **Interactive Controls**: Point size adjustment, jitter options, log scaling, trend lines
 • **Smart Color Coding**: Consistent four-cluster color scheme across all visualizations
@@ -397,22 +404,30 @@ Users can adjust clustering parameters, forecasting options, and visualization s
 
 ## ⚠️ Important Disclaimers
 
+### Educational Purpose
+• **Primary Use**: Educational analysis and learning about epidemic patterns
+• **NOT for**: Real-time health decisions, clinical guidance, or policy making
+• **Data Limitations**: Historical data may not reflect current healthcare improvements or changes
+
 ### Forecasting Reliability
-• **6-Month Forecasts**: Medium-high reliability (7-8/10) for pattern analysis
-• **Best for**: Trend identification, comparative analysis, resource planning
-• **Limitations**: Cannot predict policy changes, new variants, or external shocks
+• **6-Month Forecasts**: Medium reliability (6-7/10) for trend analysis and educational purposes
+• **Best for**: Understanding epidemic patterns, comparative analysis, learning forecasting concepts
+• **Limitations**: Cannot predict policy changes, new variants, external shocks, or healthcare improvements
+• **Educational Value**: Excellent for learning about epidemic curves and forecasting principles
 
 ### 2025 Projections Reliability
-• **Scenario Planning**: Medium reliability (5-6/10) for emergency planning
-• **Good for**: Pattern comparison, preparedness exercises, relative impact assessment
-• **NOT for**: Precise predictions, policy decisions, economic planning
-• **Major assumptions**: 2025 conditions = historical conditions (unrealistic)
+• **Scenario Planning Only**: Medium-low reliability (4-5/10) for educational "what-if" exercises
+• **Good for**: Understanding outbreak patterns, emergency planning concepts, comparative analysis
+• **NOT for**: Actual predictions, policy decisions, economic planning, or real emergency planning
+• **Major assumptions**: 2025 conditions identical to historical conditions (highly unrealistic)
+• **Educational Purpose**: Demonstrates forecasting concepts and pattern recognition
 
 ### Healthcare Access Clustering Reliability
-• **Pattern Recognition**: High reliability (8-9/10) for identifying access categories
-• **Good for**: International health planning, resource allocation, policy research
-• **Limitations**: Based on spending data only; doesn't capture healthcare quality or outcomes
-• **NOT for**: Individual country assessments, detailed health system evaluation
+• **Pattern Recognition**: High reliability (8-9/10) for identifying general access categories
+• **Good for**: Understanding global health patterns, educational analysis, research concepts
+• **Limitations**: Based on spending data only; doesn't capture healthcare quality, outcomes, or accessibility
+• **NOT for**: Individual country detailed assessments, policy recommendations, or funding decisions
+• **Educational Focus**: Great for learning about health economics and clustering analysis
 
 ## 🛠️ Installation & Setup
 
@@ -432,7 +447,7 @@ cd EpiAccess
 pip install -r requirements.txt
 
 # Run the application
-streamlit run epiaccess_app.py
+streamlit run Home.py
 ```
 
 ### Detailed Installation
@@ -470,12 +485,11 @@ The app expects these files in the `data/` directory:
 ## 📁 Project Structure
 
 ```
-├── epiaccess_app.py              # Main landing page with navigation
+├── Home.py                      # Main landing page with navigation
 ├── pages/
-│   ├── epidemic_dashboard.py     # Main forecasting dashboard
-│   ├── disease_map.py           # Interactive disease mapping
-│   ├── access_clustering.py     # Healthcare access clustering analysis
-│   └── healthcare_facilities.py # Healthcare facilities (future development)
+│   ├── Disease Trends.py        # Main forecasting dashboard
+│   ├── Disease Map.py           # Interactive disease mapping
+│   └── Healthcare Access.py     # Healthcare access clustering analysis
 ├── utils/
 │   ├── data_processor.py        # Data cleaning and unification
 │   └── forecast_engine.py       # Forecasting and insights engine
@@ -496,9 +510,9 @@ The app expects these files in the `data/` directory:
 • **Interactive Controls**: Point size adjustment, jitter options, log scaling
 • **Statistical Analysis**: Correlation analysis and efficiency metrics
 • **Multi-Tab Visualizations**: Health spending, global distribution, and economic patterns
+• **Streamlined Navigation**: Clean, three-page application structure
 
 ### Planned Features
-• **Healthcare Facilities Mapping**: Integration with hospital capacity and infrastructure data
 • **Predictive Access Models**: Forecasting healthcare access trends over time
 • **Enhanced Forecasting**: Additional statistical models and ensemble methods
 • **Real-time Data**: Integration with live epidemic monitoring systems
