@@ -59,7 +59,7 @@ def filter_data(data, disease, countries, date_range):
     
     return filtered
 
-def create_forecast_chart(data, metric, countries, disease, show_forecast=True, show_confidence=True, project_to_2025=False):
+def create_forecast_chart(data, metric, countries, disease, show_forecast=True, show_confidence=True, project_to_2025=False, use_pytorch=False):
     """Create time series chart with optional forecasting and 2025 projection"""
     if data.empty:
         return go.Figure().add_annotation(
@@ -84,7 +84,7 @@ def create_forecast_chart(data, metric, countries, disease, show_forecast=True, 
             if project_to_2025 and forecaster:
                 # Use 2025 projection mode
                 try:
-                    projection_result = forecaster.project_to_current_year(data, disease, country, metric, 2025)
+                    projection_result = forecaster.project_to_current_year(data, disease, country, metric, 2025, use_pytorch)
                     
                     if projection_result['success']:
                         projected_dates = projection_result['projected_dates']
@@ -102,6 +102,7 @@ def create_forecast_chart(data, metric, countries, disease, show_forecast=True, 
                                         'Date: %{x}<br>' +
                                         f'{metric.replace("_", " ").title()}: %{{y:,.0f}}<br>' +
                                         f'<i>Based on {projection_result["original_period"]} pattern</i><br>' +
+                                        f'<i>Forecast method: {projection_result["forecast_method"]}</i><br>' +
                                         '<b>⚠️ Scenario planning only - Reliability: 5-6/10</b><br>' +
                                         '<extra></extra>'
                         ))
@@ -123,6 +124,7 @@ def create_forecast_chart(data, metric, countries, disease, show_forecast=True, 
                                 hovertemplate=f'<b>{country} 2025 Forecast</b><br>' +
                                             'Date: %{x}<br>' +
                                             f'Predicted {metric.replace("_", " ").title()}: %{{y:,.0f}}<br>' +
+                                            f'<i>Forecast method: {projection_result["forecast_method"]}</i><br>' +
                                             '<b>⚠️ Scenario planning only - Reliability: 5-6/10</b><br>' +
                                             '<extra></extra>'
                             ))
@@ -176,7 +178,7 @@ def create_forecast_chart(data, metric, countries, disease, show_forecast=True, 
                 # Add forecast if enabled
                 if show_forecast and forecaster:
                     try:
-                        forecast_result = forecaster.generate_forecast(data, disease, country, metric)
+                        forecast_result = forecaster.generate_forecast(data, disease, country, metric, use_pytorch)
                         
                         if forecast_result['success'] and forecast_result['forecast_values']:
                             forecast_dates = forecast_result['forecast_dates']
@@ -194,6 +196,7 @@ def create_forecast_chart(data, metric, countries, disease, show_forecast=True, 
                                 hovertemplate=f'<b>{country} Forecast</b><br>' +
                                             'Date: %{x}<br>' +
                                             f'Predicted {metric.replace("_", " ").title()}: %{{y:,.0f}}<br>' +
+                                            f'<i>Forecast method: {forecast_result["forecast_method"]}</i><br>' +
                                             '<extra></extra>'
                             ))
                             
@@ -344,80 +347,47 @@ def display_key_metrics(data, disease, summary):
                     help="Available data timeframe"
                 )
 
-def display_insights_panel(data, disease, countries, metric, project_to_2025=False):
-    """Display AI-generated insights panel"""
-    st.subheader("🔮 Forecast Insights")
-    
-    if project_to_2025:
-        st.error("⚠️ **2025 PROJECTION INSIGHTS** - Scenario Planning Only!")
-        st.markdown("**Reliability: 5-6/10** | These insights assume historical conditions")
-    
-    if not countries:
-        if project_to_2025:
-            st.info("Select specific countries to generate 2025 scenario insights.")
-        else:
-            st.info("Select specific countries to generate detailed forecasts and insights.")
-        return
-    
-    try:
+def display_insights_panel(data, disease, countries, metric, project_to_2025=False, use_pytorch=False):
+    """Display insights panel with forecasting information"""
+    if not data.empty and countries:
         # Initialize forecaster and insight generator
         forecaster = EpidemicForecaster()
-        insight_gen = InsightGenerator()
+        insight_generator = InsightGenerator()
         
-        # Generate forecasts for selected countries
-        if project_to_2025:
-            # Use 2025 projection for insights
-            forecast_results = {}
-            for country in countries[:5]:
-                projection = forecaster.project_to_current_year(data, disease, country, metric, 2025)
-                if projection['success']:
-                    # Convert projection to forecast format for insights
-                    forecast_results[country] = {
-                        'success': True,
-                        'forecast_values': projection['forecast_values'],
-                        'historical_data': [{'date': d, 'y': v} for d, v in zip(projection['projected_dates'], projection['projected_values'])]
-                    }
-                else:
-                    forecast_results[country] = projection
-        else:
-            forecast_results = forecaster.batch_forecast(data, disease, countries[:5], metric)  # Limit to 5 countries
+        # Get forecasts for selected countries
+        forecast_results = forecaster.batch_forecast(data, disease, countries, metric, use_pytorch)
         
         # Generate insights
-        metric_name = metric.replace('_', ' ')
-        insights = insight_gen.generate_batch_insights(forecast_results, disease, metric_name)
+        insights = insight_generator.generate_batch_insights(forecast_results, disease, metric.replace('_', ' '))
         
-        if insights:
-            # Display insights in a nice format
-            for insight in insights[:8]:  # Show top 8 insights
-                confidence_color = {
-                    'high': '🟢',
-                    'medium': '🟡', 
-                    'low': '🔴'
-                }.get(insight['confidence'], '⚪')
-                
-                trend_icon = {
-                    'increasing': '📈',
-                    'decreasing': '📉',
-                    'stable': '➡️'
-                }.get(insight['trend'], '❓')
-                
-                insight_text = insight['insight']
-                if project_to_2025:
-                    insight_text = insight_text.replace("forecast", "projected scenario")
-                
-                st.markdown(f"{confidence_color} {trend_icon} {insight_text}")
-                
-            if project_to_2025:
-                st.warning("⚠️ These insights are based on projected scenarios, not real predictions!")
+        # Display insights
+        st.subheader("📊 Forecasting Insights")
+        
+        # Add forecast method information
+        forecast_method = "PyTorch Neural Network" if use_pytorch else "Exponential Smoothing"
+        st.info(f"**Forecast Method:** {forecast_method}")
+        
+        if use_pytorch:
+            st.markdown("""
+            **About PyTorch Forecasting:**
+            - Uses a simple neural network to learn patterns in the time series data
+            - Can capture complex non-linear relationships in the data
+            - May perform better for datasets with irregular patterns
+            - Training time is longer than traditional methods
+            """)
         else:
-            st.warning("Unable to generate insights with current data selection.")
-            
-    except Exception as e:
-        st.error(f"Error generating insights: {str(e)}")
-        if project_to_2025:
-            st.info("Try selecting fewer countries or a different metric for better projection performance.")
-        else:
-            st.info("Try selecting fewer countries or a different metric for better forecast performance.")
+            st.markdown("""
+            **About Exponential Smoothing:**
+            - Traditional statistical method for time series forecasting
+            - Works well for data with clear trends and seasonal patterns
+            - Faster computation than neural network approaches
+            - May struggle with highly irregular data
+            """)
+        
+        # Display insights for each country
+        for insight in insights:
+            with st.expander(f"**{insight['country']}** - {insight['summary']}"):
+                st.markdown(insight['details'])
 
 def main():
     # Add sidebar styling for consistency
@@ -572,6 +542,11 @@ def main():
         help="Show what the epidemic would look like if it happened in 2025"
     )
     
+    # Add PyTorch forecasting option
+    use_pytorch = st.sidebar.checkbox("Use PyTorch Neural Network (Experimental)", value=False)
+    if use_pytorch:
+        st.sidebar.info("PyTorch forecasting may take longer to compute but can capture more complex patterns.")
+    
     if project_to_2025:
         st.sidebar.warning("⚠️ **Scenario Planning Tool Only**")
         st.sidebar.markdown("""
@@ -650,12 +625,12 @@ def main():
             # 2025 projection mode
             forecast_chart = create_forecast_chart(
                 filtered_data, selected_metric, selected_countries, 
-                selected_disease, show_forecast, show_confidence, project_to_2025=True
+                selected_disease, show_forecast, show_confidence, project_to_2025, use_pytorch
             )
         elif show_forecast:
             forecast_chart = create_forecast_chart(
                 filtered_data, selected_metric, selected_countries, 
-                selected_disease, show_forecast, show_confidence
+                selected_disease, show_forecast, show_confidence, project_to_2025, use_pytorch
             )
         else:
             forecast_chart = create_time_series_chart(
@@ -685,7 +660,7 @@ def main():
     
     with col2:
         # Insights panel
-        display_insights_panel(filtered_data, selected_disease, selected_countries, selected_metric, project_to_2025)
+        display_insights_panel(filtered_data, selected_disease, selected_countries, selected_metric, project_to_2025, use_pytorch)
         
         # Additional controls and info
         st.markdown("---")

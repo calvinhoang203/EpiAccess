@@ -276,11 +276,12 @@ def forecast_methodology_tab():
     
     st.markdown("""
     <div class="methodology-card">
-        <h3 class="method-title">Exponential Smoothing for Epidemic Forecasting</h3>
+        <h3 class="method-title">Multiple Forecasting Approaches</h3>
         <p class="method-description">
-            We use a proven statistical method called exponential smoothing to analyze epidemic patterns 
-            and project trends. This method is perfect for educational purposes because it's transparent, 
-            understandable, and widely used in epidemiology.
+            We offer two different forecasting methods to analyze epidemic patterns and project trends:
+            <strong>Exponential Smoothing</strong> (traditional statistical approach) and 
+            <strong>PyTorch Neural Network</strong> (machine learning approach). This dual approach
+            provides educational value by comparing different forecasting techniques.
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -312,91 +313,200 @@ def forecast_methodology_tab():
     </div>
     """, unsafe_allow_html=True)
     
-    col1, col2 = st.columns(2)
+    # Create tabs for the two forecasting methods
+    tab1, tab2 = st.tabs(["Exponential Smoothing", "PyTorch Neural Network"])
     
-    with col1:
+    with tab1:
         st.markdown("""
-        **What Exponential Smoothing Does:**
-        - **Weighs recent data more heavily** - Last week's cases matter more than last month's
-        - **Smooths out random noise** - Ignores daily fluctuations to see real trends
-        - **Adapts to changes** - Quickly responds when outbreak patterns shift
-        - **Provides confidence intervals** - Shows uncertainty ranges around predictions
+        <div class="methodology-card">
+            <h3 class="method-title">Exponential Smoothing for Epidemic Forecasting</h3>
+            <p class="method-description">
+                We use a proven statistical method called exponential smoothing to analyze epidemic patterns 
+                and project trends. This method is perfect for educational purposes because it's transparent, 
+                understandable, and widely used in epidemiology.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
         
-        **Real Example:**
-        If COVID-19 cases in Brazil were:
-        - Week 1: 1,000 cases
-        - Week 2: 1,200 cases  
-        - Week 3: 1,500 cases
+        col1, col2 = st.columns(2)
         
-        The model sees an upward trend (+25% per week) and might predict Week 4: ~1,800 cases
+        with col1:
+            st.markdown("""
+            **What Exponential Smoothing Does:**
+            - **Weighs recent data more heavily** - Last week's cases matter more than last month's
+            - **Smooths out random noise** - Ignores daily fluctuations to see real trends
+            - **Adapts to changes** - Quickly responds when outbreak patterns shift
+            - **Provides confidence intervals** - Shows uncertainty ranges around predictions
+            
+            **Real Example:**
+            If COVID-19 cases in Brazil were:
+            - Week 1: 1,000 cases
+            - Week 2: 1,200 cases  
+            - Week 3: 1,500 cases
+            
+            The model sees an upward trend (+25% per week) and might predict Week 4: ~1,800 cases
+            """)
+        
+        with col2:
+            st.markdown("""
+            **Why This Method for Epidemics:**
+            - **Epidemic-specific** - Designed for disease spread patterns
+            - **Educational value** - Easy to understand and explain step-by-step
+            - **Proven track record** - Used by epidemiologists for decades
+            - **Handles uncertainty** - Shows confidence ranges, not false precision
+            
+            **What Makes It Different from ML:**
+            - Transparent calculations (you can see how it works)
+            - Works with smaller datasets (doesn't need millions of data points)
+            - Focuses on recent trends (more relevant for outbreaks)
+            - Educational focus (great for learning forecasting concepts)
+            """)
+        
+        st.markdown("""
+        <div class="methodology-card">
+            <h3 class="method-title">Step-by-Step: How Our Exponential Smoothing Works</h3>
+            <p class="method-description">Here's exactly how we turn historical case data into educational forecasts:</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("""
+        **Step 1: Data Preparation**
+        - Clean historical case numbers (remove obvious errors)
+        - Organize by date and country
+        - Identify the timeframe for analysis
+        
+        **Step 2: Trend Detection**
+        - Calculate recent growth/decline rates
+        - Measure how volatile the data is (lots of ups and downs?)
+        - Assess data quality (more data = higher confidence)
+        
+        **Step 3: Apply Exponential Smoothing**
+        - Give more weight to recent observations
+        - Calculate smoothed trend line
+        - Project trend forward for 6 months maximum
+        
+        **Step 4: Add Epidemic Context**
+        - Apply dampening to prevent unrealistic endless growth
+        - Account for typical epidemic curve patterns
+        - Generate uncertainty bands (confidence intervals)
+        """)
+        
+        st.markdown("""
+        **🎯 Specific Use Case Example:**
+        
+        **Learning Scenario**: Understanding SARS 2003 patterns
+        - **Input**: Daily SARS cases in Singapore (March-June 2003)
+        - **Model Output**: Shows the typical epidemic curve with peak in April
+        - **Educational Value**: Students learn how outbreaks rise, peak, and decline
+        - **Key Insight**: Even with limited data, you can see clear patterns
+        
+        **What Students Learn:**
+        - How to identify epidemic phases (growth, peak, decline)
+        - Why recent data matters more than old data
+        - How to interpret confidence intervals and uncertainty
+        - When forecasting works well vs. when it doesn't
         """)
     
-    with col2:
+    with tab2:
         st.markdown("""
-        **Why This Method for Epidemics:**
-        - **Epidemic-specific** - Designed for disease spread patterns
-        - **Educational value** - Easy to understand and explain step-by-step
-        - **Proven track record** - Used by epidemiologists for decades
-        - **Handles uncertainty** - Shows confidence ranges, not false precision
+        <div class="methodology-card">
+            <h3 class="method-title">PyTorch Neural Network for Complex Pattern Recognition</h3>
+            <p class="method-description">
+                We also offer a machine learning approach using PyTorch, a popular deep learning framework.
+                This method can capture more complex patterns in the data, though it requires more computational
+                resources and is less transparent than traditional statistical methods.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
         
-        **What Makes It Different from ML:**
-        - Transparent calculations (you can see how it works)
-        - Works with smaller datasets (doesn't need millions of data points)
-        - Focuses on recent trends (more relevant for outbreaks)
-        - Educational focus (great for learning forecasting concepts)
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown("""
+            **What PyTorch Neural Network Does:**
+            - **Learns complex patterns** - Can identify non-linear relationships in the data
+            - **Adapts to changing conditions** - Adjusts to new patterns as they emerge
+            - **Handles irregular data** - Works well with datasets that have unusual patterns
+            - **Provides confidence intervals** - Shows uncertainty ranges around predictions
+            
+            **Real Example:**
+            If COVID-19 cases in Brazil had irregular patterns:
+            - Week 1: 1,000 cases
+            - Week 2: 800 cases (unexpected drop)
+            - Week 3: 1,500 cases (sudden spike)
+            
+            The neural network might better capture this irregular pattern than simple smoothing
+            """)
+        
+        with col2:
+            st.markdown("""
+            **Why This Method for Complex Epidemics:**
+            - **Pattern recognition** - Can identify complex relationships in the data
+            - **Educational value** - Shows how machine learning can be applied to epidemiology
+            - **Modern approach** - Demonstrates cutting-edge techniques in public health
+            - **Handles uncertainty** - Shows confidence ranges, not false precision
+            
+            **What Makes It Different from Traditional Methods:**
+            - More complex calculations (less transparent)
+            - Can work with irregular patterns (better for some datasets)
+            - Requires more computational resources (slower)
+            - Educational focus (great for learning ML concepts)
+            """)
+        
+        st.markdown("""
+        <div class="methodology-card">
+            <h3 class="method-title">Step-by-Step: How Our PyTorch Forecasting Works</h3>
+            <p class="method-description">Here's how our neural network approach processes time series data:</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("""
+        **Step 1: Data Preparation**
+        - Clean historical case numbers (remove obvious errors)
+        - Organize by date and country
+        - Create input sequences (e.g., 7 days of data to predict the next day)
+        
+        **Step 2: Model Architecture**
+        - EpidemicTimeSeriesModel: A specialized neural network for epidemic data
+        - Input layer: Takes a sequence of past values (e.g., 7 days)
+        - Hidden layer: Processes the input to identify patterns
+        - Output layer: Predicts the next value in the sequence
+        
+        **Step 3: Training Process**
+        - Split data into training sequences
+        - Train the model to minimize prediction error
+        - Use Adam optimizer and mean squared error loss
+        - Train for a fixed number of epochs (iterations)
+        
+        **Step 4: Forecasting**
+        - Use the trained model to predict future values
+        - Generate confidence intervals based on model error
+        - Apply constraints to ensure realistic predictions
+        """)
+        
+        st.markdown("""
+        **🎯 Specific Use Case Example:**
+        
+        **Learning Scenario**: Understanding irregular COVID-19 patterns
+        - **Input**: Daily COVID-19 cases in a country with irregular reporting
+        - **Model Output**: Captures the underlying pattern despite reporting irregularities
+        - **Educational Value**: Students learn how machine learning can handle noisy data
+        - **Key Insight**: Neural networks can identify patterns that traditional methods miss
+        
+        **What Students Learn:**
+        - How machine learning differs from traditional statistics
+        - The trade-offs between transparency and complexity
+        - When to use different forecasting approaches
+        - The importance of data quality in all forecasting methods
         """)
     
     st.markdown("""
     <div class="methodology-card">
-        <h3 class="method-title">Step-by-Step: How Our Forecasting Works</h3>
-        <p class="method-description">Here's exactly how we turn historical case data into educational forecasts:</p>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    st.markdown("""
-    **Step 1: Data Preparation**
-    - Clean historical case numbers (remove obvious errors)
-    - Organize by date and country
-    - Identify the timeframe for analysis
-    
-    **Step 2: Trend Detection**
-    - Calculate recent growth/decline rates
-    - Measure how volatile the data is (lots of ups and downs?)
-    - Assess data quality (more data = higher confidence)
-    
-    **Step 3: Apply Exponential Smoothing**
-    - Give more weight to recent observations
-    - Calculate smoothed trend line
-    - Project trend forward for 6 months maximum
-    
-    **Step 4: Add Epidemic Context**
-    - Apply dampening to prevent unrealistic endless growth
-    - Account for typical epidemic curve patterns
-    - Generate uncertainty bands (confidence intervals)
-    """)
-    
-    st.markdown("""
-    **🎯 Specific Use Case Example:**
-    
-    **Learning Scenario**: Understanding SARS 2003 patterns
-    - **Input**: Daily SARS cases in Singapore (March-June 2003)
-    - **Model Output**: Shows the typical epidemic curve with peak in April
-    - **Educational Value**: Students learn how outbreaks rise, peak, and decline
-    - **Key Insight**: Even with limited data, you can see clear patterns
-    
-    **What Students Learn:**
-    - How to identify epidemic phases (growth, peak, decline)
-    - Why recent data matters more than old data
-    - How to interpret confidence intervals and uncertainty
-    - When forecasting works well vs. when it doesn't
-    """)
-    
-    st.markdown("""
-    <div class="methodology-card">
-        <h3 class="method-title">Why This Method is Perfect for Learning</h3>
+        <h3 class="method-title">Why Multiple Methods are Perfect for Learning</h3>
         <p class="method-description">
-            Unlike complex machine learning models, exponential smoothing is transparent and educational. 
-            You can see exactly how it works and understand its strengths and limitations.
+            By offering both traditional statistical methods and modern machine learning approaches,
+            we provide a comprehensive educational experience that shows the strengths and limitations
+            of different forecasting techniques.
         </p>
     </div>
     """, unsafe_allow_html=True)
@@ -406,10 +516,10 @@ def forecast_methodology_tab():
     with col1:
         st.markdown("""
         **Excellent for Teaching:**
-        - **Mathematical transparency** - Students can follow the calculations
+        - **Method comparison** - Students can see how different approaches perform
         - **Immediate feedback** - See how changing parameters affects results
-        - **Real-world relevance** - Actually used by health professionals
-        - **Appropriate complexity** - Not too simple, not overwhelming
+        - **Real-world relevance** - Both methods are used by health professionals
+        - **Appropriate complexity** - From simple to more advanced techniques
         
         **Limitations to Discuss:**
         - Cannot predict sudden policy changes

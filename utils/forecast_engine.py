@@ -5,17 +5,37 @@ from typing import Dict, List, Tuple, Optional
 import warnings
 warnings.filterwarnings('ignore')
 
+# Add PyTorch imports
+import torch
+import torch.nn as nn
+
+class EpidemicTimeSeriesModel(nn.Module):
+    """PyTorch neural network model for epidemic time series forecasting"""
+    def __init__(self, input_size, hidden_size, output_size):
+        super(EpidemicTimeSeriesModel, self).__init__()
+        self.fc1 = nn.Linear(input_size, hidden_size)
+        self.relu = nn.ReLU()
+        self.fc2 = nn.Linear(hidden_size, output_size)
+
+    def forward(self, x):
+        out = self.fc1(x)
+        out = self.relu(out)
+        out = self.fc2(out)
+        return out
+
 class EpidemicForecaster:
     """
     Epidemic forecasting engine using multiple approaches:
     - Exponential smoothing for stable trends
     - Linear trend for growth phases
     - Epidemic curve modeling for outbreak scenarios
+    - PyTorch neural network for complex pattern recognition
     """
     
     def __init__(self):
         self.forecast_days = 180  # 6 months
         self.min_data_points = 14  # Minimum 2 weeks of data
+        self.pytorch_models = {}  # Cache for trained PyTorch models
         
     def prepare_country_data(self, data: pd.DataFrame, disease: str, country: str, metric: str = 'new_cases') -> pd.DataFrame:
         """Prepare time series data for a specific country and disease"""
@@ -82,7 +102,76 @@ class EpidemicForecaster:
         
         return forecast, lower_bound, upper_bound
     
-    def generate_forecast(self, data: pd.DataFrame, disease: str, country: str, metric: str = 'new_cases') -> Dict:
+    def pytorch_forecast(self, ts_data: pd.DataFrame, input_size: int = 7, hidden_size: int = 16, epochs: int = 100) -> Tuple[List[float], List[float], List[float]]:
+        """Generate forecast using a PyTorch neural network for epidemic time series"""
+        values = ts_data['y'].values
+        n = len(values)
+        
+        if n < input_size + 1:
+            # Not enough data, return flat forecast
+            last_value = values[-1] if n > 0 else 0
+            forecast = [last_value] * self.forecast_days
+            lower_bound = [max(0, last_value * 0.7)] * self.forecast_days
+            upper_bound = [last_value * 1.3] * self.forecast_days
+            return forecast, lower_bound, upper_bound
+        
+        # Prepare data for PyTorch
+        X, y = [], []
+        for i in range(len(values) - input_size):
+            X.append(values[i:i+input_size])
+            y.append(values[i+input_size])
+        
+        X = torch.tensor(X, dtype=torch.float32)
+        y = torch.tensor(y, dtype=torch.float32).view(-1, 1)
+        
+        # Create and train model
+        model = EpidemicTimeSeriesModel(input_size, hidden_size, 1)
+        criterion = nn.MSELoss()
+        optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+        
+        # Training loop
+        model.train()
+        for epoch in range(epochs):
+            optimizer.zero_grad()
+            outputs = model(X)
+            loss = criterion(outputs, y)
+            loss.backward()
+            optimizer.step()
+        
+        # Generate forecast
+        forecast = []
+        current_input = values[-input_size:].copy()
+        
+        for i in range(self.forecast_days):
+            # Prepare input tensor
+            input_tensor = torch.tensor([current_input], dtype=torch.float32)
+            
+            # Get prediction
+            model.eval()
+            with torch.no_grad():
+                prediction = model(input_tensor).item()
+            
+            # Ensure non-negative values
+            prediction = max(0, prediction)
+            forecast.append(prediction)
+            
+            # Update input for next prediction
+            current_input = np.append(current_input[1:], prediction)
+        
+        # Calculate confidence intervals based on model error
+        model.eval()
+        with torch.no_grad():
+            predictions = model(X).numpy().flatten()
+            actuals = y.numpy().flatten()
+            mae = np.mean(np.abs(predictions - actuals))
+        
+        # Wider confidence intervals for longer forecasts
+        lower_bound = [max(0, f - 1.96 * mae * (1 + i/180)) for i, f in enumerate(forecast)]
+        upper_bound = [f + 1.96 * mae * (1 + i/180) for i, f in enumerate(forecast)]
+        
+        return forecast, lower_bound, upper_bound
+    
+    def generate_forecast(self, data: pd.DataFrame, disease: str, country: str, metric: str = 'new_cases', use_pytorch: bool = False) -> Dict:
         """Generate 6-month forecast for a specific country and disease"""
         ts_data = self.prepare_country_data(data, disease, country, metric)
         
@@ -96,8 +185,13 @@ class EpidemicForecaster:
                 'upper_bound': []
             }
         
-        # Generate forecast
-        forecast_values, lower_bound, upper_bound = self.exponential_smoothing_forecast(ts_data)
+        # Generate forecast using selected method
+        if use_pytorch:
+            forecast_values, lower_bound, upper_bound = self.pytorch_forecast(ts_data)
+            method = "PyTorch Neural Network"
+        else:
+            forecast_values, lower_bound, upper_bound = self.exponential_smoothing_forecast(ts_data)
+            method = "Exponential Smoothing"
         
         # Create future dates
         last_date = ts_data['date'].max()
@@ -113,16 +207,17 @@ class EpidemicForecaster:
             'forecast_values': forecast_values,
             'lower_bound': lower_bound,
             'upper_bound': upper_bound,
-            'historical_data': ts_data.to_dict('records')
+            'historical_data': ts_data.to_dict('records'),
+            'forecast_method': method
         }
     
-    def batch_forecast(self, data: pd.DataFrame, disease: str, countries: List[str], metric: str = 'new_cases') -> Dict[str, Dict]:
+    def batch_forecast(self, data: pd.DataFrame, disease: str, countries: List[str], metric: str = 'new_cases', use_pytorch: bool = False) -> Dict[str, Dict]:
         """Generate forecasts for multiple countries"""
         results = {}
         
         for country in countries:
             try:
-                forecast = self.generate_forecast(data, disease, country, metric)
+                forecast = self.generate_forecast(data, disease, country, metric, use_pytorch)
                 results[country] = forecast
             except Exception as e:
                 results[country] = {
@@ -136,7 +231,7 @@ class EpidemicForecaster:
         
         return results
 
-    def project_to_current_year(self, data: pd.DataFrame, disease: str, country: str, metric: str = 'new_cases', target_year: int = 2025) -> Dict:
+    def project_to_current_year(self, data: pd.DataFrame, disease: str, country: str, metric: str = 'new_cases', target_year: int = 2025, use_pytorch: bool = False) -> Dict:
         """Project historical epidemic patterns to a target year (e.g., 2025)"""
         ts_data = self.prepare_country_data(data, disease, country, metric)
         
@@ -175,7 +270,12 @@ class EpidemicForecaster:
         })
         
         # Generate 6-month forecast from the projected data
-        forecast_values, lower_bound, upper_bound = self.exponential_smoothing_forecast(projected_ts_data)
+        if use_pytorch:
+            forecast_values, lower_bound, upper_bound = self.pytorch_forecast(projected_ts_data)
+            method = "PyTorch Neural Network"
+        else:
+            forecast_values, lower_bound, upper_bound = self.exponential_smoothing_forecast(projected_ts_data)
+            method = "Exponential Smoothing"
         
         # Create future dates from end of projected period
         last_projected_date = projected_dates[-1]
@@ -194,16 +294,17 @@ class EpidemicForecaster:
             'forecast_values': forecast_values,
             'lower_bound': lower_bound,
             'upper_bound': upper_bound,
-            'duration_days': duration_days
+            'duration_days': duration_days,
+            'forecast_method': method
         }
     
-    def batch_project_to_current_year(self, data: pd.DataFrame, disease: str, countries: List[str], metric: str = 'new_cases', target_year: int = 2025) -> Dict[str, Dict]:
-        """Project multiple countries to target year"""
+    def batch_project_to_current_year(self, data: pd.DataFrame, disease: str, countries: List[str], metric: str = 'new_cases', target_year: int = 2025, use_pytorch: bool = False) -> Dict[str, Dict]:
+        """Project multiple countries to a target year"""
         results = {}
         
         for country in countries:
             try:
-                projection = self.project_to_current_year(data, disease, country, metric, target_year)
+                projection = self.project_to_current_year(data, disease, country, metric, target_year, use_pytorch)
                 results[country] = projection
             except Exception as e:
                 results[country] = {

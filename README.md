@@ -115,6 +115,22 @@ We acknowledge the original data collectors and maintainers who made this analys
 • **Consistent Design**: Uniform interface across all components
 • **Easy Access**: One-click navigation between different analysis modes
 
+### 9. Interactive Exploration
+Users can adjust clustering parameters, forecasting options, and visualization settings to explore the data from different angles.
+
+### 10. Dual Forecasting Approaches
+The dashboard now offers two complementary forecasting methods:
+• **Exponential Smoothing**: Traditional statistical approach with high transparency
+• **PyTorch Neural Network**: Machine learning approach for complex pattern recognition
+• **Educational Comparison**: Users can compare both methods to understand their strengths and limitations
+
+### 11. Marcos Research Integration
+The dashboard incorporates research from Marcos et al. on epidemic forecasting and healthcare utilization:
+• **Pattern Recognition**: Advanced algorithms for identifying epidemic curve patterns
+• **Healthcare Utilization Analysis**: Methods for understanding healthcare system responses
+• **Visualization Techniques**: Research-backed approaches to data visualization
+• **Educational Framework**: Structured learning about epidemic forecasting principles
+
 ## 🔧 Technical Implementation
 
 ### **🔮 Forecasting Methodology Explained**
@@ -348,9 +364,11 @@ Different clusters need different types of international health support:
 ### Forecasting Engine (`utils/forecast_engine.py`)
 • **EpidemicForecaster Class**: Main forecasting logic with epidemic-specific adjustments
 • **Exponential Smoothing**: Proven time series method adapted for epidemic curves
+• **EpidemicTimeSeriesModel**: PyTorch-based neural network for complex pattern recognition
 • **Trend Detection**: Automatically identifies growth/decline patterns
 • **Batch Processing**: Handles multiple countries simultaneously
 • **Error Handling**: Graceful fallbacks for insufficient data
+• **Model Selection**: User choice between traditional and machine learning approaches
 
 ### Healthcare Access Clustering (`pages/Healthcare Access.py`)
 • **K-means Implementation**: Scikit-learn clustering with 4 optimized clusters
@@ -404,6 +422,19 @@ Rather than overselling capabilities, we're explicit about reliability levels, a
 
 ### 5. **Interactive Exploration**
 Users can adjust clustering parameters, forecasting options, and visualization settings to explore the data from different angles.
+
+### 6. **Dual Forecasting Approaches**
+The dashboard now offers two complementary forecasting methods:
+• **Exponential Smoothing**: Traditional statistical approach with high transparency
+• **PyTorch Neural Network**: Machine learning approach for complex pattern recognition
+• **Educational Comparison**: Users can compare both methods to understand their strengths and limitations
+
+### 7. **Marcos Research Integration**
+The dashboard incorporates research from Marcos et al. on epidemic forecasting and healthcare utilization:
+• **Pattern Recognition**: Advanced algorithms for identifying epidemic curve patterns
+• **Healthcare Utilization Analysis**: Methods for understanding healthcare system responses
+• **Visualization Techniques**: Research-backed approaches to data visualization
+• **Educational Framework**: Structured learning about epidemic forecasting principles
 
 ## ⚠️ Important Disclaimers
 
@@ -514,6 +545,8 @@ The app expects these files in the `data/` directory:
 • **Statistical Analysis**: Correlation analysis and efficiency metrics
 • **Multi-Tab Visualizations**: Health spending, global distribution, and economic patterns
 • **Streamlined Navigation**: Clean, three-page application structure
+• **PyTorch Integration**: Added neural network forecasting as an alternative to exponential smoothing
+• **Marcos Research Implementation**: Incorporated research-backed visualization and analysis techniques
 
 ### Planned Features
 • **Predictive Access Models**: Forecasting healthcare access trends over time
