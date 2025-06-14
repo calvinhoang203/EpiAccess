@@ -496,6 +496,20 @@ def main():
         st.warning("No data available for selected clusters.")
         return
     
+    # Disease selection
+    disease_options = {
+        'COVID-19': 'COVID-19',
+        'SARS': 'SARS (Severe Acute Respiratory Syndrome)',
+        'Monkeypox': 'Monkeypox'
+    }
+    
+    selected_disease = st.sidebar.selectbox(
+        "Select Disease",
+        options=list(disease_options.keys()),
+        format_func=lambda x: disease_options[x],
+        help="Choose which disease to analyze"
+    )
+    
     # Visualization Section
     st.markdown("---")
     st.subheader("📊 Healthcare Access Cluster Visualizations")

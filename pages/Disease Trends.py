@@ -454,7 +454,8 @@ def main():
     col1, col2 = st.columns([4, 1])
     
     with col1:
-        st.title("🦠 Epidemic Forecast Dashboard")
+        # Main title (will be updated after disease selection)
+        st.title("📊 Epidemic Trends & Forecasting")
         st.markdown("**Get 6-month forecasts of disease cases by region**")
     
     with col2:
@@ -472,11 +473,28 @@ def main():
     st.sidebar.header("🔍 Filter Options")
     
     # Disease selection
-    diseases = sorted(data['disease'].unique())
+    disease_options = {
+        'COVID-19': 'COVID-19',
+        'SARS': 'SARS (Severe Acute Respiratory Syndrome)',
+        'Monkeypox': 'Monkeypox'
+    }
+    
     selected_disease = st.sidebar.selectbox(
-        "Select Disease Type",
-        diseases,
+        "Select Disease",
+        options=list(disease_options.keys()),
+        format_func=lambda x: disease_options[x],
         help="Choose which disease to analyze"
+    )
+    
+    # Update title with selected disease
+    display_disease = "SARS (Severe Acute Respiratory Syndrome)" if selected_disease == "SARS" else selected_disease
+    st.markdown(
+        f"""
+        <h1 style='font-size:1.6rem; font-weight:800; color:#222; margin-top:0.5em; margin-bottom:0.5em;'>
+            {display_disease} Trends & Forecasting
+        </h1>
+        """,
+        unsafe_allow_html=True
     )
     
     # Get disease-specific data for further filtering

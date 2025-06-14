@@ -490,11 +490,16 @@ def main():
     """, unsafe_allow_html=True)
     
     # Disease selection
-    diseases = sorted(data['disease'].unique())
+    disease_options = {
+        'COVID-19': 'COVID-19',
+        'SARS': 'SARS (Severe Acute Respiratory Syndrome)',
+        'Monkeypox': 'Monkeypox'
+    }
+    
     selected_disease = st.sidebar.selectbox(
         "Select Disease",
-        diseases,
-        help="Choose which disease to analyze"
+        options=list(disease_options.keys()),
+        format_func=lambda x: disease_options[x]
     )
     
     # Get disease-specific data for filtering
@@ -669,7 +674,9 @@ def main():
     # Display map
     st.subheader(f"🌍 {selected_disease} - {metric_options[selected_metric]} Distribution")
     
-    title = f"{selected_disease}: {metric_options[selected_metric]} by Country"
+    # Use full name for SARS
+    display_disease = "SARS (Severe Acute Respiratory Syndrome)" if selected_disease == "SARS" else selected_disease
+    title = f"{display_disease}: {metric_options[selected_metric]} by Country"
     
     if map_type == "Choropleth":
         fig = create_choropleth_map(country_data, selected_disease, selected_metric, title)
@@ -696,8 +703,15 @@ def main():
     
     # Add warning about regional statistics requirements
     total_countries = len(country_data)
-    unique_regions = country_data['region'].nunique()
-    region_list = sorted(country_data['region'].unique())
+    
+    # Check if region column exists and has valid values
+    if 'region' in country_data.columns and not country_data['region'].isna().all():
+        unique_regions = country_data['region'].nunique()
+        region_list = sorted(country_data['region'].dropna().unique())
+    else:
+        # Handle case where region data is missing or all NaN
+        unique_regions = 0
+        region_list = []
     
     if total_countries < 3:
         st.markdown("""
