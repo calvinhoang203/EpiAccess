@@ -540,24 +540,39 @@ The app expects these files in the `data/` directory:
 
 ### Recently Completed ✅
 • **Healthcare Access Clustering**: Advanced K-means analysis with interactive visualizations
+
 • **Enhanced Data Processing**: World Bank health expenditure integration
+
 • **Interactive Controls**: Point size adjustment, jitter options, log scaling
+
 • **Statistical Analysis**: Correlation analysis and efficiency metrics
+
 • **Multi-Tab Visualizations**: Health spending, global distribution, and economic patterns
+
 • **Streamlined Navigation**: Clean, three-page application structure
+
 • **PyTorch Integration**: Added neural network forecasting as an alternative to exponential smoothing
+
 • **Marcos Research Implementation**: Incorporated research-backed visualization and analysis techniques
 
 ### Planned Features
 • **Predictive Access Models**: Forecasting healthcare access trends over time
+
 • **Enhanced Forecasting**: Additional statistical models and ensemble methods
+
 • **Real-time Data**: Integration with live epidemic monitoring systems
+
 • **Mobile Optimization**: Responsive design for mobile devices
+
 • **Cluster Validation**: Advanced statistical validation of healthcare access clusters
 
 ### Ongoing Improvements
 • **Performance Optimization**: Faster clustering calculations and data loading
+
 • **Additional Diseases**: Expand to include more epidemic datasets (influenza, dengue, etc.)
+
 • **Advanced Analytics**: Deep learning models for complex pattern recognition
+
 • **Export Capabilities**: PDF reports, Excel exports, and data download options
+
 • **User Experience**: Enhanced tooltips, better error handling, and guided tours
