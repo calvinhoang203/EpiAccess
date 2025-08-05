@@ -501,71 +501,117 @@ Different clusters need different types of international health support:
 #### **Technical Implementation Details**
 
 **Data Preprocessing:**
+
 • **Missing Data Handling**: Use 2020-2022 averages for stability
+
 • **Outlier Management**: Cap extreme values to prevent distortion
+
 • **Feature Scaling**: Standardize all metrics to 0-1 range
 
 **Clustering Algorithm:**
+
 • **Method**: K-means with k=4 clusters
+
 • **Initialization**: K-means++ for better starting points
+
 • **Iterations**: Up to 300 iterations with early stopping
+
 • **Random State**: Fixed seed (42) for reproducible results
 
 **Validation Methods:**
+
 • **Silhouette Analysis**: Measures how well-separated clusters are
+
 • **Elbow Method**: Confirms 4 clusters is optimal number
+
 • **Domain Expert Review**: Healthcare professionals validate cluster interpretations
 
 ### Data Processing Pipeline (`utils/data_processor.py`)
+
 • **Unified Schema**: Converts different dataset formats into consistent structure
+
 • **Country Standardization**: Maps various country names to standard format
+
 • **Date Normalization**: Handles different date formats across datasets
+
 • **Missing Data Handling**: Fills gaps and handles inconsistencies
+
 • **Performance Optimization**: Processes 63k+ records efficiently
 
 ### Forecasting Engine (`utils/forecast_engine.py`)
+
 • **EpidemicForecaster Class**: Main forecasting logic with epidemic-specific adjustments
+
 • **Exponential Smoothing**: Proven time series method adapted for epidemic curves
+
 • **EpidemicTimeSeriesModel**: PyTorch-based neural network for complex pattern recognition
+
 • **Trend Detection**: Automatically identifies growth/decline patterns
+
 • **Batch Processing**: Handles multiple countries simultaneously
+
 • **Error Handling**: Graceful fallbacks for insufficient data
+
 • **Model Selection**: User choice between traditional and machine learning approaches
 
 ### Healthcare Access Clustering (`pages/Healthcare Access.py`)
+
 • **K-means Implementation**: Scikit-learn clustering with 4 optimized clusters
+
 • **Data Preprocessing**: 3-year averaging (2020-2022) for pandemic stability
+
 • **Interactive Visualizations**: Enhanced scatter plots with GDP-based point sizing
+
 • **Statistical Analysis**: Correlation analysis and efficiency ratio calculations
+
 • **Multi-Tab Interface**: Health spending, global distribution, and economic patterns
 
 ### Insights Generation (`utils/forecast_engine.py`)
+
 • **InsightGenerator Class**: Converts numerical forecasts to human-readable text
+
 • **Trend Metrics**: Calculates 1-month, 3-month, and 6-month percentage changes
+
 • **Confidence Assessment**: Evaluates reliability based on historical data quality
+
 • **Natural Language**: Generates insights in conversational English
 
 ## 📱 User Interface
 
 ### Dashboard Layout
+
 • **Header Section**: Title, navigation, and key metrics cards
+
 • **Filter Panel**: Disease, country, date, and metric selection
+
 • **Main Chart Area**: Interactive time series with forecasting
+
 • **Insights Panel**: Real-time generated summaries and trend analysis
+
 • **Comparison Charts**: Bar charts for country-to-country analysis
 
 ### Access Clustering Interface
+
 • **Three-Tab Design**: Health spending, global distribution, and economic patterns
+
 • **Interactive Controls**: Point size adjustment, jitter options, log scaling, trend lines
+
 • **Smart Color Coding**: Consistent four-cluster color scheme across all visualizations
+
 • **Comprehensive Statistics**: Summary tables, correlation analysis, and efficiency metrics
+
 • **Country Listings**: Organized by cluster with spending averages and key metrics
 
 ### Reliability Features
+
 When using "Project to 2025" mode, users see:
+
 • **Prominent warnings** about scenario planning nature
+
 • **Reliability scores** (5-6/10) throughout the interface
+
 • **Clear guidance** on appropriate vs inappropriate uses
+
 • **Educational tooltips** explaining assumptions and limitations
 
 ## 📊 What Makes This Project Unique
@@ -586,51 +632,81 @@ Rather than overselling capabilities, we're explicit about reliability levels, a
 Users can adjust clustering parameters, forecasting options, and visualization settings to explore the data from different angles.
 
 ### 6. **Dual Forecasting Approaches**
+
 The dashboard now offers two complementary forecasting methods:
+
 • **Exponential Smoothing**: Traditional statistical approach with high transparency
+
 • **PyTorch Neural Network**: Machine learning approach for complex pattern recognition
+
 • **Educational Comparison**: Users can compare both methods to understand their strengths and limitations
 
 ### 7. **Marcos Research Integration**
+
 The dashboard incorporates research from Marcos et al. on epidemic forecasting and healthcare utilization:
+
 • **Pattern Recognition**: Advanced algorithms for identifying epidemic curve patterns
+
 • **Healthcare Utilization Analysis**: Methods for understanding healthcare system responses
+
 • **Visualization Techniques**: Research-backed approaches to data visualization
+
 • **Educational Framework**: Structured learning about epidemic forecasting principles
 
 ## ⚠️ Important Disclaimers
 
 ### Educational Purpose
+
 • **Primary Use**: Educational analysis and learning about epidemic patterns
+
 • **NOT for**: Real-time health decisions, clinical guidance, or policy making
+
 • **Data Limitations**: Historical data may not reflect current healthcare improvements or changes
 
 ### Forecasting Reliability
+
 • **6-Month Forecasts**: Medium reliability (6-7/10) for trend analysis and educational purposes
+
 • **Best for**: Understanding epidemic patterns, comparative analysis, learning forecasting concepts
+
 • **Limitations**: Cannot predict policy changes, new variants, external shocks, or healthcare improvements
+
 • **Educational Value**: Excellent for learning about epidemic curves and forecasting principles
 
 ### 2025 Projections Reliability
+
 • **Scenario Planning Only**: Medium-low reliability (4-5/10) for educational "what-if" exercises
+
 • **Good for**: Understanding outbreak patterns, emergency planning concepts, comparative analysis
+
 • **NOT for**: Actual predictions, policy decisions, economic planning, or real emergency planning
+
 • **Major assumptions**: 2025 conditions identical to historical conditions (highly unrealistic)
+
 • **Educational Purpose**: Demonstrates forecasting concepts and pattern recognition
 
 ### Healthcare Access Clustering Reliability
+
 • **Pattern Recognition**: High reliability (8-9/10) for identifying general access categories
+
 • **Good for**: Understanding global health patterns, educational analysis, research concepts
+
 • **Limitations**: Based on spending data only; doesn't capture healthcare quality, outcomes, or accessibility
+
 • **NOT for**: Individual country detailed assessments, policy recommendations, or funding decisions
+
 • **Educational Focus**: Great for learning about health economics and clustering analysis
 
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
+
 • **Python 3.8+** (Python 3.9+ recommended)
+
 • **Package Manager**: pip or conda
+
 • **Memory**: 4GB+ RAM recommended for clustering analysis
+
 • **Storage**: 100MB+ for data files
 
 ### Quick Start
@@ -665,11 +741,15 @@ python -c "import streamlit, pandas, sklearn, plotly; print('All dependencies in
 The app expects these files in the `data/` directory:
 
 **Epidemic Data:**
+
 • `cleaned_covid_data.csv` - COVID-19 time series data
+
 • `sars_2003_complete_dataset_clean.csv` - SARS outbreak data  
+
 • `Daily_Country_Monkeypox_Confirmed_Cases.csv` - Monkeypox case data
 
 **Healthcare Access Data:**
+
 • `cleaned_health_expenditure.xlsx` - World Bank health spending data (2015-2022)
 
 ### First Run Setup
